@@ -1,0 +1,40 @@
+---
+title: "Data Visualization in R (Winter 2025)"
+author: "Dr. Emorie D Beck, University of California, Davis"
+---
+
+Wednesdays, 9:30 AM - 12 PM (January 8-March 12, 2025)\
+166 Young Hall\
+Psychology Department\
+University of California, Davis
+
+## **Course Description**
+
+::::: {layout="[ 65,35 ]"}
+::: {#first-column}
+
+In scholarly writing, a figure can be worth 1000 words. Data visualization is a key part of the scientific enterprise, yet most students are taught only a small range of visualizations that are most frequently used in their fields and for the types of methods they use. Such standard procedure can limit the reach and scope of scientific work in an era of rapid digital technological innovation. This course will be designed around themes rather than types of visualization. The beginning of the course will cover best practices in data visualization from the perspective of a growing literature on cognitive perceptions of data visualization and will orient students to visualizing data in R using ggplot2. Next, we will cover several broad topic areas, including visualizing probability, differences, and uncertainty. We will conclude with interactive and animated graphics in R and Shiny. Students are highly encouraged to bring their own data from ongoing or completed projects, but this is not required.
+
+:::
+
+::: {#second=column}
+![](static/R_logo.svg.png)
+
+![](static/ggplot2.png)
+
+:::
+:::::
+
+## **Navigating This Site:**
+
+1\. Weekly assignments are under **Problem Sets**. These are due at the time of class the week after they are assigned
+
+2\. Reading list (and links) and links to workshop slides are under [**Schedule**](schedule.html) and on Canvas. I recommend bookmarking this site to allow you access to all materials in perpetuity.
+
+3\. Final Project Information will be under **Final Project**. The proposal instructions (Due February 12, 2025 at 11:59 PM PST) will be posted by mid January. More details about the final project will be posted by early February, and a rubric for the final project will be posted by mid February
+
+4\. The most updated version of the syllabus will be on the [**Syllabus**](syllabus.html) page and can be downloaded there as well.
+
+## **Course Zoom Link**
+
+This course is in person, but you may access it on [Zoom](https://ucdavis.zoom.us/j/92902358318?pwd=tkLmAOCQZunvsXm1FMAbxfniKjz8yD.1) due to illness, exposure, travel, etc. with instructor permission.
