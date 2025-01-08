@@ -268,534 +268,534 @@
   {
     "objectID": "01-week1-slides-code.html",
     "href": "01-week1-slides-code.html",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "",
     "text": "library(knitr)\n\nWarning: package 'knitr' was built under R version 4.3.3\n\nlibrary(psych)\nlibrary(plyr)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ ggplot2::%+%()     masks psych::%+%()\n✖ ggplot2::alpha()   masks psych::alpha()\n✖ dplyr::arrange()   masks plyr::arrange()\n✖ purrr::compact()   masks plyr::compact()\n✖ dplyr::count()     masks plyr::count()\n✖ dplyr::desc()      masks plyr::desc()\n✖ dplyr::failwith()  masks plyr::failwith()\n✖ dplyr::filter()    masks stats::filter()\n✖ dplyr::id()        masks plyr::id()\n✖ dplyr::lag()       masks stats::lag()\n✖ dplyr::mutate()    masks plyr::mutate()\n✖ dplyr::rename()    masks plyr::rename()\n✖ dplyr::summarise() masks plyr::summarise()\n✖ dplyr::summarize() masks plyr::summarize()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors"
   },
   {
     "objectID": "01-week1-slides-code.html#course-goals-learning-outcomes",
     "href": "01-week1-slides-code.html#course-goals-learning-outcomes",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Course Goals & Learning Outcomes",
     "text": "Course Goals & Learning Outcomes\n\nUnderstand the cognitive and psychological underpinnings of perceiving data visualization.\nIdentify good data visualizations and describe what makes them good.\nProduce data visualizations according to types of questions, data, and more, with a particular emphasis on building a toolbox that you can carry into your own research."
   },
   {
     "objectID": "01-week1-slides-code.html#course-expectations",
     "href": "01-week1-slides-code.html#course-expectations",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Course Expectations",
     "text": "Course Expectations\n\n~50% of the course will be in R\nYou will get the most from this course if you:\n\nhave your own data you can apply course content to\nknow how to clean clean, transform, and manage that data\ntoday’s workshop is a good litmus test for this"
   },
   {
     "objectID": "01-week1-slides-code.html#course-materials",
     "href": "01-week1-slides-code.html#course-materials",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Course Materials",
-    "text": "Course Materials\n\nAll materials (required and optional) are free and online\n\nWickham & Grolemond: R for Data Science https://r4ds.had.co.nz\n\nWickham: Advanced R http://adv-r.had.co.nz\n\nWilke: Fundamentals of Data Visualization https://clauswilke.com/dataviz/\n\nHealy: Data Visualization: A Practical Introduction https://socviz.co\n\n\nData Camp: All paid content unlocked"
+    "text": "Course Materials\n\nAll materials (required and optional) are free and online\n\nWickham & Grolemond: R for Data Science https://r4ds.had.co.nz\nWickham: Advanced R http://adv-r.had.co.nz\nWilke: Fundamentals of Data Visualization https://clauswilke.com/dataviz/\nHealy: Data Visualization: A Practical Introduction https://socviz.co\nData Camp: All paid content unlocked"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments",
     "href": "01-week1-slides-code.html#assignments",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\n\nAssignment Weights\nPercent\n\n\nProblem Sets (5)\n20%\n\n\nResponse Papers + Visualizations\n20%\n\n\nFinal Project Proposal\n10%\n\n\nClass Presentation\n20%\n\n\nFinal Project\n30%\n\n\nTotal\n100%"
+    "text": "Assignments\n\n\n\nAssignment Weights\nPercent\n\n\nProblem Sets (5)\n20%\n\n\nResponse Papers + Visualizations\n20%\n\n\nFinal Project Proposal\n10%\n\n\nClass Presentation\n20%\n\n\nFinal Project\n30%\n\n\nTotal\n100%"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-1",
     "href": "01-week1-slides-code.html#assignments-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\nResponse Papers / Visualizations\n\nThe main homework in the course is your weekly visualization assignment\nThe goal is to demonstrate how the principles and skills you learn in the class function “in the wild.”\nThese should be fun and not taken too seriously! No one is judging you for a pulling a graphic from Instagram instead of Nature.\nDue 12:00 PM the day before (i.e. Tuesday) class (last class is “free points”)"
+    "text": "Assignments\n\nResponse Papers / Visualizations\n\nThe main homework in the course is your weekly visualization assignment\nThe goal is to demonstrate how the principles and skills you learn in the class function “in the wild.”\nThese should be fun and not taken too seriously! No one is judging you for a pulling a graphic from Instagram instead of Nature.\nDue 12:00 PM the day before (i.e. Tuesday) class (last class is “free points”)"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-2",
     "href": "01-week1-slides-code.html#assignments-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\nProblem Sets\n\nAbout every other week, there will be a practice set to help you practice what you’re learning.\nThese will have you apply the code you’ve been learning to your own data or a provided data set\nAssigning them every other week aims to reduce burden while still allowing you to practice\nFrequency / form will be adjusted as needed throughout the quarter"
+    "text": "Assignments\n\nProblem Sets\n\nAbout every other week, there will be a practice set to help you practice what you’re learning.\nThese will have you apply the code you’ve been learning to your own data or a provided data set\nAssigning them every other week aims to reduce burden while still allowing you to practice\nFrequency / form will be adjusted as needed throughout the quarter"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-3",
     "href": "01-week1-slides-code.html#assignments-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\nFinal Projects\n\nI don’t want you to walk out of this course and not know how to apply what you learned\nFinal project replaces final exam (there are no exams)\nCreate a visualization for an ongoing project!\n\nStage 1: Proposal (due 02/12/25)\nStage 2: 1-on-1 meetings + feedback (due by 02/26/25)\nStage 3: In-class presentations (03/12/25)\nStage 4: Final visualization + brief write-up (due 03/19/25 at midnight)"
+    "text": "Assignments\n\nFinal Projects\n\nI don’t want you to walk out of this course and not know how to apply what you learned\nFinal project replaces final exam (there are no exams)\nCreate a visualization for an ongoing project!\n\nStage 1: Proposal (due 02/12/25)\nStage 2: 1-on-1 meetings + feedback (due by 02/26/25)\nStage 3: In-class presentations (03/12/25)\nStage 4: Final visualization + brief write-up (due 03/19/25 at midnight)"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-4",
     "href": "01-week1-slides-code.html#assignments-4",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\nExtra Credit\n\nLots of talk series, etc. this winter\n1 pt extra credit for each one you:\n\ngo to,\ntake a snap of a data viz,\nand critique it according to what you’ve learned in class\n\n\nmax 5 pts"
+    "text": "Assignments\n\nExtra Credit\n\nLots of talk series, etc. this winter\n1 pt extra credit for each one you:\n\ngo to,\ntake a snap of a data viz,\nand critique it according to what you’ve learned in class\n\nmax 5 pts"
   },
   {
     "objectID": "01-week1-slides-code.html#class-time",
     "href": "01-week1-slides-code.html#class-time",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Class Time",
     "text": "Class Time\n\n~5-10 min: welcome and review (if needed)\n~20-35 min: discussion / some lecture content on readings\n~5-10 min: break\n~40-60 min: workshop\n~20-30 min: open lab"
   },
   {
     "objectID": "01-week1-slides-code.html#course-topics",
     "href": "01-week1-slides-code.html#course-topics",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Course Topics",
     "text": "Course Topics\n\n\n\nIntro and Overview\nCognitive Perspectives\nProportions and Probability\nDifferences and Associations\nChange and Time Series\nUncertainty\nPiecing Visualizations Together\n\n\n\nPolishing Visualizations\nInteractive Visualizations Additional Topics:\n\n\nSpatial Information\nAutomated Reports\nDiagrams\nMore?"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad",
     "href": "01-week1-slides-code.html#good-or-bad",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/leo-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-1",
     "href": "01-week1-slides-code.html#good-or-bad-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/acre-map-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-2",
     "href": "01-week1-slides-code.html#good-or-bad-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/vote-map-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-3",
     "href": "01-week1-slides-code.html#good-or-bad-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/mmr-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-4",
     "href": "01-week1-slides-code.html#good-or-bad-4",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/batman-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-5",
     "href": "01-week1-slides-code.html#good-or-bad-5",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/BadVizWk1.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-6",
     "href": "01-week1-slides-code.html#good-or-bad-6",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/chaos-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-7",
     "href": "01-week1-slides-code.html#good-or-bad-7",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/diff-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-8",
     "href": "01-week1-slides-code.html#good-or-bad-8",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/monkeypox-viz.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#good-or-bad-9",
     "href": "01-week1-slides-code.html#good-or-bad-9",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Good or Bad?",
     "text": "Good or Bad?\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/water-use-viz.jpg\")"
   },
   {
     "objectID": "01-week1-slides-code.html#why-should-i-care-about-data-visualization",
     "href": "01-week1-slides-code.html#why-should-i-care-about-data-visualization",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Why Should I Care About Data Visualization",
     "text": "Why Should I Care About Data Visualization\n\nSummarizing huge amounts of information\nSeeing the forest and the trees\nErrors in probabilistic reasoning\nIt’s fun!"
   },
   {
     "objectID": "01-week1-slides-code.html#why-visualize-data-in-r",
     "href": "01-week1-slides-code.html#why-visualize-data-in-r",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Why Visualize Data in R",
     "text": "Why Visualize Data in R\n\n\n\nOpen source and freeeee\nFlexible\nReproducible\nFlexible formatting / output\nLots of model- and package-specific support\nDid I mention free?\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/R_logo.svg.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#why-use-rstudio-pivot",
     "href": "01-week1-slides-code.html#why-use-rstudio-pivot",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Why Use RStudio (Pivot)",
     "text": "Why Use RStudio (Pivot)\n\n\n\nAlso free\nBasically a GUI for R\nOrganize files, import data, etc. with ease\nRMarkdown, Quarto, and more are powerful tools (they were used to create these slides!)\nLots of new features and support\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/RStudio-Logo-Flat.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#why-use-the-tidyverse",
     "href": "01-week1-slides-code.html#why-use-the-tidyverse",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "Why Use the tidyverse\n",
-    "text": "Why Use the tidyverse\n\n\n\n\nMaintained by RStudio (Pivot)\nNo one should have to use a for loop to change data from long to wide\nTons of integrated tools for data cleaning, manipulation, transformation, and visualization\nEven increasing support for modeling (e.g., tidymodels)\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/tidyverse.png\")"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "Why Use the tidyverse",
+    "text": "Why Use the tidyverse\n\n\n\nMaintained by RStudio (Pivot)\nNo one should have to use a for loop to change data from long to wide\nTons of integrated tools for data cleaning, manipulation, transformation, and visualization\nEven increasing support for modeling (e.g., tidymodels)\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/tidyverse.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#why-use-the-tidyverse-1",
     "href": "01-week1-slides-code.html#why-use-the-tidyverse-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "Why Use the tidyverse\n",
-    "text": "Why Use the tidyverse\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/stringr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/shiny.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/rmarkdown.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/quarto.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/knitr.png\")\n\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/ggplot2.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/forcats.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/broom.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tibble.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/purrr.png\")"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "Why Use the tidyverse",
+    "text": "Why Use the tidyverse\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/stringr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/shiny.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/rmarkdown.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/quarto.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/knitr.png\")\n\n\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/ggplot2.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/forcats.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/broom.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tibble.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/purrr.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#goals-for-today",
     "href": "01-week1-slides-code.html#goals-for-today",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Goals for Today",
-    "text": "Goals for Today\n\n\nReview core principles of:\n\n\ndyplr (data manipulation)\n\ntidyr (data transformation and reshaping)"
+    "text": "Goals for Today\n\nReview core principles of:\n\ndyplr (data manipulation)\ntidyr (data transformation and reshaping)\n\n\n\n\n\n\n\nData Manipulation in dplyr"
   },
   {
     "objectID": "01-week1-slides-code.html#dplyr-core-functions-1",
     "href": "01-week1-slides-code.html#dplyr-core-functions-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "\ndplyr Core Functions",
-    "text": "dplyr Core Functions\n\n\n%>%: The pipe. Read as “and then.”\n\nfilter(): Pick observations (rows) by their values.\n\nselect(): Pick variables (columns) by their names.\n\narrange(): Reorder the rows.\n\ngroup_by(): Implicitly split the data set by grouping by names (columns).\n\nmutate(): Create new variables with functions of existing variables.\n\nsummarize() / summarise(): Collapse many values down to a single summary."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "dplyr Core Functions",
+    "text": "dplyr Core Functions\n\n%>%: The pipe. Read as “and then.”\nfilter(): Pick observations (rows) by their values.\nselect(): Pick variables (columns) by their names.\narrange(): Reorder the rows.\ngroup_by(): Implicitly split the data set by grouping by names (columns).\nmutate(): Create new variables with functions of existing variables.\nsummarize() / summarise(): Collapse many values down to a single summary."
   },
   {
     "objectID": "01-week1-slides-code.html#core-functions",
     "href": "01-week1-slides-code.html#core-functions",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Core Functions",
     "text": "Core Functions\n\n\n\n\n%>%\nfilter()\nselect()\narrange()\ngroup_by()\nmutate()\nsummarize()\n\n\n\nAlthough each of these functions are powerful alone, they are incredibly powerful in conjunction with one another. So below, I’ll briefly introduce each function, then link them all together using an example of basic data cleaning and summary."
   },
   {
     "objectID": "01-week1-slides-code.html#section",
     "href": "01-week1-slides-code.html#section",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "1. %>%\n",
-    "text": "1. %>%\n\n\nThe pipe %>% is wonderful. It makes coding intuitive. Often in coding, you need to use so-called nested functions. For example, you might want to round a number after taking the square of 43.\n\n\n\nsqrt(43)\n\n[1] 6.557439\n\nround(sqrt(43), 2)\n\n[1] 6.56"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "1. %>%",
+    "text": "1. %>%\n\nThe pipe %>% is wonderful. It makes coding intuitive. Often in coding, you need to use so-called nested functions. For example, you might want to round a number after taking the square of 43.\n\n\n\nsqrt(43)\n\n[1] 6.557439\n\nround(sqrt(43), 2)\n\n[1] 6.56"
   },
   {
     "objectID": "01-week1-slides-code.html#section-1",
     "href": "01-week1-slides-code.html#section-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "1. %>%\n",
-    "text": "1. %>%\n\nThe issue with this comes whenever we need to do a series of operations on a data set or other type of object. In such cases, if we run it in a single call, then we have to start in the middle and read our way out.\n\nround(sqrt(43/2), 2)\n\n[1] 4.64"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "1. %>%",
+    "text": "1. %>%\nThe issue with this comes whenever we need to do a series of operations on a data set or other type of object. In such cases, if we run it in a single call, then we have to start in the middle and read our way out.\n\nround(sqrt(43/2), 2)\n\n[1] 4.64"
   },
   {
     "objectID": "01-week1-slides-code.html#section-2",
     "href": "01-week1-slides-code.html#section-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "1. %>%\n",
-    "text": "1. %>%\n\nThe pipe solves this by allowing you to read from left to right (or top to bottom). The easiest way to think of it is that each call of %>% reads and operates as “and then.” So with the rounded square root of 43, for example:\n\n\nsqrt(43) %>%\n  round(2)\n\n[1] 6.56"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "1. %>%",
+    "text": "1. %>%\nThe pipe solves this by allowing you to read from left to right (or top to bottom). The easiest way to think of it is that each call of %>% reads and operates as “and then.” So with the rounded square root of 43, for example:\n\n\nsqrt(43) %>%\n  round(2)\n\n[1] 6.56"
   },
   {
     "objectID": "01-week1-slides-code.html#filter",
     "href": "01-week1-slides-code.html#filter",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\n\n\ndata(bfi) # grab the bfi data from the psych package\nbfi <- bfi %>% as_tibble()\nhead(bfi)\n\n# A tibble: 6 × 28\n     A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2    E3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     4     3     4     4     2     3     3     4     4     3     3     3\n2     2     4     5     2     5     5     4     4     3     4     1     1     6\n3     5     4     5     4     4     4     5     4     2     5     2     4     4\n4     4     4     6     5     5     4     4     3     5     5     5     3     4\n5     2     3     3     4     5     4     4     5     3     2     2     2     5\n6     6     6     5     6     5     6     6     6     1     3     2     1     6\n# ℹ 15 more variables: E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>,\n#   N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>,\n#   gender <int>, education <int>, age <int>"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\n\n\ndata(bfi) # grab the bfi data from the psych package\nbfi <- bfi %>% as_tibble()\nhead(bfi)\n\n# A tibble: 6 × 28\n     A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2    E3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     4     3     4     4     2     3     3     4     4     3     3     3\n2     2     4     5     2     5     5     4     4     3     4     1     1     6\n3     5     4     5     4     4     4     5     4     2     5     2     4     4\n4     4     4     6     5     5     4     4     3     5     5     5     3     4\n5     2     3     3     4     5     4     4     5     3     2     2     2     5\n6     6     6     5     6     5     6     6     6     1     3     2     1     6\n# ℹ 15 more variables: E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>,\n#   N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>,\n#   gender <int>, education <int>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-1",
     "href": "01-week1-slides-code.html#filter-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nsummary(bfi$age) # get age descriptives\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   3.00   20.00   26.00   28.78   35.00   86.00"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nsummary(bfi$age) # get age descriptives\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   3.00   20.00   26.00   28.78   35.00   86.00"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-2",
     "href": "01-week1-slides-code.html#filter-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>% # see a pipe!\n  filter(age <= 18) # filter to age up to 18\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n    3.0    16.0    17.0    16.3    18.0    18.0 \n\n\n\n\nBut this isn’t quite right. We still have folks below 12. But, the beauty of filter() is that you can do sequence of OR and AND statements when there is more than one condition, such as up to 18 AND at least 12."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>% # see a pipe!\n  filter(age <= 18) # filter to age up to 18\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n    3.0    16.0    17.0    16.3    18.0    18.0 \n\n\n\n\nBut this isn’t quite right. We still have folks below 12. But, the beauty of filter() is that you can do sequence of OR and AND statements when there is more than one condition, such as up to 18 AND at least 12."
   },
   {
     "objectID": "01-week1-slides-code.html#filter-3",
     "href": "01-week1-slides-code.html#filter-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>%\n  filter(age <= 18 & age >= 12) # filter to age up to 18 and at least 12\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0 \n\n\n\n\nGot it!"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>%\n  filter(age <= 18 & age >= 12) # filter to age up to 18 and at least 12\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0 \n\n\n\n\nGot it!"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-4",
     "href": "01-week1-slides-code.html#filter-4",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\n\nBut filter works for more use cases than just conditional\n\n\n<, >, <=, and >=\n\n\n\nIt can also be used for cases where we want a single values to match cases with text.\nTo do that, let’s convert one of the variables in the bfi data frame to a string.\nSo let’s change gender (1 = male, 2 = female) to text (we’ll get into factors later).\n\n\n\nbfi$education <- plyr::mapvalues(bfi$education, 1:5, c(\"Below HS\", \"HS\", \"Some College\", \"College\", \"Higher Degree\"))"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\n\nBut filter works for more use cases than just conditional\n\n<, >, <=, and >=\n\nIt can also be used for cases where we want a single values to match cases with text.\nTo do that, let’s convert one of the variables in the bfi data frame to a string.\nSo let’s change gender (1 = male, 2 = female) to text (we’ll get into factors later).\n\n\n\nbfi$education <- plyr::mapvalues(bfi$education, 1:5, c(\"Below HS\", \"HS\", \"Some College\", \"College\", \"Higher Degree\"))"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-5",
     "href": "01-week1-slides-code.html#filter-5",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nNow let’s try a few things:\n1. Create a data set with only individuals with some college (==).\n\n\nbfi2 <- bfi %>% \n  filter(education == \"Some College\")\nunique(bfi2$education)\n\n[1] \"Some College\""
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nNow let’s try a few things:\n1. Create a data set with only individuals with some college (==).\n\n\nbfi2 <- bfi %>% \n  filter(education == \"Some College\")\nunique(bfi2$education)\n\n[1] \"Some College\""
   },
   {
     "objectID": "01-week1-slides-code.html#filter-6",
     "href": "01-week1-slides-code.html#filter-6",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nNow let’s try a few things:\n2. Create a data set with only people age 18 (==).\n\n\nbfi2 <- bfi %>%\n  filter(age == 18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n     18      18      18      18      18      18"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nNow let’s try a few things:\n2. Create a data set with only people age 18 (==).\n\n\nbfi2 <- bfi %>%\n  filter(age == 18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n     18      18      18      18      18      18"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-7",
     "href": "01-week1-slides-code.html#filter-7",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. filter()\n",
-    "text": "2. filter()\n\nNow let’s try a few things:\n3. Create a data set with individuals with some college or above (%in%).\n\n\nbfi2 <- bfi %>%\n  filter(education %in% c(\"Some College\", \"College\", \"Higher Degree\"))\nunique(bfi2$education)\n\n[1] \"Some College\"  \"Higher Degree\" \"College\"      \n\n\n\n\n%in% is great. It compares a column to a vector rather than just a single value, you can compare it to several\n\nbfi2 <- bfi %>%\n  filter(age %in% 12:18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. filter()",
+    "text": "2. filter()\nNow let’s try a few things:\n3. Create a data set with individuals with some college or above (%in%).\n\n\nbfi2 <- bfi %>%\n  filter(education %in% c(\"Some College\", \"College\", \"Higher Degree\"))\nunique(bfi2$education)\n\n[1] \"Some College\"  \"Higher Degree\" \"College\"      \n\n\n\n\n%in% is great. It compares a column to a vector rather than just a single value, you can compare it to several\n\nbfi2 <- bfi %>%\n  filter(age %in% 12:18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0"
   },
   {
     "objectID": "01-week1-slides-code.html#select",
     "href": "01-week1-slides-code.html#select",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "3. select()\n",
-    "text": "3. select()\n\n\nIf filter() is for pulling certain observations (rows), then select() is for pulling certain variables (columns).\nit’s good practice to remove these columns to stop your environment from becoming cluttered and eating up your RAM."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "3. select()",
+    "text": "3. select()\n\nIf filter() is for pulling certain observations (rows), then select() is for pulling certain variables (columns).\nit’s good practice to remove these columns to stop your environment from becoming cluttered and eating up your RAM."
   },
   {
     "objectID": "01-week1-slides-code.html#select-1",
     "href": "01-week1-slides-code.html#select-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "3. select()\n",
-    "text": "3. select()\n\n\nIn our bfi data, most of these have been pre-removed, so instead, we’ll imagine we don’t want to use any indicators of Agreeableness (A1-A5) and that we aren’t interested in gender.\nWith select(), there are few ways choose variables. We can bare quote name the ones we want to keep, bare quote names we want to remove, or use any of a number of select() helper functions."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "3. select()",
+    "text": "3. select()\n\nIn our bfi data, most of these have been pre-removed, so instead, we’ll imagine we don’t want to use any indicators of Agreeableness (A1-A5) and that we aren’t interested in gender.\nWith select(), there are few ways choose variables. We can bare quote name the ones we want to keep, bare quote names we want to remove, or use any of a number of select() helper functions."
   },
   {
     "objectID": "01-week1-slides-code.html#select-2",
     "href": "01-week1-slides-code.html#select-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\nA. Bare quote columns we want to keep:\n\n\n\n\nbfi %>%\n  select(C1, C2, C3, C4, C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows\n\n\n\n\n\n\nbfi %>%\n  select(C1:C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows"
+    "text": "3. select():\n\nA. Bare quote columns we want to keep:\n\n\n\n\nbfi %>%\n  select(C1, C2, C3, C4, C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows\n\n\n\n\n\n\nbfi %>%\n  select(C1:C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#select-3",
     "href": "01-week1-slides-code.html#select-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\nB. Bare quote columns we don’t want to keep:\n\n\nbfi %>% \n  select(-(A1:A5), -gender) %>% # Note the `()` around the columns\n  print(n = 6)\n\n# A tibble: 2,800 × 22\n     C1    C2    C3    C4    C5    E1    E2    E3    E4    E5    N1    N2    N3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     3     3     4     4     3     3     3     4     4     3     4     2\n2     5     4     4     3     4     1     1     6     4     3     3     3     3\n3     4     5     4     2     5     2     4     4     4     5     4     5     4\n4     4     4     3     5     5     5     3     4     4     4     2     5     2\n5     4     4     5     3     2     2     2     5     4     5     2     3     4\n6     6     6     6     1     3     2     1     6     5     6     3     5     2\n# ℹ 2,794 more rows\n# ℹ 9 more variables: N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>,\n#   O4 <int>, O5 <int>, education <chr>, age <int>"
+    "text": "3. select():\n\nB. Bare quote columns we don’t want to keep:\n\n\nbfi %>% \n  select(-(A1:A5), -gender) %>% # Note the `()` around the columns\n  print(n = 6)\n\n# A tibble: 2,800 × 22\n     C1    C2    C3    C4    C5    E1    E2    E3    E4    E5    N1    N2    N3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     3     3     4     4     3     3     3     4     4     3     4     2\n2     5     4     4     3     4     1     1     6     4     3     3     3     3\n3     4     5     4     2     5     2     4     4     4     5     4     5     4\n4     4     4     3     5     5     5     3     4     4     4     2     5     2\n5     4     4     5     3     2     2     2     5     4     5     2     3     4\n6     6     6     6     1     3     2     1     6     5     6     3     5     2\n# ℹ 2,794 more rows\n# ℹ 9 more variables: N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>,\n#   O4 <int>, O5 <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#select-4",
     "href": "01-week1-slides-code.html#select-4",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\nC. Add or remove using select() helper functions.\n\n\n\n\nstarts_with()\n\nends_with()\ncontains()\nmatches()\nnum_range()\none_of()\nall_of()\n\n\n\n\nbfi %>%\n  select(starts_with(\"C\"))\n\n# A tibble: 2,800 × 5\n      C1    C2    C3    C4    C5\n   <int> <int> <int> <int> <int>\n 1     2     3     3     4     4\n 2     5     4     4     3     4\n 3     4     5     4     2     5\n 4     4     4     3     5     5\n 5     4     4     5     3     2\n 6     6     6     6     1     3\n 7     5     4     4     2     3\n 8     3     2     4     2     4\n 9     6     6     3     4     5\n10     6     5     6     2     1\n# ℹ 2,790 more rows"
+    "text": "3. select():\n\nC. Add or remove using select() helper functions.\n\n\n\nstarts_with()\n\nends_with()\ncontains()\nmatches()\nnum_range()\none_of()\nall_of()\n\n\n\n\nbfi %>%\n  select(starts_with(\"C\"))\n\n# A tibble: 2,800 × 5\n      C1    C2    C3    C4    C5\n   <int> <int> <int> <int> <int>\n 1     2     3     3     4     4\n 2     5     4     4     3     4\n 3     4     5     4     2     5\n 4     4     4     3     5     5\n 5     4     4     5     3     2\n 6     6     6     6     1     3\n 7     5     4     4     2     3\n 8     3     2     4     2     4\n 9     6     6     3     4     5\n10     6     5     6     2     1\n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#arrange",
     "href": "01-week1-slides-code.html#arrange",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "4. arrange()\n",
-    "text": "4. arrange()\n\n\nSometimes, either in order to get a better sense of our data or in order to well, order our data, we want to sort it\nAlthough there is a base R sort() function, the arrange() function is tidyverse version that plays nicely with other tidyverse functions."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "4. arrange()",
+    "text": "4. arrange()\n\nSometimes, either in order to get a better sense of our data or in order to well, order our data, we want to sort it\nAlthough there is a base R sort() function, the arrange() function is tidyverse version that plays nicely with other tidyverse functions."
   },
   {
     "objectID": "01-week1-slides-code.html#arrange-1",
     "href": "01-week1-slides-code.html#arrange-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "4. arrange()\n",
-    "text": "4. arrange()\n\n\nSo in our previous examples, we could also arrange() our data by age or education, rather than simply filtering. (Or as we’ll see later, we can do both!)\n\n\n\n# sort by age\nbfi %>% \n  select(gender:age) %>%\n  arrange(age) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education       age\n   <int> <chr>         <int>\n1      1 Higher Degree     3\n2      2 <NA>              9\n3      2 Some College     11\n4      2 <NA>             11\n5      2 <NA>             11\n6      2 <NA>             12\n# ℹ 2,794 more rows\n\n\n\n\n\n\n# sort by education\nbfi %>%\n  select(gender:age) %>%\n  arrange(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      2 Below HS     18\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "4. arrange()",
+    "text": "4. arrange()\n\nSo in our previous examples, we could also arrange() our data by age or education, rather than simply filtering. (Or as we’ll see later, we can do both!)\n\n\n# sort by age\nbfi %>% \n  select(gender:age) %>%\n  arrange(age) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education       age\n   <int> <chr>         <int>\n1      1 Higher Degree     3\n2      2 <NA>              9\n3      2 Some College     11\n4      2 <NA>             11\n5      2 <NA>             11\n6      2 <NA>             12\n# ℹ 2,794 more rows\n\n\n\n\n\n\n# sort by education\nbfi %>%\n  select(gender:age) %>%\n  arrange(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      2 Below HS     18\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#arrange-2",
     "href": "01-week1-slides-code.html#arrange-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "4. arrange()\n",
-    "text": "4. arrange()\n\nWe can also arrange by multiple columns, like if we wanted to sort by gender then education:\n\n\nbfi %>%\n  select(gender:age) %>%\n  arrange(gender, education) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      1 Below HS     32\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "4. arrange()",
+    "text": "4. arrange()\nWe can also arrange by multiple columns, like if we wanted to sort by gender then education:\n\n\nbfi %>%\n  select(gender:age) %>%\n  arrange(gender, education) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      1 Below HS     32\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#bringing-it-all-together-split-apply-combine-1",
     "href": "01-week1-slides-code.html#bringing-it-all-together-split-apply-combine-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Bringing it all together: Split-Apply-Combine",
-    "text": "Bringing it all together: Split-Apply-Combine\n\nMuch of the power of dplyr functions lay in the split-apply-combine method\n\nA given set of of data are:\n\n\nsplit into smaller chunks\nthen a function or series of functions are applied to each chunk\nand then the chunks are combined back together"
+    "text": "Bringing it all together: Split-Apply-Combine\n\nMuch of the power of dplyr functions lay in the split-apply-combine method\nA given set of of data are:\n\nsplit into smaller chunks\nthen a function or series of functions are applied to each chunk\nand then the chunks are combined back together"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by",
     "href": "01-week1-slides-code.html#group_by",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "5. group_by()\n",
-    "text": "5. group_by()\n\n\nThe group_by() function is the “split” of the method\nIt basically implicitly breaks the data set into chunks by whatever bare quoted column(s)/variable(s) are supplied as arguments."
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "5. group_by()",
+    "text": "5. group_by()\n\nThe group_by() function is the “split” of the method\nIt basically implicitly breaks the data set into chunks by whatever bare quoted column(s)/variable(s) are supplied as arguments."
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-1",
     "href": "01-week1-slides-code.html#group_by-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "5. group_by()\n",
-    "text": "5. group_by()\n\nSo imagine that we wanted to group_by() education levels to get average ages at each level\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "5. group_by()",
+    "text": "5. group_by()\nSo imagine that we wanted to group_by() education levels to get average ages at each level\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-2",
     "href": "01-week1-slides-code.html#group_by-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "5. group_by()\n",
-    "text": "5. group_by()\n\n\nHadley’s first law of data cleaning: “What is split, must be combined”\nThis is super easy with the ungroup() function:\n\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  ungroup() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "5. group_by()",
+    "text": "5. group_by()\n\nHadley’s first law of data cleaning: “What is split, must be combined”\nThis is super easy with the ungroup() function:\n\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  ungroup() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-3",
     "href": "01-week1-slides-code.html#group_by-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "5. group_by()\n",
-    "text": "5. group_by()\n\nMultiple group_by() calls overwrites previous calls:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  group_by(gender, age) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   gender, age [115]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "5. group_by()",
+    "text": "5. group_by()\nMultiple group_by() calls overwrites previous calls:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  group_by(gender, age) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   gender, age [115]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate",
     "href": "01-week1-slides-code.html#mutate",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "6. mutate()\n",
-    "text": "6. mutate()\n\n\n\nmutate() is one of your “apply” functions\nWhen you use mutate(), the resulting data frame will have the same number of rows you started with\nYou are directly mutating the existing data frame, either modifying existing columns or creating new ones"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "6. mutate()",
+    "text": "6. mutate()\n\nmutate() is one of your “apply” functions\nWhen you use mutate(), the resulting data frame will have the same number of rows you started with\nYou are directly mutating the existing data frame, either modifying existing columns or creating new ones"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-1",
     "href": "01-week1-slides-code.html#mutate-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "6. mutate()\n",
-    "text": "6. mutate()\n\nTo demonstrate, let’s add a column that indicated average age levels within each age group\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  mutate(age_by_edu = mean(age, na.rm = T)) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 9\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education age_by_edu\n  <int> <int> <int> <int> <int> <int>  <int> <chr>          <dbl>\n1     6     6     3     4     5    19      1 Below HS        25.1\n2     4     3     5     3     2    21      1 Below HS        25.1\n3     5     5     5     2     2    17      1 Below HS        25.1\n4     5     5     4     1     1    18      1 Below HS        25.1\n5     4     5     4     3     3    18      1 Below HS        25.1\n6     3     2     3     4     6    18      2 Below HS        25.1\n# ℹ 2,794 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "6. mutate()",
+    "text": "6. mutate()\nTo demonstrate, let’s add a column that indicated average age levels within each age group\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  mutate(age_by_edu = mean(age, na.rm = T)) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 9\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education age_by_edu\n  <int> <int> <int> <int> <int> <int>  <int> <chr>          <dbl>\n1     6     6     3     4     5    19      1 Below HS        25.1\n2     4     3     5     3     2    21      1 Below HS        25.1\n3     5     5     5     2     2    17      1 Below HS        25.1\n4     5     5     4     1     1    18      1 Below HS        25.1\n5     4     5     4     3     3    18      1 Below HS        25.1\n6     3     2     3     4     6    18      2 Below HS        25.1\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-2",
     "href": "01-week1-slides-code.html#mutate-2",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "6. mutate()\n",
-    "text": "6. mutate()\n\nmutate() is also super useful even when you aren’t grouping\n\nWe can create a new category\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender_cat = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 9\n      C1    C2    C3    C4    C5   age gender education    gender_cat\n   <int> <int> <int> <int> <int> <int>  <int> <chr>        <chr>     \n 1     2     3     3     4     4    16      1 <NA>         Male      \n 2     5     4     4     3     4    18      2 <NA>         Female    \n 3     4     5     4     2     5    17      2 <NA>         Female    \n 4     4     4     3     5     5    17      2 <NA>         Female    \n 5     4     4     5     3     2    17      1 <NA>         Male      \n 6     6     6     6     1     3    21      2 Some College Female    \n 7     5     4     4     2     3    18      1 <NA>         Male      \n 8     3     2     4     2     4    19      1 HS           Male      \n 9     6     6     3     4     5    19      1 Below HS     Male      \n10     6     5     6     2     1    17      2 <NA>         Female    \n# ℹ 2,790 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "6. mutate()",
+    "text": "6. mutate()\nmutate() is also super useful even when you aren’t grouping\n\nWe can create a new category\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender_cat = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 9\n      C1    C2    C3    C4    C5   age gender education    gender_cat\n   <int> <int> <int> <int> <int> <int>  <int> <chr>        <chr>     \n 1     2     3     3     4     4    16      1 <NA>         Male      \n 2     5     4     4     3     4    18      2 <NA>         Female    \n 3     4     5     4     2     5    17      2 <NA>         Female    \n 4     4     4     3     5     5    17      2 <NA>         Female    \n 5     4     4     5     3     2    17      1 <NA>         Male      \n 6     6     6     6     1     3    21      2 Some College Female    \n 7     5     4     4     2     3    18      1 <NA>         Male      \n 8     3     2     4     2     4    19      1 HS           Male      \n 9     6     6     3     4     5    19      1 Below HS     Male      \n10     6     5     6     2     1    17      2 <NA>         Female    \n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-3",
     "href": "01-week1-slides-code.html#mutate-3",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "6. mutate()\n",
-    "text": "6. mutate()\n\nmutate() is also super useful even when you aren’t grouping\nWe could also just overwrite it:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 8\n      C1    C2    C3    C4    C5   age gender education   \n   <int> <int> <int> <int> <int> <int> <chr>  <chr>       \n 1     2     3     3     4     4    16 Male   <NA>        \n 2     5     4     4     3     4    18 Female <NA>        \n 3     4     5     4     2     5    17 Female <NA>        \n 4     4     4     3     5     5    17 Female <NA>        \n 5     4     4     5     3     2    17 Male   <NA>        \n 6     6     6     6     1     3    21 Female Some College\n 7     5     4     4     2     3    18 Male   <NA>        \n 8     3     2     4     2     4    19 Male   HS          \n 9     6     6     3     4     5    19 Male   Below HS    \n10     6     5     6     2     1    17 Female <NA>        \n# ℹ 2,790 more rows"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "6. mutate()",
+    "text": "6. mutate()\nmutate() is also super useful even when you aren’t grouping\nWe could also just overwrite it:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 8\n      C1    C2    C3    C4    C5   age gender education   \n   <int> <int> <int> <int> <int> <int> <chr>  <chr>       \n 1     2     3     3     4     4    16 Male   <NA>        \n 2     5     4     4     3     4    18 Female <NA>        \n 3     4     5     4     2     5    17 Female <NA>        \n 4     4     4     3     5     5    17 Female <NA>        \n 5     4     4     5     3     2    17 Male   <NA>        \n 6     6     6     6     1     3    21 Female Some College\n 7     5     4     4     2     3    18 Male   <NA>        \n 8     3     2     4     2     4    19 Male   HS          \n 9     6     6     3     4     5    19 Male   Below HS    \n10     6     5     6     2     1    17 Female <NA>        \n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#summarize-summarise",
     "href": "01-week1-slides-code.html#summarize-summarise",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "7. summarize() / summarise()\n",
-    "text": "7. summarize() / summarise()\n\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n# group_by() education\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 6 × 2\n  education     age_by_edu\n  <chr>              <dbl>\n1 Below HS            25.1\n2 College             33.0\n3 HS                  31.5\n4 Higher Degree       35.3\n5 Some College        27.2\n6 <NA>                18.0"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "7. summarize() / summarise()",
+    "text": "7. summarize() / summarise()\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n# group_by() education\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 6 × 2\n  education     age_by_edu\n  <chr>              <dbl>\n1 Below HS            25.1\n2 College             33.0\n3 HS                  31.5\n4 Higher Degree       35.3\n5 Some College        27.2\n6 <NA>                18.0"
   },
   {
     "objectID": "01-week1-slides-code.html#summarize-summarise-1",
     "href": "01-week1-slides-code.html#summarize-summarise-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "7. summarize() / summarise()\n",
-    "text": "7. summarize() / summarise()\n\n\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n\n# no groups  \nbfi %>% \n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 1 × 1\n  age_by_edu\n       <dbl>\n1       28.8"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "7. summarize() / summarise()",
+    "text": "7. summarize() / summarise()\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n\n# no groups  \nbfi %>% \n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 1 × 1\n  age_by_edu\n       <dbl>\n1       28.8\n\n\n\n\n\n\n\n\n\n\nData Wrangling in tidyr"
   },
   {
     "objectID": "01-week1-slides-code.html#tidyr",
     "href": "01-week1-slides-code.html#tidyr",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "tidyr",
-    "text": "tidyr\n\nNow, let’s build off what we learned from dplyr and focus on reshaping and merging our data.\nFirst, the reshapers:\n\n\n\npivot_longer(), which takes a “wide” format data frame and makes it long.\n\n\npivot_wider(), which takes a “long” format data frame and makes it wide."
+    "text": "tidyr\n\nNow, let’s build off what we learned from dplyr and focus on reshaping and merging our data.\nFirst, the reshapers:\n\n\npivot_longer(), which takes a “wide” format data frame and makes it long.\n\npivot_wider(), which takes a “long” format data frame and makes it wide."
   },
   {
     "objectID": "01-week1-slides-code.html#tidyr-1",
     "href": "01-week1-slides-code.html#tidyr-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "tidyr",
-    "text": "tidyr\n\nNext, the mergers:\n\n\n\nfull_join(), which merges all rows in either data frame\n\n\ninner_join(), which merges rows whose keys are present in both data frames\n\n\nleft_join(), which “prioritizes” the first data set\n\n\nright_join(), which “prioritizes” the second data set\n\n\n(See also:anti_join() and semi_join())"
+    "text": "tidyr\n\nNext, the mergers:\n\n\nfull_join(), which merges all rows in either data frame\n\ninner_join(), which merges rows whose keys are present in both data frames\n\nleft_join(), which “prioritizes” the first data set\n\nright_join(), which “prioritizes” the second data set\n\n\n(See also:anti_join() and semi_join())"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_longer",
     "href": "01-week1-slides-code.html#pivot_longer",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "1. pivot_longer()\n",
-    "text": "1. pivot_longer()\n\n\n(Formerly gather()) Makes wide data long, based on a key \n\nCore arguments:\n\n\ndata: the data, blank if piped\n\ncols: columns to be made long, selected via select() calls\n\nnames_to: name(s) of key column(s) in new long data frame (string or string vector)\n\nvalues_to: name of values in new long data frame (string)\n\nnames_sep: separator in column headers, if multiple keys\n\nvalues_drop_na: drop missing cells (similar to na.rm = T)"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "1. pivot_longer()",
+    "text": "1. pivot_longer()\n\n(Formerly gather()) Makes wide data long, based on a key \nCore arguments:\n\ndata: the data, blank if piped\ncols: columns to be made long, selected via select() calls\nnames_to: name(s) of key column(s) in new long data frame (string or string vector)\nvalues_to: name of values in new long data frame (string)\nnames_sep: separator in column headers, if multiple keys\nvalues_drop_na: drop missing cells (similar to na.rm = T)"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_longer-basic-application",
     "href": "01-week1-slides-code.html#pivot_longer-basic-application",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "1. pivot_longer(): Basic Application",
     "text": "1. pivot_longer(): Basic Application\nLet’s start with an easy one – one key, one value:\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  pivot_longer(\n    cols = A1:O5\n    , names_to = \"item\"\n    , values_to = \"values\"\n    , values_drop_na = T\n  ) %>%\n  print(n = 8)\n\n\n\n\n# A tibble: 69,492 × 6\n  SID   gender education   age item  values\n  <chr>  <int> <chr>     <int> <chr>  <int>\n1 1          1 <NA>         16 A1         2\n2 1          1 <NA>         16 A2         4\n3 1          1 <NA>         16 A3         3\n4 1          1 <NA>         16 A4         4\n5 1          1 <NA>         16 A5         4\n6 1          1 <NA>         16 C1         2\n7 1          1 <NA>         16 C2         3\n8 1          1 <NA>         16 C3         3\n# ℹ 69,484 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_longer-more-advanced-application",
     "href": "01-week1-slides-code.html#pivot_longer-more-advanced-application",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "1. pivot_longer(): More Advanced Application",
     "text": "1. pivot_longer(): More Advanced Application\nNow a harder one – two keys, one value:\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  pivot_longer(\n    cols = A1:O5\n    , names_to = c(\"trait\", \"item_num\")\n    , names_sep = -1\n    , values_to = \"values\"\n    , values_drop_na = T\n  ) %>%\n  print(n = 8)\n\n\n\n\n# A tibble: 69,492 × 7\n  SID   gender education   age trait item_num values\n  <chr>  <int> <chr>     <int> <chr> <chr>     <int>\n1 1          1 <NA>         16 A     1             2\n2 1          1 <NA>         16 A     2             4\n3 1          1 <NA>         16 A     3             3\n4 1          1 <NA>         16 A     4             4\n5 1          1 <NA>         16 A     5             4\n6 1          1 <NA>         16 C     1             2\n7 1          1 <NA>         16 C     2             3\n8 1          1 <NA>         16 C     3             3\n# ℹ 69,484 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider",
     "href": "01-week1-slides-code.html#pivot_wider",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "2. pivot_wider()\n",
-    "text": "2. pivot_wider()\n\n\n(Formerly spread()) Makes wide data long, based on a key \n\nCore arguments:\n\n\ndata: the data, blank if piped\n\nnames_from: name(s) of key column(s) in new long data frame (string or string vector)\n\nnames_sep: separator in column headers, if multiple keys\n\nnames_glue: specify multiple or custom separators of multiple keys\n\nvalues_from: name of values in new long data frame (string)\n\nvalues_fn: function applied to data with duplicate labels"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "2. pivot_wider()",
+    "text": "2. pivot_wider()\n\n(Formerly spread()) Makes wide data long, based on a key \nCore arguments:\n\ndata: the data, blank if piped\nnames_from: name(s) of key column(s) in new long data frame (string or string vector)\nnames_sep: separator in column headers, if multiple keys\nnames_glue: specify multiple or custom separators of multiple keys\nvalues_from: name of values in new long data frame (string)\nvalues_fn: function applied to data with duplicate labels"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-basic-application",
     "href": "01-week1-slides-code.html#pivot_wider-basic-application",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "2. pivot_wider(): Basic Application",
     "text": "2. pivot_wider(): Basic Application\n\nbfi_long <- bfi %>%\n  rownames_to_column(\"SID\") %>%\n  pivot_longer(\n    cols = A1:O5\n    , names_to = \"item\"\n    , values_to = \"values\"\n    , values_drop_na = T\n  )"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-basic-application-1",
     "href": "01-week1-slides-code.html#pivot_wider-basic-application-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "2. pivot_wider(): Basic Application",
     "text": "2. pivot_wider(): Basic Application\n\nbfi_long %>%\n  pivot_wider(\n    names_from = \"item\"\n    , values_from = \"values\"\n  )\n\n# A tibble: 2,800 × 29\n   SID   gender education    age    A1    A2    A3    A4    A5    C1    C2    C3\n   <chr>  <int> <chr>      <int> <int> <int> <int> <int> <int> <int> <int> <int>\n 1 1          1 <NA>          16     2     4     3     4     4     2     3     3\n 2 2          2 <NA>          18     2     4     5     2     5     5     4     4\n 3 3          2 <NA>          17     5     4     5     4     4     4     5     4\n 4 4          2 <NA>          17     4     4     6     5     5     4     4     3\n 5 5          1 <NA>          17     2     3     3     4     5     4     4     5\n 6 6          2 Some Coll…    21     6     6     5     6     5     6     6     6\n 7 7          1 <NA>          18     2     5     5     3     5     5     4     4\n 8 8          1 HS            19     4     3     1     5     1     3     2     4\n 9 9          1 Below HS      19     4     3     6     3     3     6     6     3\n10 10         2 <NA>          17     2     5     6     6     5     6     5     6\n# ℹ 2,790 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-more-advanced",
     "href": "01-week1-slides-code.html#pivot_wider-more-advanced",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "2. pivot_wider(): More Advanced",
     "text": "2. pivot_wider(): More Advanced\n\nbfi_long <- bfi %>%\n  rownames_to_column(\"SID\") %>%\n  pivot_longer(\n    cols = A1:O5\n    , names_to = c(\"trait\", \"item_num\")\n    , names_sep = -1\n    , values_to = \"values\"\n    , values_drop_na = T\n  )"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-more-advanced-1",
     "href": "01-week1-slides-code.html#pivot_wider-more-advanced-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "2. pivot_wider(): More Advanced",
     "text": "2. pivot_wider(): More Advanced\n\nbfi_long %>%\n  pivot_wider(\n    names_from = c(\"trait\", \"item_num\")\n    , values_from = \"values\"\n    , names_sep = \"_\"\n  )\n\n# A tibble: 2,800 × 29\n   SID   gender education    age   A_1   A_2   A_3   A_4   A_5   C_1   C_2   C_3\n   <chr>  <int> <chr>      <int> <int> <int> <int> <int> <int> <int> <int> <int>\n 1 1          1 <NA>          16     2     4     3     4     4     2     3     3\n 2 2          2 <NA>          18     2     4     5     2     5     5     4     4\n 3 3          2 <NA>          17     5     4     5     4     4     4     5     4\n 4 4          2 <NA>          17     4     4     6     5     5     4     4     3\n 5 5          1 <NA>          17     2     3     3     4     5     4     4     5\n 6 6          2 Some Coll…    21     6     6     5     6     5     6     6     6\n 7 7          1 <NA>          18     2     5     5     3     5     5     4     4\n 8 8          1 HS            19     4     3     1     5     1     3     2     4\n 9 9          1 Below HS      19     4     3     6     3     3     6     6     3\n10 10         2 <NA>          17     2     5     6     6     5     6     5     6\n# ℹ 2,790 more rows\n# ℹ 17 more variables: C_4 <int>, C_5 <int>, E_1 <int>, E_2 <int>, E_3 <int>,\n#   E_4 <int>, E_5 <int>, N_1 <int>, N_2 <int>, N_3 <int>, N_4 <int>,\n#   N_5 <int>, O_1 <int>, O_2 <int>, O_3 <int>, O_4 <int>, O_5 <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-a-little-more-advanced",
     "href": "01-week1-slides-code.html#pivot_wider-a-little-more-advanced",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "2. pivot_wider(): A Little More Advanced",
     "text": "2. pivot_wider(): A Little More Advanced\n\nbfi_long %>%\n  select(-item_num) %>%\n  pivot_wider(\n    names_from = \"trait\"\n    , values_from = \"values\"\n    , names_sep = \"_\"\n    , values_fn = mean\n  )\n\n# A tibble: 2,800 × 9\n   SID   gender education      age     A     C     E     N     O\n   <chr>  <int> <chr>        <int> <dbl> <dbl> <dbl> <dbl> <dbl>\n 1 1          1 <NA>            16   3.4   3.2  3.4    2.8   3.8\n 2 2          2 <NA>            18   3.6   4    3      3.8   3.2\n 3 3          2 <NA>            17   4.4   4    3.8    3.6   3.6\n 4 4          2 <NA>            17   4.8   4.2  4      2.8   3.6\n 5 5          1 <NA>            17   3.4   3.6  3.6    3.2   3.2\n 6 6          2 Some College    21   5.6   4.4  4      3     3.8\n 7 7          1 <NA>            18   4     3.6  4.2    1.4   3.8\n 8 8          1 HS              19   2.8   3    3.2    4.2   3.4\n 9 9          1 Below HS        19   3.8   4.8  3.75   3.6   5  \n10 10         2 <NA>            17   4.8   4    3.6    4.2   3.6\n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#the-_join-functions",
     "href": "01-week1-slides-code.html#the-_join-functions",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "The _join() Functions",
     "text": "The _join() Functions\n\n\n\nOften we may need to pull different data from different sources\nThere are lots of reasons to need to do this\nWe don’t have time to get into all the use cases here, so we’ll talk about them in high level terms\n\n\n\nWe’ll focus on:\n\nfull_join()\ninner_join()\nleft_join()\nright_join()"
   },
   {
     "objectID": "01-week1-slides-code.html#the-_join-functions-1",
     "href": "01-week1-slides-code.html#the-_join-functions-1",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "The _join() Functions",
     "text": "The _join() Functions\n\nLet’s separate demographic and BFI data\n\n\n\n\n\nbfi_only <- bfi %>% \n  rownames_to_column(\"SID\") %>%\n  select(SID, matches(\"[0-9]\"))\nbfi_only %>% as_tibble() %>% print(n = 6)\n\n# A tibble: 2,800 × 26\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 13 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>\n\n\n\n\n\n\nbfi_dem <- bfi %>%\n  rownames_to_column(\"SID\") %>%\n  select(SID, education, gender, age)\nbfi_dem %>% as_tibble() %>% print(n = 6)\n\n# A tibble: 2,800 × 4\n  SID   education    gender   age\n  <chr> <chr>         <int> <int>\n1 1     <NA>              1    16\n2 2     <NA>              2    18\n3 3     <NA>              2    17\n4 4     <NA>              2    17\n5 5     <NA>              1    17\n6 6     Some College      2    21\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#full_join",
     "href": "01-week1-slides-code.html#full_join",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "3. full_join()\n",
-    "text": "3. full_join()\n\nMost simply, we can put those back together keeping all observations.\n\n\n\n\nbfi_only %>%\n  full_join(bfi_dem) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, education <chr>, gender <int>, age <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "3. full_join()",
+    "text": "3. full_join()\nMost simply, we can put those back together keeping all observations.\n\n\n\n\nbfi_only %>%\n  full_join(bfi_dem) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, education <chr>, gender <int>, age <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#inner_join",
     "href": "01-week1-slides-code.html#inner_join",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "4. inner_join()\n",
-    "text": "4. inner_join()\n\nWe can also keep all rows present in both data frames\n\n\n\n\nbfi_dem %>%\n  filter(row_number() %in% 1:1700) %>%\n  inner_join(\n    bfi_only %>%\n      filter(row_number() %in% 1200:2800)\n  ) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 501 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1200  Some Colle…      2    18     1     5     6     5     5     5     6     5\n2 1201  College          2    29     1     5     6     5     5     2     1     4\n3 1202  Higher Deg…      1    46     2     5     6     5     6     6     6     6\n4 1203  Higher Deg…      1    58     5     4     4     4     5     4     4     5\n5 1204  Higher Deg…      2    38     1     4     6     6     6     4     4     5\n6 1205  Higher Deg…      2    27     2     3     1     1     1     4     2     2\n# ℹ 495 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "4. inner_join()",
+    "text": "4. inner_join()\nWe can also keep all rows present in both data frames\n\n\n\n\nbfi_dem %>%\n  filter(row_number() %in% 1:1700) %>%\n  inner_join(\n    bfi_only %>%\n      filter(row_number() %in% 1200:2800)\n  ) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 501 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1200  Some Colle…      2    18     1     5     6     5     5     5     6     5\n2 1201  College          2    29     1     5     6     5     5     2     1     4\n3 1202  Higher Deg…      1    46     2     5     6     5     6     6     6     6\n4 1203  Higher Deg…      1    58     5     4     4     4     5     4     4     5\n5 1204  Higher Deg…      2    38     1     4     6     6     6     4     4     5\n6 1205  Higher Deg…      2    27     2     3     1     1     1     4     2     2\n# ℹ 495 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#left_join",
     "href": "01-week1-slides-code.html#left_join",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "5. left_join()\n",
-    "text": "5. left_join()\n\nOr all rows present in the left (first) data frame, perhaps if it’s a subset of people with complete data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  left_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,577 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,571 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "5. left_join()",
+    "text": "5. left_join()\nOr all rows present in the left (first) data frame, perhaps if it’s a subset of people with complete data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  left_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,577 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,571 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#right_join",
     "href": "01-week1-slides-code.html#right_join",
-    "title": "Week 1 - Getting Situated in R and tidyverse",
-    "section": "6. right_join()\n",
-    "text": "6. right_join()\n\nOr all rows present in the right (second) data frame, such as I do when I join a codebook with raw data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  right_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,794 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>\n\n\n\n\n\n\n\n\nPSC 290 - Data Visualization"
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "6. right_join()",
+    "text": "6. right_join()\nOr all rows present in the right (second) data frame, such as I do when I join a codebook with raw data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  right_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,794 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "schedule.html",
@@ -992,5 +992,12 @@
     "title": "Week 1 (Workbook) - Getting Situated in R and tidyverse",
     "section": "6. right_join()\n",
     "text": "6. right_join()\n\nOr all rows present in the right (second) data frame, such as I do when I join a codebook with raw data\n\nCodebfi_dem %>%\n  drop_na() %>%\n  right_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,794 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>"
+  },
+  {
+    "objectID": "final-project-proposal.html",
+    "href": "final-project-proposal.html",
+    "title": "Final Project Proposal",
+    "section": "",
+    "text": "Due at 11:59 PM PST on October 31, 2022 on Canvas\n1-2 page (single spaced) proposal\n\nShort background (why do you / we care?)\nResearch question(s; only the question[s] you are focusing on)\nShort method (what are the data? Which are you using?)\nVisualization plan (short summary of your proposed visualization)\nChallenges and barriers (what do you struggle with this visualization; are there specific barriers?)\n\n\n\n\nCan be any combination of the following:\nText description\n\nclearly describe axes/scales, fills/colors, panels, etc.\ndescribe affordances you will build into the visualization to aid understanding\ndescribe why you chose this visualization\n\nDraft visualization (digital)\n\nrough visualization of some or all of data\n\nDraft visualization (drawn)\n\nsome roughly drawn visualization showing what you are hoping to do\nparticularly helpful if you foresee barriers or don’t know how to do it\ncan also draw these on a plot of yours from the past, etc.\n\n\n\n\nThe goal of this proposal is to:\n\nProvide you with support to build visualizations you may be nervous about\nAnticipate barriers and provide you tools\nSet you up to create a visualization that you are proud of\n\n\n\n\nWhat is okay?\n\nIntroducing a new kind of visualization to your area of research\nOffering improvements to “standard practice” visualizations in your area\nSetting up a procedure for a kind of visualization you’ve long wanted / needed to figure out\nReally anything that is both useful to you and displays some sort of mastery of course content\n\n\n\n\nYou will have an easier time with this project if you anchor your visualization on a specific research question.\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question (Beck & Jackson, 2022). There were five research questions I was answering more generally, but one was just “Do psychological, situational, time, or full feature sets perform best?” I answered this with the following visualization, which shows the relative proportion of individuals’ psychological, situational, and timing features in their best performing model using a “sequence plot” I stole from genetics (which you’ll notice looks a lot like a rotated stacked bar chart, which it is!).\n\n\n\nUsing a research question will help you to anchor your visualization and allow you to consider the extent to which you think your visualization clearly answers it. While not required, I highly suggest using one."
   }
 ]

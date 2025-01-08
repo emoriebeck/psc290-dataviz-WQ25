@@ -67,7 +67,7 @@ library(tidyverse)
     -   Wickham: *Advanced R* <http://adv-r.had.co.nz>
     -   Wilke: *Fundamentals of Data Visualization* <https://clauswilke.com/dataviz/>
     -   Healy: *Data Visualization: A Practical Introduction* <https://socviz.co>
-    -   [Data Camp](https://www.datacamp.com/groups/shared_links/bd4b5bf66c2195741f388ca82c1b19c89b6f37754c7cfa0eb5aded5f16678360): All paid content unlocked
+    -   [Data Camp](https://www.datacamp.com/groups/shared_links/9f274d67a5851e9f7c6245893b50a01c76ca3bdcc4aeb031a2265b6787d54357): All paid content unlocked
 
 ## Assignments
 
