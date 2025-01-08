@@ -1,5 +1,5 @@
 ---
-title: "Week 1 - Getting Situated in R and tidyverse "
+title: "Week 1 (Slides) - Getting Situated in R and tidyverse"
 author: "Emorie D Beck"
 format: 
   revealjs:
@@ -11,12 +11,15 @@ format:
     preview-links: true
     slide-number: true
     self-contained: true
+    fig-height: 4
+    fig-width: 6
+    fig-align: center
     css: custom.css
-    theme: psc290
-    highlight-style: atom-one-dark
+    theme: psc290-23
+    # highlight-style: atom-one-dark
     margin-left: "0"
     margin-right: "0"
-    # width: 1400
+    width: 1400
     # height: 900
     footer: "PSC 290 - Data Visualization"
     logo: "https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/ucdavis_logo_blue.png"
@@ -68,24 +71,15 @@ library(tidyverse)
 
 ## Assignments
 
-| Assignment Weights               | Percent  |
-|----------------------------------|----------|
-| Class Participation              | 20%      |
-| Response Papers + Visualizations | 20%      |
-| Final Project Proposal           | 10%      |
-| Class Presentation               | 20%      |
-| Final Project                    | 30%      |
-| **Total**                        | **100%** |
-
-## Assignments
-
-### Class Participation
-
--   There are lots of ways to participate, both in and outside class meetings
--   Classes will be technologically hybrid
--   The goal of this is for accessibility and to create recordings
--   If you need to miss 2 classes (i.e. 20% of total class time), maybe consider taking the course in a different year
--   If you must miss class, please let me know ahead of time if possible
+|                                  |             |
+|----------------------------------|-------------|
+| **Assignment Weights**           | **Percent** |
+| Problem Sets (5)                 | 20%         |
+| Response Papers + Visualizations | 20%         |
+| Final Project Proposal           | 10%         |
+| Class Presentation               | 20%         |
+| Final Project                    | 30%         |
+| **Total**                        | **100%**    |
 
 ## Assignments
 
@@ -94,25 +88,37 @@ library(tidyverse)
 -   The main homework in the course is your weekly visualization assignment
 -   The goal is to demonstrate how the principles and skills you learn in the class function "in the wild."
 -   These should be fun and not taken too seriously! No one is judging you for a pulling a graphic from Instagram instead of Nature.
--   Due 12:01 AM each Monday (last class is "free points")
+-   Due 12:00 PM the day before (i.e. Tuesday) class (last class is "free points")
 
-## Assigments
+## Assignments
+
+### Problem Sets
+
+-   About every other week, there will be a practice set to help you practice what you're learning.
+
+-   These will have you apply the code you've been learning to your own data or a provided data set
+
+-   Assigning them every other week aims to reduce burden while still allowing you to practice
+
+-   Frequency / form will be adjusted as needed throughout the quarter
+
+## Assignments
 
 ### Final Projects
 
 -   I don't want you to walk out of this course and not know how to apply what you learned
 -   Final project replaces final exam (there are no exams)
 -   Create a visualization for an ongoing project!
-    -   Stage 1: Proposal (due 10/31/22)
-    -   Stage 2: 1-on-1 meetings + feedback
-    -   Stage 3: In-class presentations (11/28)
-    -   Stage 4: Final visualization + brief write-up (??)
+    -   Stage 1: Proposal (due 02/12/25)
+    -   Stage 2: 1-on-1 meetings + feedback (due by 02/26/25)
+    -   Stage 3: In-class presentations (03/12/25)
+    -   Stage 4: Final visualization + brief write-up (due 03/19/25 at midnight)
 
 ## Assignments
 
 ### Extra Credit
 
--   Lots of job searches this fall
+-   Lots of talk series, etc. this winter
 -   1 pt extra credit for each one you:
     -   go to,
     -   take a snap of a data viz,
@@ -122,15 +128,14 @@ library(tidyverse)
 ## Class Time
 
 -   \~5-10 min: welcome and review (if needed)
--   \~10-20 min: data viz of the week
--   \~30-45 min: discussion of readings
+-   \~20-35 min: discussion / some lecture content on readings
 -   \~5-10 min: break
--   \~60-90 min: workshop
+-   \~40-60 min: workshop
 -   \~20-30 min: open lab
 
 ## Course Topics
 
-::: columns
+::::: columns
 ::: column
 1.  Intro and Overview
 2.  Cognitive Perspectives
@@ -150,11 +155,11 @@ library(tidyverse)
 -   Diagrams
 -   More?
 :::
-:::
+:::::
 
 # Questions on the Syllabus and Course?
 
-# Data Viz of the Week and Discussion
+# Discussion
 
 ## Good or Bad?
 
@@ -227,7 +232,7 @@ knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/
 
 ## Why Visualize Data in R
 
-::: columns
+::::: columns
 ::: {.column width="60%"}
 -   Open source and freeeee
 -   Flexible
@@ -242,11 +247,11 @@ knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/
 knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/R_logo.svg.png")
 ```
 :::
-:::
+:::::
 
 ## Why Use RStudio (Pivot)
 
-::: columns
+::::: columns
 ::: {.column width="60%"}
 -   Also free
 -   Basically a GUI for R
@@ -260,11 +265,11 @@ knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/
 knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/RStudio-Logo-Flat.png")
 ```
 :::
-:::
+:::::
 
 ## Why Use the `tidyverse`
 
-::: columns
+::::: columns
 ::: {.column width="70%"}
 -   Maintained by RStudio (Pivot)
 -   No one should have to use a for loop to change data from long to wide
@@ -277,57 +282,57 @@ knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/
 knitr::include_graphics("https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/tidyverse.png")
 ```
 :::
-:::
+:::::
 
 ## Why Use the `tidyverse`
 
 ::: {layout="[[1,1, 1, 1, 1, 1], [1,1, 1, 1, 1,1]]"}
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/tidyr.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/stringr.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/stringr.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/shiny.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/shiny.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/rmarkdown.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/rmarkdown.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/quarto.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/quarto.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/knitr.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/knitr.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/ggplot2.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/ggplot2.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/forcats.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/forcats.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/dplyr.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/broom.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/broom.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/tibble.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/tibble.png")
 ```
 
 ```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/purrr.png")
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/purrr.png")
 ```
 :::
 
@@ -339,23 +344,25 @@ knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thum
 
 ------------------------------------------------------------------------
 
-::: {.columns .v-center-container}
-::: {.column width="70%"}
-<p style="font-size:160%;">
+::::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="70%" style="display: flex; align-items: center;"}
+<!-- <p style="font-size:160%;"> -->
 
-Data Manipulation in `dplyr`
+# Data Manipulation in `dplyr`
 
-</p>
+<!-- </p> -->
 :::
 
-::: {.column width="30%"}
-```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/dplyr.png")
+::: {.column width="30%" style="display: flex; justify-content: center; align-items: center;"}
+```{r, fig.align='center', echo = F}
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png")
 ```
 :::
-:::
+:::::
 
-## Core Functions
+# `dplyr` Core Functions
+
+## `dplyr` Core Functions
 
 1.  **`%>%`**: The pipe. Read as "and then."
 2.  **`filter()`**: Pick observations (rows) by their values.
@@ -367,8 +374,8 @@ knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thum
 
 ## Core Functions
 
-::: columns
-::: {.column width="40%"}
+:::::: columns
+:::: {.column width="40%"}
 ::: nonincremental
 1.  **`%>%`**
 2.  **`filter()`**
@@ -378,12 +385,12 @@ knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thum
 6.  **`mutate()`**
 7.  **`summarize()`**
 :::
-:::
+::::
 
 ::: {.column width="60%" style="text-align: center; background-color: #FFD966; color: black; border: 5px solid #033266;"}
 Although each of these functions are powerful alone, they are incredibly powerful in conjunction with one another. So below, I'll briefly introduce each function, then link them all together using an example of basic data cleaning and summary.
 :::
-:::
+::::::
 
 ## 1. `%>%`
 
@@ -556,8 +563,8 @@ summary(bfi2$age)
 
 ### A. Bare quote columns we want to keep:
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|2"
@@ -566,9 +573,9 @@ bfi %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo=T}
 #| code-line-numbers: "|2"
@@ -579,8 +586,8 @@ bfi %>%
 
 <!-- We can also use `:` to grab a *range* of columns.   -->
 :::
-:::
-:::
+::::
+:::::::
 
 ## 3. `select()`:
 
@@ -599,7 +606,7 @@ bfi %>%
 
 ### C. Add or remove using `select()` helper functions.
 
-::: columns
+:::::: columns
 ::: {.column width="40%"}
 -   `starts_with()`\
 -   `ends_with()`
@@ -610,15 +617,15 @@ bfi %>%
 -   `all_of()`
 :::
 
-::: {.column width="60%"}
+:::: {.column width="60%"}
 ::: fragment
 ```{r, echo = T}
 bfi %>%
   select(starts_with("C"))
 ```
 :::
-:::
-:::
+::::
+::::::
 
 ## 4. `arrange()`
 
@@ -627,10 +634,10 @@ bfi %>%
 
 ## 4. `arrange()`
 
-::: columns
+::::::: columns
 So in our previous examples, we could also `arrange()` our data by age or education, rather than simply filtering. (Or as we'll see later, we can do both!)
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|4"
@@ -641,9 +648,9 @@ bfi %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: fragment
 ```{r, echo=TRUE}
 #| code-line-numbers: "|4"
@@ -654,8 +661,8 @@ bfi %>%
   print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ## 4. `arrange()`
 
@@ -780,14 +787,14 @@ bfi %>%
 
 ## 7. `summarize()` / `summarise()`
 
-::: columns
+:::::: columns
 ::: column
 -   `summarize()` is one of your "apply" functions
 -   The resulting data frame will have the same number of rows as your grouping variable
 -   You number of groups is 1 for ungrouped data frames
 :::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 # group_by() education
@@ -798,21 +805,21 @@ bfi %>%
   summarize(age_by_edu = mean(age, na.rm = T))  
 ```
 :::
-:::
-:::
+::::
+::::::
 
 ## 7. `summarize()` / `summarise()`
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: nonincremental
 -   `summarize()` is one of your "apply" functions
 -   The resulting data frame will have the same number of rows as your grouping variable
 -   You number of groups is 1 for ungrouped data frames
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 # no groups  
@@ -822,26 +829,28 @@ bfi %>%
   summarize(age_by_edu = mean(age, na.rm = T))  
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ------------------------------------------------------------------------
 
-::: {.columns .v-center-container}
-::: {.column width="70%"}
-<p style="font-size:160%;">
+::::: {.columns style="display: flex !important; height: 90%;"}
+::: {.column width="70%" style="display: flex; align-items: center;"}
+<!-- <p style="font-size:160%;"> -->
 
-Data Wrangling in `tidyr`
+# Data Wrangling in `tidyr`
 
-</p>
+<!-- </p> -->
 :::
 
-::: {.column width="30%"}
-```{r, fig.align='center'}
-knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thumbs/tidyr.png")
+::: {.column width="30%" style="display: flex; justify-content: center; align-items: center;"}
+```{r, fig.align='center', echo=F}
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png")
 ```
 :::
-:::
+:::::
+
+# Reshaping and Merging
 
 ## `tidyr`
 
@@ -881,7 +890,7 @@ knitr::include_graphics("https://github.com/rstudio/hex-stickers/raw/master/thum
 
 Let's start with an easy one -- one key, one value:
 
-::: columns
+::::: columns
 ::: column
 ```{r, echo=TRUE, results = 'hide'}
 bfi %>%
@@ -909,13 +918,13 @@ bfi %>%
   print(n = 8)
 ```
 :::
-:::
+:::::
 
 ## 1. `pivot_longer()`: More Advanced Application
 
 Now a harder one -- two keys, one value:
 
-::: columns
+::::: columns
 ::: column
 ```{r, echo=TRUE, results = 'hide'}
 bfi %>%
@@ -945,7 +954,7 @@ bfi %>%
   print(n = 8)
 ```
 :::
-:::
+:::::
 
 ## 2. `pivot_wider()` {.smaller}
 
@@ -960,8 +969,7 @@ bfi %>%
 
 ## 2. `pivot_wider()`: Basic Application
 
-```{r, results = 'hide'}
-
+```{r}
 bfi_long <- bfi %>%
   rownames_to_column("SID") %>%
   pivot_longer(
@@ -971,6 +979,8 @@ bfi_long <- bfi %>%
     , values_drop_na = T
   )
 ```
+
+## 2. `pivot_wider()`: Basic Application
 
 ```{r, echo=TRUE}
 #| code-line-numbers: "|2|3"
@@ -995,7 +1005,9 @@ bfi_long <- bfi %>%
   )
 ```
 
-```{r, echo = T}
+## 2. `pivot_wider()`: More Advanced
+
+```{r, echo = T, eval = T}
 bfi_long %>%
   pivot_wider(
     names_from = c("trait", "item_num")
@@ -1021,7 +1033,7 @@ bfi_long %>%
 
 ## The `_join()` Functions
 
-::: columns
+::::: columns
 ::: {.column width="60%"}
 -   Often we may need to pull different data from different sources
 -   There are lots of reasons to need to do this
@@ -1035,70 +1047,72 @@ bfi_long %>%
     -   `left_join()`
     -   `right_join()`
 :::
-:::
+:::::
 
 ## The `_join()` Functions
 
 -   Let's separate demographic and BFI data
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|3"
 bfi_only <- bfi %>% 
   rownames_to_column("SID") %>%
   select(SID, matches("[0-9]"))
-bfi_only %>% print(n = 6)
+bfi_only %>% as_tibble() %>% print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|3"
 bfi_dem <- bfi %>%
   rownames_to_column("SID") %>%
   select(SID, education, gender, age)
-bfi_dem %>% print(n = 6)
+bfi_dem %>% as_tibble() %>% print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ## 3. `full_join()`
 
 Most simply, we can put those back together keeping all observations.
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 bfi_only %>%
   full_join(bfi_dem) %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 bfi %>%
   rownames_to_column("SID") %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ## 4. `inner_join()`
 
 We can also keep all rows present in *both* data frames
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|1-2|4-5|3"
@@ -1108,74 +1122,80 @@ bfi_dem %>%
     bfi_only %>%
       filter(row_number() %in% 1200:2800)
   ) %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 bfi %>%
   rownames_to_column("SID") %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ## 5. `left_join()`
 
 Or all rows present in the left (first) data frame, perhaps if it's a subset of people with complete data
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|2|3"
 bfi_dem %>%
   drop_na() %>%
   left_join(bfi_only) %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 bfi %>%
   rownames_to_column("SID") %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::
 
 ## 6. `right_join()`
 
 Or all rows present in the right (second) data frame, such as I do when I join a codebook with raw data
 
-::: columns
-::: column
+::::::: columns
+:::: column
 ::: fragment
 ```{r, echo = T}
 #| code-line-numbers: "|3"
 bfi_dem %>%
   drop_na() %>%
   right_join(bfi_only) %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
+::::
 
-::: column
+:::: column
 ::: fragment
 ```{r, echo = T}
 bfi %>%
   rownames_to_column("SID") %>%
+  as_tibble() %>%
   print(n = 6)
 ```
 :::
-:::
-:::
+::::
+:::::::

@@ -16,5 +16,11 @@
   },
   "syllabus.qmd": {
     "syllabus.html": "7d2d8af8"
+  },
+  "01-week1-workshop.qmd": {
+    "01-week1-workshop.html": "ec551d0f"
+  },
+  "01-week1-workbook.qmd": {
+    "01-week1-workbook.html": "8809a27b"
   }
 }

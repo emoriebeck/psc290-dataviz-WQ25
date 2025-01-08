@@ -89,7 +89,7 @@ However, you will spend about 50% of this course using R. Therefore, to get the 
 
 One goal of this course is to teach you how to produce good data visualizations with a particular emphasis on being able to do so with your own data, rather than simply with toy data designed to work perfectly with different assignments. In the previous iteration of this class, we did not do this weekly, so this time, I want to experiment with a few different assignment formats throughout the quarter in order to see which is most effective. At the same time, I don’t want to overload you with assignments (or me with assignment prep and grading), so we won’t do assignments every week but rather every other week or so.
 
-Problem sets (5% x 5 = 25%) will be due at the start of class the week after they are assigned. These will likely be graded for completion unless otherwise stated in the assignment.
+Problem sets (4% x 5 = 20%) will be due at the start of class the week after they are assigned. These will likely be graded for completion unless otherwise stated in the assignment.
 
 This is good opportunity to:
 
@@ -102,7 +102,7 @@ This is good opportunity to:
 
 The goal of this course is not simply to teach you *how* to produce data visualizations. Rather, the goal is to teach you principles of good visualization, how to identify features of good visualizations, and how to produce visualizations with these features.
 
-Weekly homework (15%) in this class will focus on principles of good visualizations. Each week, you will find two visualizations related to the topic of the week, one good example, and one bad example. Submit each of these via Canvas along with a one paragraph summary describing why each is a good or bad visualization by [**midnight the Sunday before class**]{.underline}. I’ll pull together some highlights for discussion the following day.
+Weekly homework (20%) in this class will focus on principles of good visualizations. Each week, you will find two visualizations related to the topic of the week, one good example, and one bad example. Submit each of these via Canvas along with a one paragraph summary describing why each is a good or bad visualization by [**noon the day (Tuesday) before class**]{.underline}. I’ll pull together some highlights for discussion the following day.
 
 These will be graded for completion (you turned it in), relevance (it should be clear from the visualization or description how it connects to the weekly topic), and effort (a one sentence summary is not effort). You will not receive feedback on them unless there is an ongoing problem (e.g., lack of depth or effort).
 
@@ -145,8 +145,8 @@ All grades will be posted on Canvas. You are strongly encouraged to check your s
 |                                  |             |
 |----------------------------------|-------------|
 | **Assignment Weights**           | **Percent** |
-| Problem Sets (5)                 | 25%         |
-| Response Papers + Visualizations | 15%         |
+| Problem Sets (5)                 | 20%         |
+| Response Papers + Visualizations | 20%         |
 | Final Project Proposal           | 10%         |
 | Class Presentation               | 20%         |
 | Final Project                    | 30%         |
