@@ -26,9 +26,9 @@ website:
       collapse-level: 2
       contents:
         - 01-week1-workbook.qmd
-        - 01-week1-slides-code.qmd
-        # - 02-week2-slides.qmd
-        # - 02-week2-workbook.qmd
+        - 01-week1-slides.qmd
+        - 02-week2-workbook.qmd
+        - 02-week2-slides.qmd
         # - 03-week3-slides.qmd
         # - 03-week3-workbook.qmd
         # - 04-week4-slides.qmd

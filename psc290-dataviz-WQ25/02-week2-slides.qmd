@@ -1,0 +1,11 @@
+---
+title: "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2"
+---
+
+Welcome to Week 2! This week, we'll review core concepts from our readings on cognitive perspectives on data visualization and then introduce `ggplot2` core functions.
+
+<div>
+
+<iframe class="slide-deck" src="/slides/02-week2-slides-code.html" width="1200" height="800"></iframe>
+
+</div>
