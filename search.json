@@ -11,7 +11,7 @@
     "href": "index.html#course-description",
     "title": "Data Visualization in R (Winter 2025)",
     "section": "Course Description",
-    "text": "Course Description\n\n\n\nIn scholarly writing, a figure can be worth 1000 words. Data visualization is a key part of the scientific enterprise, yet most students are taught only a small range of visualizations that are most frequently used in their fields and for the types of methods they use. Such standard procedure can limit the reach and scope of scientific work in an era of rapid digital technological innovation. This course will be designed around themes rather than types of visualization. The beginning of the course will cover best practices in data visualization from the perspective of a growing literature on cognitive perceptions of data visualization and will orient students to visualizing data in R using ggplot2. Next, we will cover several broad topic areas, including visualizing probability, differences, and uncertainty. We will conclude with interactive and animated graphics in R and Shiny. Students are highly encouraged to bring their own data from ongoing or completed projects, but this is not required."
+    "text": "Course Description\n\n\n\nIn scholarly writing, a figure can be worth 1000 words. Data visualization is a key part of the scientific enterprise, yet most students are taught only a small range of visualizations that are most frequently used in their fields and for the types of methods they use. Ssuch standard procedure can limit the reach and scope of scientific work in an era of rapid digital technological innovation. This course will be designed around themes rather than types of visualization. The beginning of the course will cover best practices in data visualization from the perspective of a growing literature on cognitive perceptions of data visualization and will orient students to visualizing data in R using ggplot2. Next, we will cover several broad topic areas, including visualizing probability, differences, and uncertainty. We will conclude with interactive and animated graphics in R and Shiny. Students are highly encouraged to bring their own data from ongoing or completed projects, but this is not required."
   },
   {
     "objectID": "index.html#navigating-this-site",
@@ -291,42 +291,42 @@
     "href": "01-week1-slides-code.html#course-materials",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Course Materials",
-    "text": "Course Materials\n\nAll materials (required and optional) are free and online\n\nWickham & Grolemond: R for Data Science https://r4ds.had.co.nz\nWickham: Advanced R http://adv-r.had.co.nz\nWilke: Fundamentals of Data Visualization https://clauswilke.com/dataviz/\nHealy: Data Visualization: A Practical Introduction https://socviz.co\nData Camp: All paid content unlocked"
+    "text": "Course Materials\n\nAll materials (required and optional) are free and online\n\nWickham & Grolemond: R for Data Science https://r4ds.had.co.nz\n\nWickham: Advanced R http://adv-r.had.co.nz\n\nWilke: Fundamentals of Data Visualization https://clauswilke.com/dataviz/\n\nHealy: Data Visualization: A Practical Introduction https://socviz.co\n\n\nData Camp: All paid content unlocked"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments",
     "href": "01-week1-slides-code.html#assignments",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\n\n\nAssignment Weights\nPercent\n\n\nProblem Sets (5)\n20%\n\n\nResponse Papers + Visualizations\n20%\n\n\nFinal Project Proposal\n10%\n\n\nClass Presentation\n20%\n\n\nFinal Project\n30%\n\n\nTotal\n100%"
+    "text": "Assignments\n\n\nAssignment Weights\nPercent\n\n\nProblem Sets (5)\n20%\n\n\nResponse Papers + Visualizations\n20%\n\n\nFinal Project Proposal\n10%\n\n\nClass Presentation\n20%\n\n\nFinal Project\n30%\n\n\nTotal\n100%"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-1",
     "href": "01-week1-slides-code.html#assignments-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\nResponse Papers / Visualizations\n\nThe main homework in the course is your weekly visualization assignment\nThe goal is to demonstrate how the principles and skills you learn in the class function “in the wild.”\nThese should be fun and not taken too seriously! No one is judging you for a pulling a graphic from Instagram instead of Nature.\nDue 12:00 PM the day before (i.e. Tuesday) class (last class is “free points”)"
+    "text": "Assignments\nResponse Papers / Visualizations\n\nThe main homework in the course is your weekly visualization assignment\nThe goal is to demonstrate how the principles and skills you learn in the class function “in the wild.”\nThese should be fun and not taken too seriously! No one is judging you for a pulling a graphic from Instagram instead of Nature.\nDue 12:00 PM the day before (i.e. Tuesday) class (last class is “free points”)"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-2",
     "href": "01-week1-slides-code.html#assignments-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\nProblem Sets\n\nAbout every other week, there will be a practice set to help you practice what you’re learning.\nThese will have you apply the code you’ve been learning to your own data or a provided data set\nAssigning them every other week aims to reduce burden while still allowing you to practice\nFrequency / form will be adjusted as needed throughout the quarter"
+    "text": "Assignments\nProblem Sets\n\nAbout every other week, there will be a practice set to help you practice what you’re learning.\nThese will have you apply the code you’ve been learning to your own data or a provided data set\nAssigning them every other week aims to reduce burden while still allowing you to practice\nFrequency / form will be adjusted as needed throughout the quarter"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-3",
     "href": "01-week1-slides-code.html#assignments-3",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\nFinal Projects\n\nI don’t want you to walk out of this course and not know how to apply what you learned\nFinal project replaces final exam (there are no exams)\nCreate a visualization for an ongoing project!\n\nStage 1: Proposal (due 02/12/25)\nStage 2: 1-on-1 meetings + feedback (due by 02/26/25)\nStage 3: In-class presentations (03/12/25)\nStage 4: Final visualization + brief write-up (due 03/19/25 at midnight)"
+    "text": "Assignments\nFinal Projects\n\nI don’t want you to walk out of this course and not know how to apply what you learned\nFinal project replaces final exam (there are no exams)\nCreate a visualization for an ongoing project!\n\nStage 1: Proposal (due 02/12/25)\nStage 2: 1-on-1 meetings + feedback (due by 02/26/25)\nStage 3: In-class presentations (03/12/25)\nStage 4: Final visualization + brief write-up (due 03/19/25 at midnight)"
   },
   {
     "objectID": "01-week1-slides-code.html#assignments-4",
     "href": "01-week1-slides-code.html#assignments-4",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Assignments",
-    "text": "Assignments\n\nExtra Credit\n\nLots of talk series, etc. this winter\n1 pt extra credit for each one you:\n\ngo to,\ntake a snap of a data viz,\nand critique it according to what you’ve learned in class\n\nmax 5 pts"
+    "text": "Assignments\nExtra Credit\n\nLots of talk series, etc. this winter\n1 pt extra credit for each one you:\n\ngo to,\ntake a snap of a data viz,\nand critique it according to what you’ve learned in class\n\n\nmax 5 pts"
   },
   {
     "objectID": "01-week1-slides-code.html#class-time",
@@ -437,29 +437,29 @@
     "objectID": "01-week1-slides-code.html#why-use-the-tidyverse",
     "href": "01-week1-slides-code.html#why-use-the-tidyverse",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "Why Use the tidyverse",
-    "text": "Why Use the tidyverse\n\n\n\nMaintained by RStudio (Pivot)\nNo one should have to use a for loop to change data from long to wide\nTons of integrated tools for data cleaning, manipulation, transformation, and visualization\nEven increasing support for modeling (e.g., tidymodels)\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/tidyverse.png\")"
+    "section": "Why Use the tidyverse\n",
+    "text": "Why Use the tidyverse\n\n\n\n\nMaintained by RStudio (Pivot)\nNo one should have to use a for loop to change data from long to wide\nTons of integrated tools for data cleaning, manipulation, transformation, and visualization\nEven increasing support for modeling (e.g., tidymodels)\n\n\n\nknitr::include_graphics(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/01-week1-intro/02-code/02-images/tidyverse.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#why-use-the-tidyverse-1",
     "href": "01-week1-slides-code.html#why-use-the-tidyverse-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "Why Use the tidyverse",
-    "text": "Why Use the tidyverse\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/stringr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/shiny.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/rmarkdown.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/quarto.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/knitr.png\")\n\n\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/ggplot2.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/forcats.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/broom.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tibble.png\")\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/purrr.png\")"
+    "section": "Why Use the tidyverse\n",
+    "text": "Why Use the tidyverse\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tidyr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/stringr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/shiny.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/rmarkdown.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/quarto.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/knitr.png\")\n\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/ggplot2.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/forcats.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/dplyr.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/broom.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/tibble.png\")\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/raw/main/thumbs/purrr.png\")"
   },
   {
     "objectID": "01-week1-slides-code.html#goals-for-today",
     "href": "01-week1-slides-code.html#goals-for-today",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Goals for Today",
-    "text": "Goals for Today\n\nReview core principles of:\n\ndyplr (data manipulation)\ntidyr (data transformation and reshaping)\n\n\n\n\n\n\n\nData Manipulation in dplyr"
+    "text": "Goals for Today\n\n\nReview core principles of:\n\n\ndyplr (data manipulation)\n\ntidyr (data transformation and reshaping)"
   },
   {
     "objectID": "01-week1-slides-code.html#dplyr-core-functions-1",
     "href": "01-week1-slides-code.html#dplyr-core-functions-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "dplyr Core Functions",
-    "text": "dplyr Core Functions\n\n%>%: The pipe. Read as “and then.”\nfilter(): Pick observations (rows) by their values.\nselect(): Pick variables (columns) by their names.\narrange(): Reorder the rows.\ngroup_by(): Implicitly split the data set by grouping by names (columns).\nmutate(): Create new variables with functions of existing variables.\nsummarize() / summarise(): Collapse many values down to a single summary."
+    "section": "\ndplyr Core Functions",
+    "text": "dplyr Core Functions\n\n\n%>%: The pipe. Read as “and then.”\n\nfilter(): Pick observations (rows) by their values.\n\nselect(): Pick variables (columns) by their names.\n\narrange(): Reorder the rows.\n\ngroup_by(): Implicitly split the data set by grouping by names (columns).\n\nmutate(): Create new variables with functions of existing variables.\n\nsummarize() / summarise(): Collapse many values down to a single summary."
   },
   {
     "objectID": "01-week1-slides-code.html#core-functions",
@@ -472,232 +472,232 @@
     "objectID": "01-week1-slides-code.html#section",
     "href": "01-week1-slides-code.html#section",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "1. %>%",
-    "text": "1. %>%\n\nThe pipe %>% is wonderful. It makes coding intuitive. Often in coding, you need to use so-called nested functions. For example, you might want to round a number after taking the square of 43.\n\n\n\nsqrt(43)\n\n[1] 6.557439\n\nround(sqrt(43), 2)\n\n[1] 6.56"
+    "section": "1. %>%\n",
+    "text": "1. %>%\n\n\nThe pipe %>% is wonderful. It makes coding intuitive. Often in coding, you need to use so-called nested functions. For example, you might want to round a number after taking the square of 43.\n\n\n\nsqrt(43)\n\n[1] 6.557439\n\nround(sqrt(43), 2)\n\n[1] 6.56"
   },
   {
     "objectID": "01-week1-slides-code.html#section-1",
     "href": "01-week1-slides-code.html#section-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "1. %>%",
-    "text": "1. %>%\nThe issue with this comes whenever we need to do a series of operations on a data set or other type of object. In such cases, if we run it in a single call, then we have to start in the middle and read our way out.\n\nround(sqrt(43/2), 2)\n\n[1] 4.64"
+    "section": "1. %>%\n",
+    "text": "1. %>%\n\nThe issue with this comes whenever we need to do a series of operations on a data set or other type of object. In such cases, if we run it in a single call, then we have to start in the middle and read our way out.\n\nround(sqrt(43/2), 2)\n\n[1] 4.64"
   },
   {
     "objectID": "01-week1-slides-code.html#section-2",
     "href": "01-week1-slides-code.html#section-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "1. %>%",
-    "text": "1. %>%\nThe pipe solves this by allowing you to read from left to right (or top to bottom). The easiest way to think of it is that each call of %>% reads and operates as “and then.” So with the rounded square root of 43, for example:\n\n\nsqrt(43) %>%\n  round(2)\n\n[1] 6.56"
+    "section": "1. %>%\n",
+    "text": "1. %>%\n\nThe pipe solves this by allowing you to read from left to right (or top to bottom). The easiest way to think of it is that each call of %>% reads and operates as “and then.” So with the rounded square root of 43, for example:\n\n\nsqrt(43) %>%\n  round(2)\n\n[1] 6.56"
   },
   {
     "objectID": "01-week1-slides-code.html#filter",
     "href": "01-week1-slides-code.html#filter",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\n\n\ndata(bfi) # grab the bfi data from the psych package\nbfi <- bfi %>% as_tibble()\nhead(bfi)\n\n# A tibble: 6 × 28\n     A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2    E3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     4     3     4     4     2     3     3     4     4     3     3     3\n2     2     4     5     2     5     5     4     4     3     4     1     1     6\n3     5     4     5     4     4     4     5     4     2     5     2     4     4\n4     4     4     6     5     5     4     4     3     5     5     5     3     4\n5     2     3     3     4     5     4     4     5     3     2     2     2     5\n6     6     6     5     6     5     6     6     6     1     3     2     1     6\n# ℹ 15 more variables: E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>,\n#   N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>,\n#   gender <int>, education <int>, age <int>"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\n\n\ndata(bfi) # grab the bfi data from the psych package\nbfi <- bfi %>% as_tibble()\nhead(bfi)\n\n# A tibble: 6 × 28\n     A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2    E3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     4     3     4     4     2     3     3     4     4     3     3     3\n2     2     4     5     2     5     5     4     4     3     4     1     1     6\n3     5     4     5     4     4     4     5     4     2     5     2     4     4\n4     4     4     6     5     5     4     4     3     5     5     5     3     4\n5     2     3     3     4     5     4     4     5     3     2     2     2     5\n6     6     6     5     6     5     6     6     6     1     3     2     1     6\n# ℹ 15 more variables: E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>,\n#   N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>,\n#   gender <int>, education <int>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-1",
     "href": "01-week1-slides-code.html#filter-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nsummary(bfi$age) # get age descriptives\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   3.00   20.00   26.00   28.78   35.00   86.00"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nsummary(bfi$age) # get age descriptives\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   3.00   20.00   26.00   28.78   35.00   86.00"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-2",
     "href": "01-week1-slides-code.html#filter-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>% # see a pipe!\n  filter(age <= 18) # filter to age up to 18\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n    3.0    16.0    17.0    16.3    18.0    18.0 \n\n\n\n\nBut this isn’t quite right. We still have folks below 12. But, the beauty of filter() is that you can do sequence of OR and AND statements when there is more than one condition, such as up to 18 AND at least 12."
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>% # see a pipe!\n  filter(age <= 18) # filter to age up to 18\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n    3.0    16.0    17.0    16.3    18.0    18.0 \n\n\n\n\nBut this isn’t quite right. We still have folks below 12. But, the beauty of filter() is that you can do sequence of OR and AND statements when there is more than one condition, such as up to 18 AND at least 12."
   },
   {
     "objectID": "01-week1-slides-code.html#filter-3",
     "href": "01-week1-slides-code.html#filter-3",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>%\n  filter(age <= 18 & age >= 12) # filter to age up to 18 and at least 12\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0 \n\n\n\n\nGot it!"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nOften times, when conducting research (experiments or otherwise), there are observations (people, specific trials, etc.) that you don’t want to include.\n\n\nbfi2 <- bfi %>%\n  filter(age <= 18 & age >= 12) # filter to age up to 18 and at least 12\n\nsummary(bfi2$age) # summary of the new data \n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0 \n\n\n\n\nGot it!"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-4",
     "href": "01-week1-slides-code.html#filter-4",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\n\nBut filter works for more use cases than just conditional\n\n<, >, <=, and >=\n\nIt can also be used for cases where we want a single values to match cases with text.\nTo do that, let’s convert one of the variables in the bfi data frame to a string.\nSo let’s change gender (1 = male, 2 = female) to text (we’ll get into factors later).\n\n\n\nbfi$education <- plyr::mapvalues(bfi$education, 1:5, c(\"Below HS\", \"HS\", \"Some College\", \"College\", \"Higher Degree\"))"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\n\nBut filter works for more use cases than just conditional\n\n\n<, >, <=, and >=\n\n\n\nIt can also be used for cases where we want a single values to match cases with text.\nTo do that, let’s convert one of the variables in the bfi data frame to a string.\nSo let’s change gender (1 = male, 2 = female) to text (we’ll get into factors later).\n\n\n\nbfi$education <- plyr::mapvalues(bfi$education, 1:5, c(\"Below HS\", \"HS\", \"Some College\", \"College\", \"Higher Degree\"))"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-5",
     "href": "01-week1-slides-code.html#filter-5",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nNow let’s try a few things:\n1. Create a data set with only individuals with some college (==).\n\n\nbfi2 <- bfi %>% \n  filter(education == \"Some College\")\nunique(bfi2$education)\n\n[1] \"Some College\""
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nNow let’s try a few things:\n1. Create a data set with only individuals with some college (==).\n\n\nbfi2 <- bfi %>% \n  filter(education == \"Some College\")\nunique(bfi2$education)\n\n[1] \"Some College\""
   },
   {
     "objectID": "01-week1-slides-code.html#filter-6",
     "href": "01-week1-slides-code.html#filter-6",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nNow let’s try a few things:\n2. Create a data set with only people age 18 (==).\n\n\nbfi2 <- bfi %>%\n  filter(age == 18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n     18      18      18      18      18      18"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nNow let’s try a few things:\n2. Create a data set with only people age 18 (==).\n\n\nbfi2 <- bfi %>%\n  filter(age == 18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n     18      18      18      18      18      18"
   },
   {
     "objectID": "01-week1-slides-code.html#filter-7",
     "href": "01-week1-slides-code.html#filter-7",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. filter()",
-    "text": "2. filter()\nNow let’s try a few things:\n3. Create a data set with individuals with some college or above (%in%).\n\n\nbfi2 <- bfi %>%\n  filter(education %in% c(\"Some College\", \"College\", \"Higher Degree\"))\nunique(bfi2$education)\n\n[1] \"Some College\"  \"Higher Degree\" \"College\"      \n\n\n\n\n%in% is great. It compares a column to a vector rather than just a single value, you can compare it to several\n\nbfi2 <- bfi %>%\n  filter(age %in% 12:18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0"
+    "section": "2. filter()\n",
+    "text": "2. filter()\n\nNow let’s try a few things:\n3. Create a data set with individuals with some college or above (%in%).\n\n\nbfi2 <- bfi %>%\n  filter(education %in% c(\"Some College\", \"College\", \"Higher Degree\"))\nunique(bfi2$education)\n\n[1] \"Some College\"  \"Higher Degree\" \"College\"      \n\n\n\n\n%in% is great. It compares a column to a vector rather than just a single value, you can compare it to several\n\nbfi2 <- bfi %>%\n  filter(age %in% 12:18)\nsummary(bfi2$age)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   12.0    16.0    17.0    16.4    18.0    18.0"
   },
   {
     "objectID": "01-week1-slides-code.html#select",
     "href": "01-week1-slides-code.html#select",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "3. select()",
-    "text": "3. select()\n\nIf filter() is for pulling certain observations (rows), then select() is for pulling certain variables (columns).\nit’s good practice to remove these columns to stop your environment from becoming cluttered and eating up your RAM."
+    "section": "3. select()\n",
+    "text": "3. select()\n\n\nIf filter() is for pulling certain observations (rows), then select() is for pulling certain variables (columns).\nit’s good practice to remove these columns to stop your environment from becoming cluttered and eating up your RAM."
   },
   {
     "objectID": "01-week1-slides-code.html#select-1",
     "href": "01-week1-slides-code.html#select-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "3. select()",
-    "text": "3. select()\n\nIn our bfi data, most of these have been pre-removed, so instead, we’ll imagine we don’t want to use any indicators of Agreeableness (A1-A5) and that we aren’t interested in gender.\nWith select(), there are few ways choose variables. We can bare quote name the ones we want to keep, bare quote names we want to remove, or use any of a number of select() helper functions."
+    "section": "3. select()\n",
+    "text": "3. select()\n\n\nIn our bfi data, most of these have been pre-removed, so instead, we’ll imagine we don’t want to use any indicators of Agreeableness (A1-A5) and that we aren’t interested in gender.\nWith select(), there are few ways choose variables. We can bare quote name the ones we want to keep, bare quote names we want to remove, or use any of a number of select() helper functions."
   },
   {
     "objectID": "01-week1-slides-code.html#select-2",
     "href": "01-week1-slides-code.html#select-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\n\nA. Bare quote columns we want to keep:\n\n\n\n\nbfi %>%\n  select(C1, C2, C3, C4, C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows\n\n\n\n\n\n\nbfi %>%\n  select(C1:C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows"
+    "text": "3. select():\nA. Bare quote columns we want to keep:\n\n\n\n\nbfi %>%\n  select(C1, C2, C3, C4, C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows\n\n\n\n\n\n\nbfi %>%\n  select(C1:C5) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 5\n     C1    C2    C3    C4    C5\n  <int> <int> <int> <int> <int>\n1     2     3     3     4     4\n2     5     4     4     3     4\n3     4     5     4     2     5\n4     4     4     3     5     5\n5     4     4     5     3     2\n6     6     6     6     1     3\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#select-3",
     "href": "01-week1-slides-code.html#select-3",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\n\nB. Bare quote columns we don’t want to keep:\n\n\nbfi %>% \n  select(-(A1:A5), -gender) %>% # Note the `()` around the columns\n  print(n = 6)\n\n# A tibble: 2,800 × 22\n     C1    C2    C3    C4    C5    E1    E2    E3    E4    E5    N1    N2    N3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     3     3     4     4     3     3     3     4     4     3     4     2\n2     5     4     4     3     4     1     1     6     4     3     3     3     3\n3     4     5     4     2     5     2     4     4     4     5     4     5     4\n4     4     4     3     5     5     5     3     4     4     4     2     5     2\n5     4     4     5     3     2     2     2     5     4     5     2     3     4\n6     6     6     6     1     3     2     1     6     5     6     3     5     2\n# ℹ 2,794 more rows\n# ℹ 9 more variables: N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>,\n#   O4 <int>, O5 <int>, education <chr>, age <int>"
+    "text": "3. select():\nB. Bare quote columns we don’t want to keep:\n\n\nbfi %>% \n  select(-(A1:A5), -gender) %>% # Note the `()` around the columns\n  print(n = 6)\n\n# A tibble: 2,800 × 22\n     C1    C2    C3    C4    C5    E1    E2    E3    E4    E5    N1    N2    N3\n  <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1     2     3     3     4     4     3     3     3     4     4     3     4     2\n2     5     4     4     3     4     1     1     6     4     3     3     3     3\n3     4     5     4     2     5     2     4     4     4     5     4     5     4\n4     4     4     3     5     5     5     3     4     4     4     2     5     2\n5     4     4     5     3     2     2     2     5     4     5     2     3     4\n6     6     6     6     1     3     2     1     6     5     6     3     5     2\n# ℹ 2,794 more rows\n# ℹ 9 more variables: N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>,\n#   O4 <int>, O5 <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#select-4",
     "href": "01-week1-slides-code.html#select-4",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "3. select():",
-    "text": "3. select():\n\nC. Add or remove using select() helper functions.\n\n\n\nstarts_with()\n\nends_with()\ncontains()\nmatches()\nnum_range()\none_of()\nall_of()\n\n\n\n\nbfi %>%\n  select(starts_with(\"C\"))\n\n# A tibble: 2,800 × 5\n      C1    C2    C3    C4    C5\n   <int> <int> <int> <int> <int>\n 1     2     3     3     4     4\n 2     5     4     4     3     4\n 3     4     5     4     2     5\n 4     4     4     3     5     5\n 5     4     4     5     3     2\n 6     6     6     6     1     3\n 7     5     4     4     2     3\n 8     3     2     4     2     4\n 9     6     6     3     4     5\n10     6     5     6     2     1\n# ℹ 2,790 more rows"
+    "text": "3. select():\nC. Add or remove using select() helper functions.\n\n\n\n\nstarts_with()\n\nends_with()\ncontains()\nmatches()\nnum_range()\none_of()\nall_of()\n\n\n\n\nbfi %>%\n  select(starts_with(\"C\"))\n\n# A tibble: 2,800 × 5\n      C1    C2    C3    C4    C5\n   <int> <int> <int> <int> <int>\n 1     2     3     3     4     4\n 2     5     4     4     3     4\n 3     4     5     4     2     5\n 4     4     4     3     5     5\n 5     4     4     5     3     2\n 6     6     6     6     1     3\n 7     5     4     4     2     3\n 8     3     2     4     2     4\n 9     6     6     3     4     5\n10     6     5     6     2     1\n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#arrange",
     "href": "01-week1-slides-code.html#arrange",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "4. arrange()",
-    "text": "4. arrange()\n\nSometimes, either in order to get a better sense of our data or in order to well, order our data, we want to sort it\nAlthough there is a base R sort() function, the arrange() function is tidyverse version that plays nicely with other tidyverse functions."
+    "section": "4. arrange()\n",
+    "text": "4. arrange()\n\n\nSometimes, either in order to get a better sense of our data or in order to well, order our data, we want to sort it\nAlthough there is a base R sort() function, the arrange() function is tidyverse version that plays nicely with other tidyverse functions."
   },
   {
     "objectID": "01-week1-slides-code.html#arrange-1",
     "href": "01-week1-slides-code.html#arrange-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "4. arrange()",
-    "text": "4. arrange()\n\nSo in our previous examples, we could also arrange() our data by age or education, rather than simply filtering. (Or as we’ll see later, we can do both!)\n\n\n# sort by age\nbfi %>% \n  select(gender:age) %>%\n  arrange(age) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education       age\n   <int> <chr>         <int>\n1      1 Higher Degree     3\n2      2 <NA>              9\n3      2 Some College     11\n4      2 <NA>             11\n5      2 <NA>             11\n6      2 <NA>             12\n# ℹ 2,794 more rows\n\n\n\n\n\n\n# sort by education\nbfi %>%\n  select(gender:age) %>%\n  arrange(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      2 Below HS     18\n# ℹ 2,794 more rows"
+    "section": "4. arrange()\n",
+    "text": "4. arrange()\n\n\nSo in our previous examples, we could also arrange() our data by age or education, rather than simply filtering. (Or as we’ll see later, we can do both!)\n\n\n\n# sort by age\nbfi %>% \n  select(gender:age) %>%\n  arrange(age) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education       age\n   <int> <chr>         <int>\n1      1 Higher Degree     3\n2      2 <NA>              9\n3      2 Some College     11\n4      2 <NA>             11\n5      2 <NA>             11\n6      2 <NA>             12\n# ℹ 2,794 more rows\n\n\n\n\n\n\n# sort by education\nbfi %>%\n  select(gender:age) %>%\n  arrange(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      2 Below HS     18\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#arrange-2",
     "href": "01-week1-slides-code.html#arrange-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "4. arrange()",
-    "text": "4. arrange()\nWe can also arrange by multiple columns, like if we wanted to sort by gender then education:\n\n\nbfi %>%\n  select(gender:age) %>%\n  arrange(gender, education) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      1 Below HS     32\n# ℹ 2,794 more rows"
+    "section": "4. arrange()\n",
+    "text": "4. arrange()\n\nWe can also arrange by multiple columns, like if we wanted to sort by gender then education:\n\n\nbfi %>%\n  select(gender:age) %>%\n  arrange(gender, education) %>% \n  print(n = 6)\n\n# A tibble: 2,800 × 3\n  gender education   age\n   <int> <chr>     <int>\n1      1 Below HS     19\n2      1 Below HS     21\n3      1 Below HS     17\n4      1 Below HS     18\n5      1 Below HS     18\n6      1 Below HS     32\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#bringing-it-all-together-split-apply-combine-1",
     "href": "01-week1-slides-code.html#bringing-it-all-together-split-apply-combine-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "Bringing it all together: Split-Apply-Combine",
-    "text": "Bringing it all together: Split-Apply-Combine\n\nMuch of the power of dplyr functions lay in the split-apply-combine method\nA given set of of data are:\n\nsplit into smaller chunks\nthen a function or series of functions are applied to each chunk\nand then the chunks are combined back together"
+    "text": "Bringing it all together: Split-Apply-Combine\n\nMuch of the power of dplyr functions lay in the split-apply-combine method\n\nA given set of of data are:\n\n\nsplit into smaller chunks\nthen a function or series of functions are applied to each chunk\nand then the chunks are combined back together"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by",
     "href": "01-week1-slides-code.html#group_by",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "5. group_by()",
-    "text": "5. group_by()\n\nThe group_by() function is the “split” of the method\nIt basically implicitly breaks the data set into chunks by whatever bare quoted column(s)/variable(s) are supplied as arguments."
+    "section": "5. group_by()\n",
+    "text": "5. group_by()\n\n\nThe group_by() function is the “split” of the method\nIt basically implicitly breaks the data set into chunks by whatever bare quoted column(s)/variable(s) are supplied as arguments."
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-1",
     "href": "01-week1-slides-code.html#group_by-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "5. group_by()",
-    "text": "5. group_by()\nSo imagine that we wanted to group_by() education levels to get average ages at each level\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "section": "5. group_by()\n",
+    "text": "5. group_by()\n\nSo imagine that we wanted to group_by() education levels to get average ages at each level\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-2",
     "href": "01-week1-slides-code.html#group_by-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "5. group_by()",
-    "text": "5. group_by()\n\nHadley’s first law of data cleaning: “What is split, must be combined”\nThis is super easy with the ungroup() function:\n\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  ungroup() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "section": "5. group_by()\n",
+    "text": "5. group_by()\n\n\nHadley’s first law of data cleaning: “What is split, must be combined”\nThis is super easy with the ungroup() function:\n\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  ungroup() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#group_by-3",
     "href": "01-week1-slides-code.html#group_by-3",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "5. group_by()",
-    "text": "5. group_by()\nMultiple group_by() calls overwrites previous calls:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  group_by(gender, age) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   gender, age [115]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
+    "section": "5. group_by()\n",
+    "text": "5. group_by()\n\nMultiple group_by() calls overwrites previous calls:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  group_by(education) %>%\n  group_by(gender, age) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 8\n# Groups:   gender, age [115]\n     C1    C2    C3    C4    C5   age gender education   \n  <int> <int> <int> <int> <int> <int>  <int> <chr>       \n1     2     3     3     4     4    16      1 <NA>        \n2     5     4     4     3     4    18      2 <NA>        \n3     4     5     4     2     5    17      2 <NA>        \n4     4     4     3     5     5    17      2 <NA>        \n5     4     4     5     3     2    17      1 <NA>        \n6     6     6     6     1     3    21      2 Some College\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate",
     "href": "01-week1-slides-code.html#mutate",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "6. mutate()",
-    "text": "6. mutate()\n\nmutate() is one of your “apply” functions\nWhen you use mutate(), the resulting data frame will have the same number of rows you started with\nYou are directly mutating the existing data frame, either modifying existing columns or creating new ones"
+    "section": "6. mutate()\n",
+    "text": "6. mutate()\n\n\n\nmutate() is one of your “apply” functions\nWhen you use mutate(), the resulting data frame will have the same number of rows you started with\nYou are directly mutating the existing data frame, either modifying existing columns or creating new ones"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-1",
     "href": "01-week1-slides-code.html#mutate-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "6. mutate()",
-    "text": "6. mutate()\nTo demonstrate, let’s add a column that indicated average age levels within each age group\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  mutate(age_by_edu = mean(age, na.rm = T)) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 9\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education age_by_edu\n  <int> <int> <int> <int> <int> <int>  <int> <chr>          <dbl>\n1     6     6     3     4     5    19      1 Below HS        25.1\n2     4     3     5     3     2    21      1 Below HS        25.1\n3     5     5     5     2     2    17      1 Below HS        25.1\n4     5     5     4     1     1    18      1 Below HS        25.1\n5     4     5     4     3     3    18      1 Below HS        25.1\n6     3     2     3     4     6    18      2 Below HS        25.1\n# ℹ 2,794 more rows"
+    "section": "6. mutate()\n",
+    "text": "6. mutate()\n\nTo demonstrate, let’s add a column that indicated average age levels within each age group\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  mutate(age_by_edu = mean(age, na.rm = T)) %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 9\n# Groups:   education [6]\n     C1    C2    C3    C4    C5   age gender education age_by_edu\n  <int> <int> <int> <int> <int> <int>  <int> <chr>          <dbl>\n1     6     6     3     4     5    19      1 Below HS        25.1\n2     4     3     5     3     2    21      1 Below HS        25.1\n3     5     5     5     2     2    17      1 Below HS        25.1\n4     5     5     4     1     1    18      1 Below HS        25.1\n5     4     5     4     3     3    18      1 Below HS        25.1\n6     3     2     3     4     6    18      2 Below HS        25.1\n# ℹ 2,794 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-2",
     "href": "01-week1-slides-code.html#mutate-2",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "6. mutate()",
-    "text": "6. mutate()\nmutate() is also super useful even when you aren’t grouping\n\nWe can create a new category\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender_cat = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 9\n      C1    C2    C3    C4    C5   age gender education    gender_cat\n   <int> <int> <int> <int> <int> <int>  <int> <chr>        <chr>     \n 1     2     3     3     4     4    16      1 <NA>         Male      \n 2     5     4     4     3     4    18      2 <NA>         Female    \n 3     4     5     4     2     5    17      2 <NA>         Female    \n 4     4     4     3     5     5    17      2 <NA>         Female    \n 5     4     4     5     3     2    17      1 <NA>         Male      \n 6     6     6     6     1     3    21      2 Some College Female    \n 7     5     4     4     2     3    18      1 <NA>         Male      \n 8     3     2     4     2     4    19      1 HS           Male      \n 9     6     6     3     4     5    19      1 Below HS     Male      \n10     6     5     6     2     1    17      2 <NA>         Female    \n# ℹ 2,790 more rows"
+    "section": "6. mutate()\n",
+    "text": "6. mutate()\n\nmutate() is also super useful even when you aren’t grouping\n\nWe can create a new category\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender_cat = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 9\n      C1    C2    C3    C4    C5   age gender education    gender_cat\n   <int> <int> <int> <int> <int> <int>  <int> <chr>        <chr>     \n 1     2     3     3     4     4    16      1 <NA>         Male      \n 2     5     4     4     3     4    18      2 <NA>         Female    \n 3     4     5     4     2     5    17      2 <NA>         Female    \n 4     4     4     3     5     5    17      2 <NA>         Female    \n 5     4     4     5     3     2    17      1 <NA>         Male      \n 6     6     6     6     1     3    21      2 Some College Female    \n 7     5     4     4     2     3    18      1 <NA>         Male      \n 8     3     2     4     2     4    19      1 HS           Male      \n 9     6     6     3     4     5    19      1 Below HS     Male      \n10     6     5     6     2     1    17      2 <NA>         Female    \n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#mutate-3",
     "href": "01-week1-slides-code.html#mutate-3",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "6. mutate()",
-    "text": "6. mutate()\nmutate() is also super useful even when you aren’t grouping\nWe could also just overwrite it:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 8\n      C1    C2    C3    C4    C5   age gender education   \n   <int> <int> <int> <int> <int> <int> <chr>  <chr>       \n 1     2     3     3     4     4    16 Male   <NA>        \n 2     5     4     4     3     4    18 Female <NA>        \n 3     4     5     4     2     5    17 Female <NA>        \n 4     4     4     3     5     5    17 Female <NA>        \n 5     4     4     5     3     2    17 Male   <NA>        \n 6     6     6     6     1     3    21 Female Some College\n 7     5     4     4     2     3    18 Male   <NA>        \n 8     3     2     4     2     4    19 Male   HS          \n 9     6     6     3     4     5    19 Male   Below HS    \n10     6     5     6     2     1    17 Female <NA>        \n# ℹ 2,790 more rows"
+    "section": "6. mutate()\n",
+    "text": "6. mutate()\n\nmutate() is also super useful even when you aren’t grouping\nWe could also just overwrite it:\n\n\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  mutate(gender = plyr::mapvalues(gender, c(1,2), c(\"Male\", \"Female\")))\n\n# A tibble: 2,800 × 8\n      C1    C2    C3    C4    C5   age gender education   \n   <int> <int> <int> <int> <int> <int> <chr>  <chr>       \n 1     2     3     3     4     4    16 Male   <NA>        \n 2     5     4     4     3     4    18 Female <NA>        \n 3     4     5     4     2     5    17 Female <NA>        \n 4     4     4     3     5     5    17 Female <NA>        \n 5     4     4     5     3     2    17 Male   <NA>        \n 6     6     6     6     1     3    21 Female Some College\n 7     5     4     4     2     3    18 Male   <NA>        \n 8     3     2     4     2     4    19 Male   HS          \n 9     6     6     3     4     5    19 Male   Below HS    \n10     6     5     6     2     1    17 Female <NA>        \n# ℹ 2,790 more rows"
   },
   {
     "objectID": "01-week1-slides-code.html#summarize-summarise",
     "href": "01-week1-slides-code.html#summarize-summarise",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "7. summarize() / summarise()",
-    "text": "7. summarize() / summarise()\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n# group_by() education\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 6 × 2\n  education     age_by_edu\n  <chr>              <dbl>\n1 Below HS            25.1\n2 College             33.0\n3 HS                  31.5\n4 Higher Degree       35.3\n5 Some College        27.2\n6 <NA>                18.0"
+    "section": "7. summarize() / summarise()\n",
+    "text": "7. summarize() / summarise()\n\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n# group_by() education\nbfi %>%\n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  group_by(education) %>% \n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 6 × 2\n  education     age_by_edu\n  <chr>              <dbl>\n1 Below HS            25.1\n2 College             33.0\n3 HS                  31.5\n4 Higher Degree       35.3\n5 Some College        27.2\n6 <NA>                18.0"
   },
   {
     "objectID": "01-week1-slides-code.html#summarize-summarise-1",
     "href": "01-week1-slides-code.html#summarize-summarise-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "7. summarize() / summarise()",
-    "text": "7. summarize() / summarise()\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n\n# no groups  \nbfi %>% \n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 1 × 1\n  age_by_edu\n       <dbl>\n1       28.8\n\n\n\n\n\n\n\n\n\n\nData Wrangling in tidyr"
+    "section": "7. summarize() / summarise()\n",
+    "text": "7. summarize() / summarise()\n\n\n\n\n\n\nsummarize() is one of your “apply” functions\nThe resulting data frame will have the same number of rows as your grouping variable\nYou number of groups is 1 for ungrouped data frames\n\n\n\n\n\n# no groups  \nbfi %>% \n  select(starts_with(\"C\"), age, gender, education) %>%\n  arrange(education) %>%\n  summarize(age_by_edu = mean(age, na.rm = T))  \n\n# A tibble: 1 × 1\n  age_by_edu\n       <dbl>\n1       28.8"
   },
   {
     "objectID": "01-week1-slides-code.html#tidyr",
     "href": "01-week1-slides-code.html#tidyr",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "tidyr",
-    "text": "tidyr\n\nNow, let’s build off what we learned from dplyr and focus on reshaping and merging our data.\nFirst, the reshapers:\n\n\npivot_longer(), which takes a “wide” format data frame and makes it long.\n\npivot_wider(), which takes a “long” format data frame and makes it wide."
+    "text": "tidyr\n\nNow, let’s build off what we learned from dplyr and focus on reshaping and merging our data.\nFirst, the reshapers:\n\n\n\npivot_longer(), which takes a “wide” format data frame and makes it long.\n\n\npivot_wider(), which takes a “long” format data frame and makes it wide."
   },
   {
     "objectID": "01-week1-slides-code.html#tidyr-1",
     "href": "01-week1-slides-code.html#tidyr-1",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
     "section": "tidyr",
-    "text": "tidyr\n\nNext, the mergers:\n\n\nfull_join(), which merges all rows in either data frame\n\ninner_join(), which merges rows whose keys are present in both data frames\n\nleft_join(), which “prioritizes” the first data set\n\nright_join(), which “prioritizes” the second data set\n\n\n(See also:anti_join() and semi_join())"
+    "text": "tidyr\n\nNext, the mergers:\n\n\n\nfull_join(), which merges all rows in either data frame\n\n\ninner_join(), which merges rows whose keys are present in both data frames\n\n\nleft_join(), which “prioritizes” the first data set\n\n\nright_join(), which “prioritizes” the second data set\n\n\n(See also:anti_join() and semi_join())"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_longer",
     "href": "01-week1-slides-code.html#pivot_longer",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "1. pivot_longer()",
-    "text": "1. pivot_longer()\n\n(Formerly gather()) Makes wide data long, based on a key \nCore arguments:\n\ndata: the data, blank if piped\ncols: columns to be made long, selected via select() calls\nnames_to: name(s) of key column(s) in new long data frame (string or string vector)\nvalues_to: name of values in new long data frame (string)\nnames_sep: separator in column headers, if multiple keys\nvalues_drop_na: drop missing cells (similar to na.rm = T)"
+    "section": "1. pivot_longer()\n",
+    "text": "1. pivot_longer()\n\n\n(Formerly gather()) Makes wide data long, based on a key \n\nCore arguments:\n\n\ndata: the data, blank if piped\n\ncols: columns to be made long, selected via select() calls\n\nnames_to: name(s) of key column(s) in new long data frame (string or string vector)\n\nvalues_to: name of values in new long data frame (string)\n\nnames_sep: separator in column headers, if multiple keys\n\nvalues_drop_na: drop missing cells (similar to na.rm = T)"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_longer-basic-application",
@@ -717,8 +717,8 @@
     "objectID": "01-week1-slides-code.html#pivot_wider",
     "href": "01-week1-slides-code.html#pivot_wider",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "2. pivot_wider()",
-    "text": "2. pivot_wider()\n\n(Formerly spread()) Makes wide data long, based on a key \nCore arguments:\n\ndata: the data, blank if piped\nnames_from: name(s) of key column(s) in new long data frame (string or string vector)\nnames_sep: separator in column headers, if multiple keys\nnames_glue: specify multiple or custom separators of multiple keys\nvalues_from: name of values in new long data frame (string)\nvalues_fn: function applied to data with duplicate labels"
+    "section": "2. pivot_wider()\n",
+    "text": "2. pivot_wider()\n\n\n(Formerly spread()) Makes wide data long, based on a key \n\nCore arguments:\n\n\ndata: the data, blank if piped\n\nnames_from: name(s) of key column(s) in new long data frame (string or string vector)\n\nnames_sep: separator in column headers, if multiple keys\n\nnames_glue: specify multiple or custom separators of multiple keys\n\nvalues_from: name of values in new long data frame (string)\n\nvalues_fn: function applied to data with duplicate labels"
   },
   {
     "objectID": "01-week1-slides-code.html#pivot_wider-basic-application",
@@ -773,36 +773,36 @@
     "objectID": "01-week1-slides-code.html#full_join",
     "href": "01-week1-slides-code.html#full_join",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "3. full_join()",
-    "text": "3. full_join()\nMost simply, we can put those back together keeping all observations.\n\n\n\n\nbfi_only %>%\n  full_join(bfi_dem) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, education <chr>, gender <int>, age <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "section": "3. full_join()\n",
+    "text": "3. full_join()\n\nMost simply, we can put those back together keeping all observations.\n\n\n\n\nbfi_only %>%\n  full_join(bfi_dem) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, education <chr>, gender <int>, age <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#inner_join",
     "href": "01-week1-slides-code.html#inner_join",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "4. inner_join()",
-    "text": "4. inner_join()\nWe can also keep all rows present in both data frames\n\n\n\n\nbfi_dem %>%\n  filter(row_number() %in% 1:1700) %>%\n  inner_join(\n    bfi_only %>%\n      filter(row_number() %in% 1200:2800)\n  ) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 501 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1200  Some Colle…      2    18     1     5     6     5     5     5     6     5\n2 1201  College          2    29     1     5     6     5     5     2     1     4\n3 1202  Higher Deg…      1    46     2     5     6     5     6     6     6     6\n4 1203  Higher Deg…      1    58     5     4     4     4     5     4     4     5\n5 1204  Higher Deg…      2    38     1     4     6     6     6     4     4     5\n6 1205  Higher Deg…      2    27     2     3     1     1     1     4     2     2\n# ℹ 495 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "section": "4. inner_join()\n",
+    "text": "4. inner_join()\n\nWe can also keep all rows present in both data frames\n\n\n\n\nbfi_dem %>%\n  filter(row_number() %in% 1:1700) %>%\n  inner_join(\n    bfi_only %>%\n      filter(row_number() %in% 1200:2800)\n  ) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 501 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1200  Some Colle…      2    18     1     5     6     5     5     5     6     5\n2 1201  College          2    29     1     5     6     5     5     2     1     4\n3 1202  Higher Deg…      1    46     2     5     6     5     6     6     6     6\n4 1203  Higher Deg…      1    58     5     4     4     4     5     4     4     5\n5 1204  Higher Deg…      2    38     1     4     6     6     6     4     4     5\n6 1205  Higher Deg…      2    27     2     3     1     1     1     4     2     2\n# ℹ 495 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#left_join",
     "href": "01-week1-slides-code.html#left_join",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "5. left_join()",
-    "text": "5. left_join()\nOr all rows present in the left (first) data frame, perhaps if it’s a subset of people with complete data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  left_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,577 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,571 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "section": "5. left_join()\n",
+    "text": "5. left_join()\n\nOr all rows present in the left (first) data frame, perhaps if it’s a subset of people with complete data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  left_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,577 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,571 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
   },
   {
     "objectID": "01-week1-slides-code.html#right_join",
     "href": "01-week1-slides-code.html#right_join",
     "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
-    "section": "6. right_join()",
-    "text": "6. right_join()\nOr all rows present in the right (second) data frame, such as I do when I join a codebook with raw data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  right_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,794 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>"
+    "section": "6. right_join()\n",
+    "text": "6. right_join()\n\nOr all rows present in the right (second) data frame, such as I do when I join a codebook with raw data\n\n\n\n\nbfi_dem %>%\n  drop_na() %>%\n  right_join(bfi_only) %>%\n  as_tibble() %>%\n  print(n = 6)\n\nJoining with `by = join_by(SID)`\n\n\n# A tibble: 2,800 × 29\n  SID   education   gender   age    A1    A2    A3    A4    A5    C1    C2    C3\n  <chr> <chr>        <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 6     Some Colle…      2    21     6     6     5     6     5     6     6     6\n2 8     HS               1    19     4     3     1     5     1     3     2     4\n3 9     Below HS         1    19     4     3     6     3     3     6     6     3\n4 11    Below HS         1    21     4     4     5     6     5     4     3     5\n5 15    Below HS         1    17     4     5     2     2     1     5     5     5\n6 23    Higher Deg…      1    68     1     5     6     5     6     4     3     2\n# ℹ 2,794 more rows\n# ℹ 17 more variables: C4 <int>, C5 <int>, E1 <int>, E2 <int>, E3 <int>,\n#   E4 <int>, E5 <int>, N1 <int>, N2 <int>, N3 <int>, N4 <int>, N5 <int>,\n#   O1 <int>, O2 <int>, O3 <int>, O4 <int>, O5 <int>\n\n\n\n\n\n\nbfi %>%\n  rownames_to_column(\"SID\") %>%\n  as_tibble() %>%\n  print(n = 6)\n\n# A tibble: 2,800 × 29\n  SID      A1    A2    A3    A4    A5    C1    C2    C3    C4    C5    E1    E2\n  <chr> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int> <int>\n1 1         2     4     3     4     4     2     3     3     4     4     3     3\n2 2         2     4     5     2     5     5     4     4     3     4     1     1\n3 3         5     4     5     4     4     4     5     4     2     5     2     4\n4 4         4     4     6     5     5     4     4     3     5     5     5     3\n5 5         2     3     3     4     5     4     4     5     3     2     2     2\n6 6         6     6     5     6     5     6     6     6     1     3     2     1\n# ℹ 2,794 more rows\n# ℹ 16 more variables: E3 <int>, E4 <int>, E5 <int>, N1 <int>, N2 <int>,\n#   N3 <int>, N4 <int>, N5 <int>, O1 <int>, O2 <int>, O3 <int>, O4 <int>,\n#   O5 <int>, gender <int>, education <chr>, age <int>\n\n\n\n\n\n\n\n\nPSC 290 - Data Visualization"
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Course Schedule\nNote: Course schedule is subject to change without notice.\n\n\n\n\n\n\n\n\n\n1\n01/08/2025\nDiscussion: Intro to Data Viz\nWorkshop: Getting Situated in R & tidyverse\nReadings:\n\nWilke Ch. 2, 29\n\n\n\nHealy Ch. 1\nJones: Graphical Gaffes\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n2\n01/15/2025\nDiscussion: Cognitive Perspectives on Data Visualization\nWorkshop: Working with ggplot2\nReadings:\n\nKazakova (2021). The Psychology Behind Data Visualization Techniques.\nHealey, C. G. (2007). Perception in visualization. Retrieved September 5, 2022.\nFranconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the public interest, 22(3), 110-161.\n\n2 viz + 2 paragraph response due at 12:01 AM\n\n\n3\n01/22/2025\nDiscussion: Visualizing Proportions and Probability\nWorkshop: Should I Ever Use a Pie Chart?\nReadings:\n\nWilke Ch. 10-11\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n4\n01/29/2025\nDiscussion: Visualizing Differences and Associations\nWorkshop: Summarizing Models\nReadings:\n\nWilke Ch. 12\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n5\n02/05/2025\nDiscussion: Visualizing Change\nWorkshop: Trajectories and Times Series\nReadings:\n\nWilke Ch. 13-14\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n6\n02/12/2025\nDiscussion: Visualizing Uncertainty\nWorkshop: Visualizing Uncertainty\nReadings:\n\nPadilla, Kay, & Hullman (2020). Visualizing Uncertainty.\nWilke Ch. 16\nSkim Wilke Ch. 7-9 (optional)\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\nPROPOSALS DUE\n\n\n7\n02/19/2025\nDiscussion: Piecing Visualizations Together\nWorkshop: Panel plots, cowplot, and more\nReadings:\n\nWilke Ch. 21\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n8\n02/26/2025\nDiscussion: Polishing Visualizations\nWorkshop:\nReadings:\n\nWilke Ch. 17, 19, 23\nSkim Wilke 18, 22, 24-26\n\n2 viz (any) + 2 paragraph response due at 12:01 AM\nMEETINGS DUE\n\n\n9\n03/05/2025\nDiscussion: Interactive Visualizations\nWorkshop: Getting Started in RShiny\nReadings:\n2 viz (any) + 2 paragraph response due at 12:01 AM\n\n\n10\n03/12/2025\nIn-Class Presentations"
+    "text": "Course Schedule\nNote: Course schedule is subject to change without notice.\n\n\n\n\n\n\n\n\n\n1\n01/08/2025\nDiscussion: Intro to Data Viz\nWorkshop: Getting Situated in R & tidyverse\nReadings:\n\nWilke Ch. 2, 29\n\n\n\nHealy Ch. 1\nJones: Graphical Gaffes\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on 01/08\n\n\n2\n01/15/2025\nDiscussion: Cognitive Perspectives on Data Visualization\nWorkshop: Working with ggplot2\nReadings:\n\nKazakova (2021). The Psychology Behind Data Visualization Techniques.\nHealey, C. G. (2007). Perception in visualization. Retrieved September 5, 2022.\nFranconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the public interest, 22(3), 110-161.\n\n2 viz + 2 paragraph response due at 12:00 PM on Tues. 01/14\n\n\n3\n01/22/2025\nDiscussion: Visualizing Proportions and Probability\nWorkshop: Should I Ever Use a Pie Chart?\nReadings:\n\nWilke Ch. 10-11\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 01/21\n\n\n4\n01/29/2025\nDiscussion: Visualizing Differences and Associations\nWorkshop: Summarizing Models\nReadings:\n\nWilke Ch. 12\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 01/28\n\n\n5\n02/05/2025\nDiscussion: Visualizing Change\nWorkshop: Trajectories and Times Series\nReadings:\n\nWilke Ch. 13-14\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 02/04\n\n\n6\n02/12/2025\nDiscussion: Visualizing Uncertainty\nWorkshop: Visualizing Uncertainty\nReadings:\n\nPadilla, Kay, & Hullman (2020). Visualizing Uncertainty.\nWilke Ch. 16\nSkim Wilke Ch. 7-9 (optional)\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 02/11\nPROPOSALS DUE\n\n\n7\n02/19/2025\nDiscussion: Piecing Visualizations Together\nWorkshop: Panel plots, cowplot, and more\nReadings:\n\nWilke Ch. 21\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 02/18\n\n\n8\n02/26/2025\nDiscussion: Polishing Visualizations\nWorkshop:\nReadings:\n\nWilke Ch. 17, 19, 23\nSkim Wilke 18, 22, 24-26\n\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 02/25\nMEETINGS DUE\n\n\n9\n03/05/2025\nDiscussion: Interactive Visualizations\nWorkshop: Getting Started in RShiny\nReadings:\n2 viz (any) + 2 paragraph response due at 12:00 PM on Tues. 03/04\n\n\n10\n03/12/2025\nIn-Class Presentations"
   },
   {
     "objectID": "01-week1-workbook.html",
@@ -998,6 +998,510 @@
     "href": "final-project-proposal.html",
     "title": "Final Project Proposal",
     "section": "",
-    "text": "Due at 11:59 PM PST on October 31, 2022 on Canvas\n1-2 page (single spaced) proposal\n\nShort background (why do you / we care?)\nResearch question(s; only the question[s] you are focusing on)\nShort method (what are the data? Which are you using?)\nVisualization plan (short summary of your proposed visualization)\nChallenges and barriers (what do you struggle with this visualization; are there specific barriers?)\n\n\n\n\nCan be any combination of the following:\nText description\n\nclearly describe axes/scales, fills/colors, panels, etc.\ndescribe affordances you will build into the visualization to aid understanding\ndescribe why you chose this visualization\n\nDraft visualization (digital)\n\nrough visualization of some or all of data\n\nDraft visualization (drawn)\n\nsome roughly drawn visualization showing what you are hoping to do\nparticularly helpful if you foresee barriers or don’t know how to do it\ncan also draw these on a plot of yours from the past, etc.\n\n\n\n\nThe goal of this proposal is to:\n\nProvide you with support to build visualizations you may be nervous about\nAnticipate barriers and provide you tools\nSet you up to create a visualization that you are proud of\n\n\n\n\nWhat is okay?\n\nIntroducing a new kind of visualization to your area of research\nOffering improvements to “standard practice” visualizations in your area\nSetting up a procedure for a kind of visualization you’ve long wanted / needed to figure out\nReally anything that is both useful to you and displays some sort of mastery of course content\n\n\n\n\nYou will have an easier time with this project if you anchor your visualization on a specific research question.\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question (Beck & Jackson, 2022). There were five research questions I was answering more generally, but one was just “Do psychological, situational, time, or full feature sets perform best?” I answered this with the following visualization, which shows the relative proportion of individuals’ psychological, situational, and timing features in their best performing model using a “sequence plot” I stole from genetics (which you’ll notice looks a lot like a rotated stacked bar chart, which it is!).\n\n\n\nUsing a research question will help you to anchor your visualization and allow you to consider the extent to which you think your visualization clearly answers it. While not required, I highly suggest using one."
+    "text": "Due at 11:59 PM PST on February 12, 2025 on Canvas\n1-2 page (single spaced) proposal\n\nShort background (why do you / we care?)\nResearch question(s; only the question[s] you are focusing on)\nShort method (what are the data? Which are you using?)\nVisualization plan (short summary of your proposed visualization)\nChallenges and barriers (what do you struggle with this visualization; are there specific barriers?)\n\n\n\n\nCan be any combination of the following:\nText description\n\nclearly describe axes/scales, fills/colors, panels, etc.\ndescribe affordances you will build into the visualization to aid understanding\ndescribe why you chose this visualization\n\nDraft visualization (digital)\n\nrough visualization of some or all of data\n\nDraft visualization (drawn)\n\nsome roughly drawn visualization showing what you are hoping to do\nparticularly helpful if you foresee barriers or don’t know how to do it\ncan also draw these on a plot of yours from the past, etc.\n\n\n\n\nThe goal of this proposal is to:\n\nProvide you with support to build visualizations you may be nervous about\nAnticipate barriers and provide you tools\nSet you up to create a visualization that you are proud of\n\n\n\n\nWhat is okay?\n\nIntroducing a new kind of visualization to your area of research\nOffering improvements to “standard practice” visualizations in your area\nSetting up a procedure for a kind of visualization you’ve long wanted / needed to figure out\nReally anything that is both useful to you and displays some sort of mastery of course content\n\n\n\n\nYou will have an easier time with this project if you anchor your visualization on a specific research question.\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question (Beck & Jackson, 2022). There were five research questions I was answering more generally, but one was just “Do psychological, situational, time, or full feature sets perform best?” I answered this with the following visualization, which shows the relative proportion of individuals’ psychological, situational, and timing features in their best performing model using a “sequence plot” I stole from genetics (which you’ll notice looks a lot like a rotated stacked bar chart, which it is!).\n\n\n\nUsing a research question will help you to anchor your visualization and allow you to consider the extent to which you think your visualization clearly answers it. While not required, I highly suggest using one."
+  },
+  {
+    "objectID": "02-week2-workbook.html",
+    "href": "02-week2-workbook.html",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "",
+    "text": "Codelibrary(plyr)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::arrange()   masks plyr::arrange()\n✖ purrr::compact()   masks plyr::compact()\n✖ dplyr::count()     masks plyr::count()\n✖ dplyr::desc()      masks plyr::desc()\n✖ dplyr::failwith()  masks plyr::failwith()\n✖ dplyr::filter()    masks stats::filter()\n✖ dplyr::id()        masks plyr::id()\n✖ dplyr::lag()       masks stats::lag()\n✖ dplyr::mutate()    masks plyr::mutate()\n✖ dplyr::rename()    masks plyr::rename()\n✖ dplyr::summarise() masks plyr::summarise()\n✖ dplyr::summarize() masks plyr::summarize()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "02-week2-workbook.html#what-is-ggplot2-trying-to-do",
+    "href": "02-week2-workbook.html#what-is-ggplot2-trying-to-do",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "What is ggplot2 trying to do?",
+    "text": "What is ggplot2 trying to do?\n\nCreate a grammar of graphics\nAims to help draw connections across diverse plots\nCreate order in the chaos of complicated plots\n\nFrom Wickham (2010):\n\nA grammar of graphics is a tool that enables us to concisely describe the components of a graphic."
+  },
+  {
+    "objectID": "02-week2-workbook.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "href": "02-week2-workbook.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "What are the core elements of ggplot2 grammar?",
+    "text": "What are the core elements of ggplot2 grammar?\n\n\nMappings: base layer\n\nScales: control and modify your mappings\n\nGeoms: plot elements\n\nFacets: panel your plot\n\nGrobs: things that aren’t geoms that we want to layer on like text, arrows, other things\n\nThemes: style your figure"
+  },
+  {
+    "objectID": "02-week2-workbook.html#but-first-our-data",
+    "href": "02-week2-workbook.html#but-first-our-data",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "But first, our data",
+    "text": "But first, our data\n\nThese are some Experience Sampling Method data I collected during my time in graduate school\nSpecifically, these include data from Beck & Jackson (2022)\nIn that paper I built personalized machine learning models of behaviors and experiences from sets of:\n\npsychological\nsituational\nand time variables\n\n\n\n\nCodeload(url(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/02-week2-ggplot2/01-data/ipcs_data.RData\"))\nipcs_data \n\n\n\n  \n\n\n\n\nCodeipcs_data <- ipcs_data %>%\n  group_by(SID) %>%\n  mutate(beep = 1:n()) %>%\n  ungroup()"
+  },
+  {
+    "objectID": "02-week2-workbook.html#continuous",
+    "href": "02-week2-workbook.html#continuous",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "continuous",
+    "text": "continuous\n\nLet’s try the continuous scale with our y mapping\nWe’ll use the following three arguments\n\n\nlimits: vector length 2\n\nbreaks: vector of any length\n\nlabels: numeric or character vector\n\n\n\n\nCodeggplot(\n  data = ipcs_data\n  , mapping = aes(x = linear, y = happy)\n) + \n  scale_y_continuous(\n    limits = c(1, 5)\n    , breaks = seq(1, 5, by = 2)\n    , labels = c(\"one\", \"three\", \"five\")\n  )"
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_jitter",
+    "href": "02-week2-workbook.html#geom_jitter",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "geom_jitter()",
+    "text": "geom_jitter()\n\nSometimes we have data that have lots of repeating values, especially with ordinal response scales where the variables aren’t composited / latent\njitter adds random noise to the point to allow you to see more of the points\n\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    )) + \n    geom_jitter() + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nThis may be too much jitter\n\nSometimes we have data that have lots of repeating values, especially with ordinal response scales where the variables aren’t composited / latent\njitter adds random noise to the point to allow you to see more of the points\n\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    )) + \n    geom_jitter(width = .1, height = .1) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nalpha\nAlpha can help us understand how many points are stacked when using jitter (or other overlapping data)\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(\n      width = .1\n      , height = .1\n      , alpha = .25\n      ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_smooth",
+    "href": "02-week2-workbook.html#geom_smooth",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "geom_smooth()",
+    "text": "geom_smooth()\n\n\ngeom_smooth() allows you to apply statistical functions to your data\nThere are other ways to do this that we won’t cover today\nCore arguments are:\n\n\nmethod: “loess”, “lm”, “glm”, “gam”\n\nformula: e.g., y ~ x or y ~ poly(x, 2)\n\n\nse: display standard error of estimate (T/ F)\n\naes() wrapped aesthetics or directly mapped aesthetics\n\n\n\nRemember: it’s a LAYERED grammar of graphics, so let’s layer!\nse = F\nmethod = \"lm\"\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nmethod = \"loess\"\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"loess\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at 4.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 1.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 0\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 1\n\n\n\n\n\n\n\n\nse=T\nAnd we can add standard error ribbons\nmethod = \"lm\"\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nmethod = \"loess\"\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"loess\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at 4.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 1.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 0\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 1\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : pseudoinverse used at\n4.015\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : neighborhood radius\n1.015\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : reciprocal condition\nnumber 0\n\n\nWarning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x\nelse if (is.data.frame(newdata))\nas.matrix(model.frame(delete.response(terms(object)), : There are other near\nsingularities as well. 1"
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_hlinegeom_vline",
+    "href": "02-week2-workbook.html#geom_hlinegeom_vline",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "\ngeom_hline()/geom_vline()\n",
+    "text": "geom_hline()/geom_vline()\n\n\nSometimes, we will want to place lines at various intercepts\nWe’ll get into specific use cases as the course progresses\n\ngeom_hline(): horizontal lines have yintercept mappings\n\ngeom_vline(): vertical lines have xintercept mappings\n\ngeom_hline()\nHorizontal lines have yintercept mappings\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_hline(\n      aes(yintercept = mean(happy, na.rm = T))\n      , linetype = \"dashed\"\n      ) + \n    geom_smooth(method = \"lm\", formula = y ~ x, se = F, color = \"blue\") + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\ngeom_vline()\nVertical lines have xintercept mappings\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_vline(\n      aes(xintercept = mean(purposeful, na.rm = T))\n      , linetype = \"dashed\"\n      ) + \n    geom_smooth(method = \"lm\", formula = y ~ x, se = F, color = \"blue\") + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_bar",
+    "href": "02-week2-workbook.html#geom_bar",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "geom_bar()",
+    "text": "geom_bar()\n\nBar graphs can be useful for showing relative differences\nMy hot take is that they are rarely that useful\n\n(This is mostly because of how we perceive errorbars and differences, which we’ll talk more about in a few weeks!)\n\n\nBut let’s look at using them for frequency and means / se’s\n\nFrequency\nHow often did our participant have an argument, interact with others, study, and feel tired?\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>% \n  select(SID, Full_Date, argument, interacted, study, tired) %>%\n  pivot_longer(\n    cols = argument:tired\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(value = sum(value == 1)) %>%\n  ggplot(aes(x = item, fill = item, y = value)) + \n    geom_col(color = \"black\") + \n    theme_classic()\n\n\n\n\n\n\n\nMean differences\nWere there mean-level in our continuous variables?\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(\n    mean = mean(value)\n    , ci = 1.96*(sd(value)/sqrt(n()))\n    ) %>%\n  ggplot(aes(x = item, fill = item, y = mean)) + \n    geom_col(color = \"black\") + \n    geom_errorbar(\n      aes(ymin = mean - ci, ymax = mean + ci)\n      , position = position_dodge(width = .1)\n      , width = .1\n      , stat = \"identity\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_boxplot",
+    "href": "02-week2-workbook.html#geom_boxplot",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "geom_boxplot()",
+    "text": "geom_boxplot()\n\nSometimes called box and whisker plots\nA method for summarizing a distribution of data without showing raw data\nBox instead shows 25th, 50th, and 75th percentile (quartiles)\nWhiskers show 1.5 * interquartile range (75%tile-25%tile)\nMore fun when we want to compare distributions across variables (IMO)\n\nOne boxplot\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(y = SID, x = happy)) + \n    geom_boxplot(width = .5) + \n    theme_classic()\n\n\n\n\n\n\n\nMultiple boxplots\nMultiple Participants\n\nLater, we’ll also talk about how to order the boxplots (and other axes) by means, medians, etc.\n\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n    y = SID, x = happy\n    , fill = SID\n    )) + \n    geom_boxplot(width = .5) + \n    theme_classic()\n\n\n\n\n\n\n\nMultiple Variables\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(\n    y = item\n    , x = value\n    , fill = item\n    )) + \n    geom_boxplot(width = .5) + \n    theme_classic()\n\n\n\n\n\n\n\nAdvanced!\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    scale_x_continuous(limits = c(1,7), breaks = seq(1,5,2)) + \n    scale_y_continuous(limits = c(1,7), breaks = seq(1,5,2)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_boxplot(aes(\n      x = 6\n      , y = happy\n      )) + \n    geom_boxplot(aes(\n      y = 6\n      , x = purposeful\n      )) +\n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n      ) + \n    theme_classic() # I just hate grey backgrounds\n\nWarning: Removed 1 row containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "02-week2-workbook.html#geom_histogram-geom_density",
+    "href": "02-week2-workbook.html#geom_histogram-geom_density",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "\ngeom_histogram() & geom_density()\n",
+    "text": "geom_histogram() & geom_density()\n\n\nUseful for showing raw / smoothed distributions of data\n\nHistogram\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(y = happy)) + \n    geom_histogram(\n      fill = \"grey\"\n      , color = \"black\"\n    ) + \n    coord_flip() +\n    theme_classic()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nDensity Distribution\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(x = happy, y = ..density..)) + \n    geom_histogram(\n      fill = \"grey\"\n      , color = \"black\"\n    ) + \n    theme_classic()\n\nWarning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(density)` instead.\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nMultiple histograms / density distributions\n\nWe can compare multiple participants\n\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n     y = happy\n    , fill = SID\n    )) + \n    geom_density(alpha = .2) + \n    coord_flip() +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-workbook.html#facets",
+    "href": "02-week2-workbook.html#facets",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "Facets",
+    "text": "Facets\n\nOften, we have lots of other reasons we need to reproduce the same plot multiple times\n\nmultiple variables\nmultiple people\nmultiple conditions\netc.\n\n\nThere are more ways to do this than we’ll cover today, like piecing plots together and more\n\n\n\n\n\n\n\n\n\n\nThe core of directly faceting within ggplot is that you have to facet according to variables in your data set\nThis is part of why we covered moving your data to long\nSay that you want to facet by variable, for example, but your data is in wide form\n\nFacets couldn’t handle that\n\n\n\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) \n\n\n\n  \n\n\n\nIn ggplot2, there are two core faceting functions * facet_grid() + snaps figures in a grid; no wrapping + especially useful for 1-2 faceting variables * facet_wrap() + treats each facet a separate + wraps according to nrow and ncol arguments\nfacet_grid()\nCore arguments:\n\n\nrows, cols: list of variables or formula, e.g., x ~ y\n\n\nscales: same x or y scale on all facets?\n\nspace: same space for unequal length x or y facets?\n\nswitch: move labels from left to right or top to bottom?\n\ndrop: drop unused factor levels\n\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_grid(item~.) +\n    theme_classic()\n\n\n\n\n\n\n\nfacet_wrap()\nCore arguments:\n\n\nfacets: barequoted or one-sided formula, e.g., ~ x + y\n\n\nnrow / ncol: number of rows and columns\n\nscales: same x or y scale on all facets?\n\nswitch: move labels from left to right or top to bottom?\n\ndrop: drop unused factor levels\n\ndir: horizontal or vertical\n\nstrip.position: where to put the labels\n\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_wrap(\n      ~item\n      , ncol = 1\n      , strip.position = \"right\"\n      ) +\n    theme_classic()\n\n\n\n\n\n\n\nChange scale and space\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_grid(\n      item ~ . \n      , scales = \"free_y\"\n      , space = \"free_y\"\n      ) +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-workbook.html#labels-titles",
+    "href": "02-week2-workbook.html#labels-titles",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "Labels & Titles",
+    "text": "Labels & Titles\n\nAPA style says titles are bad\nCommon sense says titles help understanding\nAsk for forgiveness, not permission\n\nRemember this?\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nWe can add labels and a title\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    labs(\n      x = \"Momentary Purpose (1-5)\"\n      , y = \"Momentary Happiness (1-5)\"\n      , title = \"Zero-Order Associations \n                  Between Momentary Happiness and Purpose\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\nLabels also apply to other mappings like color\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n     y = happy\n    , fill = SID\n    )) + \n    geom_density(alpha = .2) + \n    coord_flip() +\n    labs(\n      x = \"Momentary Happiness\"\n      , y = \"Smoothed Density\"\n      , fill = \"Participant\\nID\"\n    ) + \n    theme_classic()\n\n\n\n\n\n\n\nYou can also use labels to remove axis labels\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(\n    y = item\n    , x = value\n    , fill = item\n    )) +\n    geom_boxplot(width = .5) + \n    labs(\n      x = \"Momentart Rating (1-5)\"\n      , y = NULL\n      , fill = \"Item\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-workbook.html#themes",
+    "href": "02-week2-workbook.html#themes",
+    "title": "Week 2 (Workbook) - Introduction to ggplot2",
+    "section": "Themes",
+    "text": "Themes\nBasic, Built-in Themes\n\nThere are lots of themes you can use in ggplot that are pre-built into the package\nTry tying theme_ into your R console, and look at the functions that pop up\nSome stand-out ones are:\n\n\ntheme_classic() (what we’ve been using)\ntheme_bw()\n\ntheme_minimal() (but is there a theme_maximal?)\ntheme_void\n\n\nAdvanced Themes\n\nCustom themes are one of the best ways to “hack” your ggplots\nYou will not remember all of them\nYou will have to google them all time\nHere’s the site: https://ggplot2.tidyverse.org/reference/theme.html\n\nRather than give details on a bunch of these, I’m going to demonstrate theme modifications I often use\n\nSmoothed Regression Line\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    labs(\n      x = \"Momentary Purpose (1-5)\"\n      , y = \"Momentary Happiness (1-5)\"\n      , title = \"Zero-Order Associations Between Momentary Happiness and Purpose\"\n    ) + \n    theme_classic() + \n    theme(\n      plot.title = element_text(\n        face = \"bold\"\n        , size = rel(1.1)\n        , hjust = .5\n        )\n      , axis.title = element_text(\n        face = \"bold\"\n        , size = rel(1.1)\n        )\n      , axis.text = element_text(\n        face = \"bold\"\n        , size = rel(1.2)\n        )\n    )\n\n\n\n\n\n\n\nBar Chart\n\nCodeipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(\n    mean = mean(value)\n    , ci = 1.96*(sd(value)/sqrt(n()))\n    ) %>%\n  ggplot(aes(x = item, fill = item, y = mean)) + \n    geom_col(color = \"black\") + \n    geom_errorbar(\n      aes(ymin = mean - ci, ymax = mean + ci)\n      , position = position_dodge(width = .1)\n      , width = .1\n      , stat = \"identity\"\n    ) + \n    labs(\n      x = NULL\n      , y = \"Mean Momentary Rating (CI)\\n[Range 1-5]\"\n      , title = \"Descriptive Statistics of Momentary Emotion Ratings\"\n    ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n  )\n\n\n\n\n\n\n\nTime Series\n\nCodeipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_line(aes(color = item)) + \n    geom_point(size = 1) + \n    facet_grid(item~.) +\n    labs(\n      x = \"ESM Beep (#)\"\n      , y = \"Rated Momentary Value (1-5)\"\n      , title = \"Time Series of Four Momentary Emotion Items for Participant 216\"\n      , color = NULL\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"bottom\"\n      , legend.text = element_text(face = \"bold\", size = rel(1.1))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(color = \"black\", fill = \"cornflowerblue\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2), color = \"white\")\n    )"
+  },
+  {
+    "objectID": "02-week2-slides-code.html",
+    "href": "02-week2-slides-code.html",
+    "title": "Week 2: Cognitive Perspectives and Introduction to ggplot2",
+    "section": "",
+    "text": "library(plyr)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.0     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::arrange()   masks plyr::arrange()\n✖ purrr::compact()   masks plyr::compact()\n✖ dplyr::count()     masks plyr::count()\n✖ dplyr::desc()      masks plyr::desc()\n✖ dplyr::failwith()  masks plyr::failwith()\n✖ dplyr::filter()    masks stats::filter()\n✖ dplyr::id()        masks plyr::id()\n✖ dplyr::lag()       masks stats::lag()\n✖ dplyr::mutate()    masks plyr::mutate()\n✖ dplyr::rename()    masks plyr::rename()\n✖ dplyr::summarise() masks plyr::summarise()\n✖ dplyr::summarize() masks plyr::summarize()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#the-cognitive-and-psychological-foundation-of-data-visualization",
+    "href": "02-week2-slides-code.html#the-cognitive-and-psychological-foundation-of-data-visualization",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "The cognitive and psychological foundation of data visualization",
+    "text": "The cognitive and psychological foundation of data visualization\n\n\n\nWe are better at processing visual information than verbal information (includes reading)? Yes!\nWhy? Preattentive processing"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#visual-variables",
+    "href": "02-week2-slides-code.html#visual-variables",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Visual Variables",
+    "text": "Visual Variables\n\n\n\nPosition (x; y)\nSize (size)\nShape (shape; linetype)\nLightness (color; fill)\nColor hue (color; fill)\nOrientation (angle)\n\n\n\nTexture (linetype; shape)\nColor saturation (color; fill)\nArrangement (scale_[mapping]_[type])\nCrispness (e.g., geom_point v. geom_jitter)\nResolution (ggsave)\nTransparency (alpha)"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#common-types-of-visual-aesthetics",
+    "href": "02-week2-slides-code.html#common-types-of-visual-aesthetics",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "6 Common Types of Visual Aesthetics",
+    "text": "6 Common Types of Visual Aesthetics"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#gestalt-principles",
+    "href": "02-week2-slides-code.html#gestalt-principles",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Gestalt Principles",
+    "text": "Gestalt Principles\n\nGestalt psychology emerges from the observation that we perceive elements of the world holistically\nCan be leveraged to allow simple perceptions of complex patterns"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#gestalt-principles-1",
+    "href": "02-week2-slides-code.html#gestalt-principles-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Gestalt Principles",
+    "text": "Gestalt Principles"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#the-cognitive-psychology-of-data-visualization",
+    "href": "02-week2-slides-code.html#the-cognitive-psychology-of-data-visualization",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "The Cognitive Psychology of Data Visualization",
+    "text": "The Cognitive Psychology of Data Visualization\nPrinciples for Efficient Visualization\n\nUse visualizations to allow viewers to powerfully compute statistics\nAvoid visual processing limits: making comparisons\nControl comparison with visual grouping cues\nGuide viewer to the most important comparison\nAvoid taxing limited working memory"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#what-is-ggplot2-trying-to-do",
+    "href": "02-week2-slides-code.html#what-is-ggplot2-trying-to-do",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "What is ggplot2 trying to do?",
+    "text": "What is ggplot2 trying to do?\n\nCreate a grammar of graphics\nAims to help draw connections across diverse plots\nCreate order in the chaos of complicated plots\n\n\nFrom Wickham (2010):\n\nA grammar of graphics is a tool that enables us to concisely describe the components of a graphic."
+  },
+  {
+    "objectID": "02-week2-slides-code.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "href": "02-week2-slides-code.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "What are the core elements of ggplot2 grammar?",
+    "text": "What are the core elements of ggplot2 grammar?\n\n\nMappings: base layer\n\nScales: control and modify your mappings\n\nGeoms: plot elements\n\nFacets: panel your plot\n\nGrobs: things that aren’t geoms that we want to layer on like text, arrows, other things\n\nThemes: style your figure"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#but-first-our-data",
+    "href": "02-week2-slides-code.html#but-first-our-data",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "But first, our data",
+    "text": "But first, our data\n\n\n\nThese are some Experience Sampling Method data I collected during my time in graduate school\nSpecifically, these include data from Beck & Jackson (2022)\nIn that paper I built personalized machine learning models of behaviors and experiences from sets of:\n\npsychological\nsituational\nand time variables\n\n\n\n\n\n\nload(url(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/02-week2-ggplot2/01-data/ipcs_data.RData\"))\nipcs_data %>% \n  print(n = 6)\n\n# A tibble: 4,222 × 70\n  SID   Full_Date    afraid angry attentive content excited goaldir guilty happy\n  <chr> <chr>         <dbl> <dbl>     <dbl>   <dbl>   <dbl>   <dbl>  <dbl> <dbl>\n1 02    2018-10-22 …      1     2         4       4       2       5      2     3\n2 02    2018-10-22 …      1     1         4       3       2       5      1     3\n3 02    2018-10-23 …      2     1         2       3       1       2      2     3\n4 02    2018-10-23 …      2     2         4       3       2       4      1     3\n5 02    2018-10-23 …      2     1         4       4       3       4      1     3\n6 02    2018-10-24 …      2     1         4       4       2       4      1     3\n# ℹ 4,216 more rows\n# ℹ 60 more variables: proud <dbl>, purposeful <dbl>,\n#   agreeableness_Compassion <dbl>, agreeableness_Respectfulness <dbl>,\n#   agreeableness_Trust <dbl>, conscientiousness_Organization <dbl>,\n#   conscientiousness_Productiveness <dbl>,\n#   conscientiousness_Responsibility <dbl>, extraversion_Assertiveness <dbl>,\n#   extraversion_Energy.Level <dbl>, extraversion_Sociability <dbl>, …"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#mappings",
+    "href": "02-week2-slides-code.html#mappings",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Mappings",
+    "text": "Mappings\n\n\n\nThe first thing we call with ggplot2 is always the ggplot() function, which has two core arguments:\n\n\ndata: your data object (can also be piped)\n\n\n\n\n\n\n\nggplot(\n  data = ipcs_data\n)"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#mappings-1",
+    "href": "02-week2-slides-code.html#mappings-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Mappings",
+    "text": "Mappings\n\n\n\n\nThe first thing we call with ggplot2 is always the ggplot() function, which has two core arguments:\n\n\ndata: your data object (can also be piped)\n\n\nmapping: you aesthetic mappings for the plot, wrapped in aes()\n\n\n\n\n\n\n\n\nggplot(\n  data = ipcs_data\n  , mapping = aes(x = linear, y = happy)\n)"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#mappings-2",
+    "href": "02-week2-slides-code.html#mappings-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Mappings",
+    "text": "Mappings\n\nHow many aesthetic mappings are there?\n\n\n\n\nx\ny\n\ncol / color\n\nfill\nshape\n\n\n\nsize\nlinetype\n\nxmin / xmax\n\n\nymin / ymax\n\nalpha\n\n\n\n\nThere are lots of geom-specific ones, too\nUse ?geom_whatever() to get more info on a specific geom"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#scales",
+    "href": "02-week2-slides-code.html#scales",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Scales",
+    "text": "Scales\n\nEvery mapping is a scale\nScales can be lots of different things\nIn ggplot2 language, some core ones are:\n\n\n\n\ncontinuous\ndiscrete\nmanual\nordinal\n\n\n\nbinned\ndate\nbrewer\n\n\n\n\nAll of these have specific arguments based on the type of scale"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#scales-1",
+    "href": "02-week2-slides-code.html#scales-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Scales",
+    "text": "Scales\ncontinuous\n\n\n\nLet’s try the continuous scale with our y mapping\nWe’ll use the following three arguments\n\n\nlimits: vector length 2\n\nbreaks: vector of any length\n\nlabels: numeric or character vector\n\n\n\n\n\n\nggplot(\n  data = ipcs_data\n  , mapping = aes(x = linear, y = happy)\n) + \n  scale_y_continuous(\n    limits = c(1, 5)\n    , breaks = seq(1, 5, by = 2)\n    , labels = c(\"one\", \"three\", \"five\")\n  )"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms",
+    "href": "02-week2-slides-code.html#geoms",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms",
+    "text": "Geoms\n\n\n\nWe’ll loop back to scales after talking about some geoms\nIt’s not possible to go through all the possible geoms (that’s what the rest of the class is for!)\nWe’ll focus on some basic ones for now\n\n\n\ngeom_point()\ngeom_jitter()\ngeom_smooth()\n\ngeom_hline() / geom_vline()\n\ngeom_bar()\ngeom_boxplot()\ngeom_density()\ngeom_histogram()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_point",
+    "href": "02-week2-slides-code.html#geoms-geom_point",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_point()\n",
+    "text": "Geoms: geom_point()\n\nYour basic scatterplot!\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    )) + \n    geom_point() + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_point-1",
+    "href": "02-week2-slides-code.html#geoms-geom_point-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_point()\n",
+    "text": "Geoms: geom_point()\n\nYour basic scatterplot!\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    , color = happy\n    )) + \n    geom_point() + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_point-2",
+    "href": "02-week2-slides-code.html#geoms-geom_point-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_point()\n",
+    "text": "Geoms: geom_point()\n\nYour basic scatterplot!\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    , color = happy\n    )) + \n    scale_color_continuous(type = \"viridis\") +\n    geom_point() + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    , color = happy\n    )) + \n    scale_color_gradient(low = \"red\", high = \"blue\") +\n    geom_point() + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_jitter",
+    "href": "02-week2-slides-code.html#geoms-geom_jitter",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_jitter()\n",
+    "text": "Geoms: geom_jitter()\n\n\n\n\nSometimes we have data that have lots of repeating values, especially with ordinal response scales where the variables aren’t composited / latent\njitter adds random noise to the point to allow you to see more of the points\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    )) + \n    geom_jitter() + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\n\n\n\nThis may be too much jitter"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_jitter-1",
+    "href": "02-week2-slides-code.html#geoms-geom_jitter-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_jitter()\n",
+    "text": "Geoms: geom_jitter()\n\n\n\n\n\nSometimes we have data that have lots of repeating values, especially with ordinal response scales where the variables aren’t composited / latent\njitter adds random noise to the point to allow you to see more of the points\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(\n    x = purposeful\n    , y = happy\n    )) + \n    geom_jitter(width = .1, height = .1) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_jitter-2",
+    "href": "02-week2-slides-code.html#geoms-geom_jitter-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_jitter()\n",
+    "text": "Geoms: geom_jitter()\n\nalpha\n\n\nAlpha can help us understand how many points are stacked when using jitter (or other overlapping data)\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(\n      width = .1\n      , height = .1\n      , alpha = .25\n      ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_smooth",
+    "href": "02-week2-slides-code.html#geoms-geom_smooth",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_smooth()\n",
+    "text": "Geoms: geom_smooth()\n\n\n\ngeom_smooth() allows you to apply statistical functions to your data\nThere are other ways to do this that we won’t cover today\nCore arguments are:\n\n\nmethod: “loess”, “lm”, “glm”, “gam”\n\nformula: e.g., y ~ x or y ~ poly(x, 2)\n\n\nse: display standard error of estimate (T/ F)\n\naes() wrapped aesthetics or directly mapped aesthetics"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_smooth-1",
+    "href": "02-week2-slides-code.html#geoms-geom_smooth-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_smooth()\n",
+    "text": "Geoms: geom_smooth()\n\nRemember: it’s a LAYERED grammar of graphics, so let’s layer!\n\n\n\n\nmethod = \"lm\"\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\n\n\n\n\nmethod = \"loess\"\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"loess\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_smooth-2",
+    "href": "02-week2-slides-code.html#geoms-geom_smooth-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_smooth()\n",
+    "text": "Geoms: geom_smooth()\n\nRemember: it’s a LAYERED grammar of graphics, so let’s layer!\n\n\n\n\nmethod = \"lm\"\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\n\n\n\n\nmethod = \"loess\"\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"loess\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-1",
+    "href": "02-week2-slides-code.html#geoms-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms:",
+    "text": "Geoms:\n\ngeom_hline()/geom_vline()\n\n\nSometimes, we will want to place lines at various intercepts\nWe’ll get into specific use cases as the course progresses\n\ngeom_hline(): horizontal lines have yintercept mappings\n\ngeom_vline(): vertical lines have xintercept mappings"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-2",
+    "href": "02-week2-slides-code.html#geoms-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms:",
+    "text": "Geoms:\n\ngeom_hline()/geom_vline()\n\n\n\ngeom_hline(): horizontal lines have yintercept mappings\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_hline(\n      aes(yintercept = mean(happy, na.rm = T))\n      , linetype = \"dashed\"\n      ) + \n    geom_smooth(method = \"lm\", formula = y ~ x, se = F, color = \"blue\") + \n    theme_classic() # I just hate grey backgrounds\n\n\n\n\n\n\n\n\n\ngeom_vline(): vertical lines have xintercept mappings\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_vline(\n      aes(xintercept = mean(purposeful, na.rm = T))\n      , linetype = \"dashed\"\n      ) + \n    geom_smooth(method = \"lm\", formula = y ~ x, se = F, color = \"blue\") + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_line",
+    "href": "02-week2-slides-code.html#geoms-geom_line",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_line()\n",
+    "text": "Geoms: geom_line()\n\n\n\n\nLine graphs are great for showing relationships among variables as well as showing changes over time\nBe careful, geom_line() in ggplot2 is pretty literal\nWe’ll come back to this several times, so I’ll just show one example of a time series\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = beep, y = happy)) + \n    geom_line(color = \"blue\") + \n    geom_point(size = 1) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_bar",
+    "href": "02-week2-slides-code.html#geoms-geom_bar",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_bar()\n",
+    "text": "Geoms: geom_bar()\n\n\nBar graphs can be useful for showing relative differences\nMy hot take is that they are rarely that useful\n\n(This is mostly because of how we perceive errorbars and differences, which we’ll talk more about in a few weeks!)\n\n\nBut let’s look at using them for frequency and means / se’s"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_bar-1",
+    "href": "02-week2-slides-code.html#geoms-geom_bar-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_bar()\n",
+    "text": "Geoms: geom_bar()\n\nFrequency\nHow often did our participant have an argument, interact with others, study, and feel tired?\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>% \n  select(SID, Full_Date, argument, interacted, study, tired) %>%\n  pivot_longer(\n    cols = argument:tired\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(value = sum(value == 1)) %>%\n  ggplot(aes(x = item, fill = item, y = value)) + \n    geom_col(color = \"black\") + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_bar-2",
+    "href": "02-week2-slides-code.html#geoms-geom_bar-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_bar()\n",
+    "text": "Geoms: geom_bar()\n\nMean differences\nWere there mean-level in our continuous variables?\n\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(\n    mean = mean(value)\n    , ci = 1.96*(sd(value)/sqrt(n()))\n    ) %>%\n  ggplot(aes(x = item, fill = item, y = mean)) + \n    geom_col(color = \"black\") + \n    geom_errorbar(\n      aes(ymin = mean - ci, ymax = mean + ci)\n      , position = position_dodge(width = .1)\n      , width = .1\n      , stat = \"identity\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_boxplot",
+    "href": "02-week2-slides-code.html#geoms-geom_boxplot",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_boxplot()\n",
+    "text": "Geoms: geom_boxplot()\n\n\nSometimes called box and whisker plots\nA method for summarizing a distribution of data without showing raw data\nBox instead shows 25th, 50th, and 75th percentile (quartiles)\nWhiskers show 1.5 * interquartile range (75%tile-25%tile)\nMore fun when we want to compare distributions across variables (IMO)"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_boxplot-1",
+    "href": "02-week2-slides-code.html#geoms-geom_boxplot-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_boxplot()\n",
+    "text": "Geoms: geom_boxplot()\n\nOne boxplot\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(y = SID, x = happy)) + \n    geom_boxplot(width = .5) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_boxplot-2",
+    "href": "02-week2-slides-code.html#geoms-geom_boxplot-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_boxplot()\n",
+    "text": "Geoms: geom_boxplot()\n\nMultiple boxplots\n\n\n\n\nWe can compare multiple participants\nLater, we’ll also talk about how to order the boxplots (and other axes) by means, medians, etc.\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n    y = SID, x = happy\n    , fill = SID\n    )) + \n    geom_boxplot(width = .5) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_boxplot-3",
+    "href": "02-week2-slides-code.html#geoms-geom_boxplot-3",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_boxplot()\n",
+    "text": "Geoms: geom_boxplot()\n\nMultiple boxplots\n\nWe can also compare multiple variables\n\n\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(\n    y = item\n    , x = value\n    , fill = item\n    )) + \n    geom_boxplot(width = .5) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-geom_boxplot-4",
+    "href": "02-week2-slides-code.html#geoms-geom_boxplot-4",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms: geom_boxplot()\n",
+    "text": "Geoms: geom_boxplot()\n\nAdvanced!\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    scale_x_continuous(limits = c(1,7), breaks = seq(1,5,2)) + \n    scale_y_continuous(limits = c(1,7), breaks = seq(1,5,2)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_boxplot(aes(\n      x = 6\n      , y = happy\n      )) + \n    geom_boxplot(aes(\n      y = 6\n      , x = purposeful\n      )) +\n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = F\n      , color = \"blue\"\n      ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-3",
+    "href": "02-week2-slides-code.html#geoms-3",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms:",
+    "text": "Geoms:\n\ngeom_histogram() & geom_density()\n\n\nUseful for showing raw / smoothed distributions of data\n\n\n\n\n\nHistogram\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(y = happy)) + \n    geom_histogram(\n      fill = \"grey\"\n      , color = \"black\"\n    ) + \n    coord_flip() +\n    theme_classic()\n\n\n\n\n\n\n\n\n\n\n\nDensity Distribution\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(aes(x = happy, y = ..density..)) + \n    geom_histogram(\n      fill = \"grey\"\n      , color = \"black\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#geoms-4",
+    "href": "02-week2-slides-code.html#geoms-4",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Geoms:",
+    "text": "Geoms:\n\ngeom_histogram() & geom_density()\n\nMultiple histograms / density distributions\n\nWe can compare multiple participants\n\n\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n     y = happy\n    , fill = SID\n    )) + \n    geom_density(alpha = .2) + \n    coord_flip() +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#plot-appearance",
+    "href": "02-week2-slides-code.html#plot-appearance",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Plot Appearance",
+    "text": "Plot Appearance\n\nSo far, we have only changed appearance via the scale_() functions\nBut that doesn’t change things like axis, text, title, and more\nNor does it help when we want to split the plot into multiple panels\nLet’s do those next!"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#plot-apperance-facets",
+    "href": "02-week2-slides-code.html#plot-apperance-facets",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Plot Apperance: Facets",
+    "text": "Plot Apperance: Facets\n\n\n\nOften, we have lots of other reasons we need to reproduce the same plot multiple times\n\nmultiple variables\nmultiple people\nmultiple conditions\netc.\n\n\nThere are more ways to do this than we’ll cover today, like piecing plots together and more"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets",
+    "href": "02-week2-slides-code.html#appearance-facets",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\n\n\n\nThe core of directly faceting within ggplot is that you have to facet according to variables in your data set\nThis is part of why we covered moving your data to long\nSay that you want to facet by variable, for example, but your data is in wide form\n\nFacets couldn’t handle that\n\n\n\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  print(n = 8)\n\n# A tibble: 432 × 4\n  SID    beep item      value\n  <chr> <int> <chr>     <dbl>\n1 216       1 afraid        1\n2 216       1 angry         2\n3 216       1 attentive     3\n4 216       1 content       4\n5 216       2 afraid        2\n6 216       2 angry         2\n7 216       2 attentive     3\n8 216       2 content       4\n# ℹ 424 more rows"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets-1",
+    "href": "02-week2-slides-code.html#appearance-facets-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\n\nIn ggplot2, there are two core faceting functions\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\n\n\n\nfacet_grid()\n\nsnaps figures in a grid; no wrapping\nespecially useful for 1-2 faceting variables\n\n\n\n\n\n\nfacet_wrap()\n\ntreats each facet a separate\nwraps according to nrow and ncol arguments"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets-2",
+    "href": "02-week2-slides-code.html#appearance-facets-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\n\n\nfacet_grid()\nCore arguments:\n\n\nrows, cols: list of variables or formula, e.g., x ~ y\n\n\nscales: same x or y scale on all facets?\n\nspace: same space for unequal length x or y facets?\n\nswitch: move labels from left to right or top to bottom?\n\ndrop: drop unused factor levels\n\n\nfacet_wrap()\nCore arguments:\n\n\nfacets: barequoted or one-sided formula, e.g., ~ x + y\n\n\nnrow / ncol: number of rows and columns\n\nscales: same x or y scale on all facets?\n\nswitch: move labels from left to right or top to bottom?\n\ndrop: drop unused factor levels\n\ndir: horizontal or vertical\n\nstrip.position: where to put the labels"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets-3",
+    "href": "02-week2-slides-code.html#appearance-facets-3",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\nfacet_grid()\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_grid(item~.) +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets-4",
+    "href": "02-week2-slides-code.html#appearance-facets-4",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\nfacet_wrap()\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_wrap(\n      ~item\n      , ncol = 1\n      , strip.position = \"right\"\n      ) +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-facets-5",
+    "href": "02-week2-slides-code.html#appearance-facets-5",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Facets",
+    "text": "Appearance: Facets\n\nfacet_wrap(): Change scale and space\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_point() + \n    geom_line() + \n    facet_grid(\n      item ~ . \n      , scales = \"free_y\"\n      , space = \"free_y\"\n      ) +\n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-labels-titles",
+    "href": "02-week2-slides-code.html#appearance-labels-titles",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Labels & Titles",
+    "text": "Appearance: Labels & Titles\n\nAPA style says titles are bad\nCommon sense says titles help understanding\nAsk for forgiveness, not permission"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-labels-titles-1",
+    "href": "02-week2-slides-code.html#appearance-labels-titles-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Labels & Titles",
+    "text": "Appearance: Labels & Titles\nRemember this?\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-labels-titles-2",
+    "href": "02-week2-slides-code.html#appearance-labels-titles-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Labels & Titles",
+    "text": "Appearance: Labels & Titles\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    labs(\n      x = \"Momentary Purpose (1-5)\"\n      , y = \"Momentary Happiness (1-5)\"\n      , title = \"Zero-Order Associations \n                  Between Momentary Happiness and Purpose\"\n    ) + \n    theme_classic() # I just hate grey backgrounds"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-labels-titles-3",
+    "href": "02-week2-slides-code.html#appearance-labels-titles-3",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Labels & Titles",
+    "text": "Appearance: Labels & Titles\nLabels also apply to other mappings like color\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\", \"211\", \"174\", \"150\", \"171\")) %>%\n  ggplot(aes(\n     y = happy\n    , fill = SID\n    )) + \n    geom_density(alpha = .2) + \n    coord_flip() +\n    labs(\n      x = \"Momentary Happiness\"\n      , y = \"Smoothed Density\"\n      , fill = \"Participant\\nID\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-labels-titles-4",
+    "href": "02-week2-slides-code.html#appearance-labels-titles-4",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Labels & Titles",
+    "text": "Appearance: Labels & Titles\nYou can also use labels to remove axis labels\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(\n    y = item\n    , x = value\n    , fill = item\n    )) +\n    geom_boxplot(width = .5) + \n    labs(\n      x = \"Momentart Rating (1-5)\"\n      , y = NULL\n      , fill = \"Item\"\n    ) + \n    theme_classic()"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-themes-basic",
+    "href": "02-week2-slides-code.html#appearance-themes-basic",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Themes (Basic)",
+    "text": "Appearance: Themes (Basic)\n\nThere are lots of themes you can use in ggplot that are pre-built into the package\nTry tying theme_ into your R console, and look at the functions that pop up\nSome stand-out ones are:\n\n\ntheme_classic() (what we’ve been using)\ntheme_bw()\n\ntheme_minimal() (but is there a theme_maximal?)\ntheme_void"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-themes-advanced",
+    "href": "02-week2-slides-code.html#appearance-themes-advanced",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Themes (Advanced)",
+    "text": "Appearance: Themes (Advanced)\n\nCustom themes are one of the best ways to “hack” your ggplots\nYou will not remember all of them\nYou will have to google them all time\nHere’s the site: https://ggplot2.tidyverse.org/reference/theme.html\n\nRather than give details on a bunch of these, I’m going to demonstrate theme modifications I often use"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-themes",
+    "href": "02-week2-slides-code.html#appearance-themes",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Themes",
+    "text": "Appearance: Themes\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  ggplot(mapping = aes(x = purposeful, y = happy)) + \n    geom_jitter(width = .1, height = .1, alpha = .25) + \n    geom_smooth(\n      method = \"lm\"\n      , formula = y ~ x\n      , se = T\n      , color = \"blue\"\n    ) + \n    labs(\n      x = \"Momentary Purpose (1-5)\"\n      , y = \"Momentary Happiness (1-5)\"\n      , title = \"Zero-Order Associations Between Momentary Happiness and Purpose\"\n    ) + \n    theme_classic() + \n    theme(\n      plot.title = element_text(\n        face = \"bold\"\n        , size = rel(1.1)\n        , hjust = .5\n        )\n      , axis.title = element_text(\n        face = \"bold\"\n        , size = rel(1.1)\n        )\n      , axis.text = element_text(\n        face = \"bold\"\n        , size = rel(1.2)\n        )\n    )"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-themes-1",
+    "href": "02-week2-slides-code.html#appearance-themes-1",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Themes",
+    "text": "Appearance: Themes\n\n\n\nipcs_data %>%\n  filter(SID %in% c(\"216\")) %>%\n  select(SID, Full_Date, happy, purposeful, afraid, attentive) %>%\n  pivot_longer(\n    cols = c(-SID, -Full_Date)\n    , names_to = \"item\"\n    , values_to = \"value\"\n    , values_drop_na = T\n  ) %>%\n  group_by(item) %>%\n  summarize(\n    mean = mean(value)\n    , ci = 1.96*(sd(value)/sqrt(n()))\n    ) %>%\n  ggplot(aes(x = item, fill = item, y = mean)) + \n    geom_col(color = \"black\") + \n    geom_errorbar(\n      aes(ymin = mean - ci, ymax = mean + ci)\n      , position = position_dodge(width = .1)\n      , width = .1\n      , stat = \"identity\"\n    ) + \n    labs(\n      x = NULL\n      , y = \"Mean Momentary Rating (CI)\\n[Range 1-5]\"\n      , title = \"Descriptive Statistics of Momentary Emotion Ratings\"\n    ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n  )"
+  },
+  {
+    "objectID": "02-week2-slides-code.html#appearance-themes-2",
+    "href": "02-week2-slides-code.html#appearance-themes-2",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "Appearance: Themes",
+    "text": "Appearance: Themes\n\n\n\nipcs_data %>%\n  filter(SID == \"216\") %>%\n  select(SID, beep, afraid:content) %>%\n  pivot_longer(\n    cols = afraid:content\n    , names_to = \"item\"\n    , values_to = \"value\"\n  ) %>%\n  ggplot(aes(x = beep, y = value, group = item)) + \n    geom_line(aes(color = item)) + \n    geom_point(size = 1) + \n    facet_grid(item~.) +\n    labs(\n      x = \"ESM Beep (#)\"\n      , y = \"Rated Momentary Value (1-5)\"\n      , title = \"Time Series of Four Momentary Emotion Items for Participant 216\"\n      , color = NULL\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"bottom\"\n      , legend.text = element_text(face = \"bold\", size = rel(1.1))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(color = \"black\", fill = \"cornflowerblue\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2), color = \"white\")\n    )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPSC 290 - Data Visualization"
+  },
+  {
+    "objectID": "01-week1-slides.html",
+    "href": "01-week1-slides.html",
+    "title": "Week 1 (Slides) - Getting Situated in R and tidyverse",
+    "section": "",
+    "text": "Welcome to Week 1! This week, we introduce the course and review tidyverse core functions."
+  },
+  {
+    "objectID": "02-week2-slides.html",
+    "href": "02-week2-slides.html",
+    "title": "Week 2 (Slides) - Cognitive Perspectives and Introduction to ggplot2",
+    "section": "",
+    "text": "Welcome to Week 2! This week, we’ll review core concepts from our readings on cognitive perspectives on data visualization and then introduce ggplot2 core functions."
   }
 ]
