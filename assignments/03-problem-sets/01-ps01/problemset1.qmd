@@ -33,13 +33,13 @@ head(starwars)
 # your code here
 ```
 
-2.  What an outlier! Let's
+2.  What an outlier! Use the arrange() function to sort the data by mass (descending) to figure out what it is
 
 ```{r q1.2}
 # your code here
 ```
 
-3.  Now, plot the relationship between mass and height again, removing that outlier.
+3.  Now, plot the relationship between mass and height again, removing that outlier (hint: use filter).
 
 ```{r q1.3}
 # your code here
@@ -51,7 +51,7 @@ head(starwars)
 # your code here
 ```
 
-5.  Oops -- that's a lot of species, let's reduce that to humans, Droids, and Wookiees and collapse the others to "Other" (hint create a new variable with mutate). Then replot. Once you're done, assign that plot to object `p1`. Remember that `ggplot` is a layered grammar of graphics, so assigning this plot to an object will let us layer additional things on top of this base plot.
+5.  Oops -- that's a lot of species, let's reduce that to humans, Droids, and Wookiees and collapse the others to "Other" (hint create a new variable with mutate; consider using `ifelse()`, `if_else()` or `case_when()`). Then replot. Once you're done, assign that plot to object `p1`. Remember that `ggplot` is a layered grammar of graphics, so assigning this plot to an object will let us layer additional things on top of this base plot.
 
 ```{r q1.5}
 # your code here
