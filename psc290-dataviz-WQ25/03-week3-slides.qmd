@@ -1,0 +1,13 @@
+---
+title: "Week 3 (Slides) - Proportions"
+---
+
+Welcome to Week 3! This week, focus on visualizing proportions. Rather than going through best practices and then practical applications, we'll go through both together with breaks for exercises.
+
+<div>
+
+<iframe class="slide-deck" src="/slides/03-week3-slides-code.html" width="1200" height="800">
+
+</iframe>
+
+</div>
