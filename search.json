@@ -1510,5 +1510,565 @@
     "title": "Problem Set 1",
     "section": "",
     "text": "Due Date: Wednesday, January 22, 9:30 AM PST.\nDownload your problem set for week 1 below or on Canvas."
+  },
+  {
+    "objectID": "03-week3-slides.html",
+    "href": "03-week3-slides.html",
+    "title": "Week 3 (Slides) - Proportions",
+    "section": "",
+    "text": "Welcome to Week 3! This week, focus on visualizing proportions. Rather than going through best practices and then practical applications, we’ll go through both together with breaks for exercises."
+  },
+  {
+    "objectID": "03-week3-slides-code.html#review",
+    "href": "03-week3-slides-code.html#review",
+    "title": "Week 3: Proportions",
+    "section": "Review",
+    "text": "Review\n\nWhat are the core elements of ggplot2 grammar?\nFrom last week:\n\n\n\nMappings: base layer\n\nggplot() and aes()\n\nScales: control and modify your mappings\n\ne.g., scale_x_continuous() and scale_fill_manual()\n\nGeoms: plot elements\n\ne.g., geom_point() and geom_line()\n\n\n\n\nFacets: panel your plot\n\nfacet_wrap() and facet_grid()\n\nThemes: style your figure\n\nBuilt-in: e.g., theme_classic()\nManual: theme() (legend, strip, axis, plot, panel)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#quick-review-1",
+    "href": "03-week3-slides-code.html#quick-review-1",
+    "title": "Week 3: Proportions",
+    "section": "Quick Review",
+    "text": "Quick Review\n\nColorblindness and accessible plots\n\nAdding in a colorblind-friendly palette from Wong (2011)\n\n\n\n\n\ncbsafe_pal <- tribble(\n  ~name, ~rgb\n  , \"black\", c(0, 0, 0)\n  , \"sky blue\", c(86, 180, 233)\n  , \"bluish green\", c(0, 158, 115)\n  , \"yellow\", c(240, 228, 66)\n  , \"orange\", c(230, 159, 0)\n  , \"blue\", c(0, 114, 178)\n  , \"vermillion\", c(213, 94, 0)\n  , \"reddish purple\", c(204, 121, 167)\n) %>%\n  mutate(hex = map_chr(rgb, function(x) rgb(x[1], x[2], x[3], maxColorValue = 255)))\ncbsafe_pal\n\n\n\n\n# A tibble: 8 × 3\n  name           rgb       hex    \n  <chr>          <list>    <chr>  \n1 black          <dbl [3]> #000000\n2 sky blue       <dbl [3]> #56B4E9\n3 bluish green   <dbl [3]> #009E73\n4 yellow         <dbl [3]> #F0E442\n5 orange         <dbl [3]> #E69F00\n6 blue           <dbl [3]> #0072B2\n7 vermillion     <dbl [3]> #D55E00\n8 reddish purple <dbl [3]> #CC79A7"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#visualizating-proportions",
+    "href": "03-week3-slides-code.html#visualizating-proportions",
+    "title": "Week 3: Proportions",
+    "section": "Visualizating Proportions",
+    "text": "Visualizating Proportions\n\nProportions are often important in our research\nFrom describing sample-level differences to describing the frequency of behaviors / events / experiences, etc., we often reach toward describing amounts relative to the whole\nBut the goals we are trying to achieve are varied, which necesssitates the use of different graphics"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#agenda",
+    "href": "03-week3-slides-code.html#agenda",
+    "title": "Week 3: Proportions",
+    "section": "Agenda",
+    "text": "Agenda\n\nWe will cover X kinds of ways of visualizations, all of which were covered in your readings\nWe will cover both when to use them and how to create them\n\nPie Charts\nBar Charts (Stacked)\nBar Charts (Side-by-Side)\nBar Charts and Density Across Continuous Variables\nMosaic Plots\nParallel Sets"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#but-first-our-data",
+    "href": "03-week3-slides-code.html#but-first-our-data",
+    "title": "Week 3: Proportions",
+    "section": "But First, Our Data",
+    "text": "But First, Our Data\n\n\n\nToday, we’ll use the teaching sample from the German Socioeconomic Panel Study (GSOEP)\nGSOEP is an ongoing longitudinal panel study that began in 1984 (26 waves of data!)\n~20,000 people are sampled each year\nSamples households in Germany\nHas additional sub-projects (e.g., innovation studies, migrant panel, etc.)\nThe data are publicly available via application\n\n\n\n\n\n\n\nload(url(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/03-week3-proportions/04-data/gsoep.RData\"))\ngsoep\n\n# A tibble: 480,798 × 10\n    year   SID SRhealth marital chldbrth   gender yearBrth mortality   job   age\n   <dbl> <dbl>    <dbl>   <dbl>    <dbl> <hvn_lb>    <dbl>     <dbl> <dbl> <dbl>\n 1  1984   901       NA      NA       NA        2     1951         0    NA    33\n 2  1984  1001       NA      NA       NA        2     1913         0    NA    71\n 3  1984  1101       NA      NA       NA        2     1906         0    NA    78\n 4  1984  1201       NA      NA       NA        1     1911         0    NA    73\n 5  1984  1202       NA      NA       NA        2     1913         0    NA    71\n 6  1984  1301       NA      NA       NA        2     1943         0    NA    41\n 7  1984  1302       NA      NA       NA        1     1965         0    NA    19\n 8  1984  1901       NA      NA       NA        2     1948         0    NA    36\n 9  1984  2001       NA      NA       NA        2     1949         0    NA    35\n10  1984  2002       NA      NA       NA        1     1952         0    NA    32\n# ℹ 480,788 more rows"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts",
+    "href": "03-week3-slides-code.html#pie-charts",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nYou may be wondering if you should ever use a pie chart\nThe answer is, of course, it depends\nPie charts are great when:\n\nWhat you want to visualize is simple (e.g., basic fractions)\nYou want to clearly emphasize proportion relative to the whole\nYou have a small data set"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-1",
+    "href": "03-week3-slides-code.html#pie-charts-1",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nIn our data, we have a few variables that follow this, but we’ll focus on one for pie charts:\n\nmarital status (4 groups)\n\nggplot2 doesn’t specifically support pie charts\nWhy? Because it’s a layered grammar of graphics and an explicit function for it would be redundant with some of the built in coordinates\n\nspecifically, coord_polar()\n\nSo to make a pie chart, we’ll use geom_bar() + coord_polar()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-2",
+    "href": "03-week3-slides-code.html#pie-charts-2",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nBasic Syntax\n\n\n\ngsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  ggplot(aes(x = \"\", y = n, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    coord_polar(\"y\", start = 0) + \n    theme_void()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-3",
+    "href": "03-week3-slides-code.html#pie-charts-3",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nImprovements: Directly label\n\n\n\ngsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    geom_text(\n      aes(y = ypos, label = marital)\n      , color = \"white\"\n      , size=4\n      ) +\n    coord_polar(\"y\", start = 0) + \n    theme_void()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-4",
+    "href": "03-week3-slides-code.html#pie-charts-4",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nImprovements: Your Turn\n\nAdd a color-blind friendly palette (hint: use scale_fill_manual the the palette we created earlier)\nRemove the legend.\nAdd the percentages in each category."
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-5",
+    "href": "03-week3-slides-code.html#pie-charts-5",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nImprovements: Your Turn\n\n\n\ngsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    geom_text(\n      aes(y = ypos, label = sprintf(\"%s\\n%.1f%%\", marital, prop))\n      , color = \"white\"\n      , size=4\n      ) +\n    scale_fill_manual(values = cbsafe_pal$hex[c(2, 8, 3, 4)]) + \n    coord_polar(\"y\", start = 0) + \n    theme_void() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-6",
+    "href": "03-week3-slides-code.html#pie-charts-6",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nMore Improvements\n\nRemember that we want to tell a story with our data. Thus, with pie charts, it often makes sense to use a color palette that varies in saturation or lightness (v. hue) with the exception of the focal category. Let’s tell a story with our plot:\n\n\nAdd a title (hint: use the labs() function) to the plot that makes it clear what you want the reader to see.\nChange the color palette so that the focal category is a different color than the other categories (which should be the same hue but at different levels of saturation or lightness).\nMake your labels easier to see by swapping out geom_text() for geom_label()."
+  },
+  {
+    "objectID": "03-week3-slides-code.html#pie-charts-7",
+    "href": "03-week3-slides-code.html#pie-charts-7",
+    "title": "Week 3: Proportions",
+    "section": "Pie Charts",
+    "text": "Pie Charts\n\nMore Improvements\n\n\n\ngsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, 1:4, c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"black\") + \n    geom_label(\n      aes(y = ypos, label = sprintf(\"%s\\n%.1f%%\", marital, prop))\n      , color = \"white\"\n      , size = 6\n      , fontface = 2) +\n    scale_fill_manual(values = c(rev(brewer.pal(9,\"Greens\")[c(4,6,8)]), \"grey60\")) + \n    coord_polar(\"y\", start = 0) + \n    labs(\n      title = \"In 2009, the majority of GSOEP participants\\nwere or had been married/partnered\"\n    ) + \n    theme_void() + \n    theme(\n      legend.position = \"none\"\n      , plot.title = element_text(face = \"bold.italic\", size = rel(1.4), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts",
+    "href": "03-week3-slides-code.html#stacked-bar-charts",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nLike pie charts, stacked bar charts have their time and place\nIn particular:\n\nShow proportions relative to the total\nCan be used to show changes over time\n\nTo demonstrate, let’s look at marital status across emerging adulthood (18-26) where we expect changes in the proportion of martial status across time."
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-1",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-1",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nBasic Syntax\n\n\n\ngsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(\n    marital = factor(\n      marital\n      , 1:4\n      , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n      )\n    , age = factor(age)\n    , prop = n/sum(n)\n    ) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_col(color = \"black\") + # geom_bar(stat = \"identity\", color = \"black\")\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-2",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-2",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nImprovements: Color, Labels, and Scales Exercise\nLet’s improve how this looks. Let’s start by adjusting the color and labels, like last time. Do the following:\n\nChange the color palette to tell the story you see in the data.\nUse scale_y_continuous() to improve the labels on the y-axis (i.e. change them to intuitive percentages)\nUse labs() to add/improve the title, subtitle, x, and y labels on the plot\nRemove the title for fill (hint: use the labs() function) and move the legend to the bottom"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-3",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-3",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nImprovements: Color, Labels, and Scales Exercise\n\n\n\ngsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(\n    marital = factor(\n      marital\n      , seq(4,1,-1)\n      , rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))\n      )\n    , age = factor(age)\n    , prop = n/sum(n)\n    ) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in emerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-4",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-4",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nImprovements: Directly label\n\n\n\ngsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(marital = factor(marital, seq(4,1,-1), rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")))\n         , age = factor(age)\n         , prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    annotate(\"text\", x = \"26\", y = .60, label = \"Never Married\", angle = 90) + \n    annotate(\"text\", x = \"26\", y = .13, label = \"Married\", angle = 90, color = \"white\") + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in emerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-5",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-5",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nImprovements: Theme Elements Exercise\n\nBold axis text and increase size\nBold axis titles and increase size\nBold title and subtitle and center (hint, you may also need to wrap the title text using \\n)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-bar-charts-6",
+    "href": "03-week3-slides-code.html#stacked-bar-charts-6",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Bar Charts",
+    "text": "Stacked Bar Charts\n\nImprovements: Theme Elements Exercise\n\n\n\ngsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(marital = factor(marital, seq(4,1,-1), rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")))\n         , age = factor(age)\n         , prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    annotate(\"text\", x = \"26\", y = .60, label = \"Never Married\", angle = 90) + \n    annotate(\"text\", x = \"26\", y = .13, label = \"Married\", angle = 90, color = \"white\") + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in\\nemerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(\n      legend.position = \"bottom\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , plot.title = element_text(face = \"bold\", size = rel(1.2), hjust = .5)\n      , plot.subtitle = element_text(face = \"italic\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nStacked bar charts are great for showing sequences but can make it difficult to compare within a stack\nSide-by-side bar charts make it much easier to compare across categories and work well when broken into many categories\nBut they can be difficult to understand across sequences\nTo demonstrate, let’s look at marriage rates across three waves"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-1",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-1",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nBasic Syntax\n\n\n\ngsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, 1:4, c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = year, y = prop, fill = marital)) + \n    geom_col(position = \"dodge\", color = \"black\") + # geom_bar(stat = \"identity\", color = \"black\", position =\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-2",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-2",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Order\n\n\n\ngsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = year, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-3",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-3",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Axis Labels and Titles\nWe could label the bars, but let’s label the axes instead. To do so:\n\nUse theme(axis.text.x = element_text()) to adjust the angle of the x-axis labels (hint: use angle and hjust).\nAdjust the y-axis scale using scale_y_continuous() to interpretable percentages.\nUsing labs():\n\n\nRemove the x-axis title\nChange the y-axis title to a complete phrase\nAdd an informative title"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-4",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-4",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Axis Labels and Titles\n\n\n\ngsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent Throughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text.x = element_text(angle = 45, hjust = 1)\n      )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-5",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-5",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Theme Elements Exercise\nAs with the last plot type, let’s use theme() to improve the appearance of our plot. Do the following:\n\nBold axis text and increase size\nBold axis titles and increase size\nBold title and center (hint, you may also need to wrap the title text using \\n)\nChange the background color of the facet labels (hint: use theme(strip.background = element_rect(fill = [your argument])). Note that if you use a dark color, you will also have to change the text color.)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-6",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-6",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Theme Elements Exercise\n\n\n\ngsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent\\nThroughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-7",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-7",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Colors\nExercise:\n\nImprove the colors by making them:\n\nColorblind-friendly\nMatch the goal of the plot (see title)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#side-by-side-bar-charts-8",
+    "href": "03-week3-slides-code.html#side-by-side-bar-charts-8",
+    "title": "Week 3: Proportions",
+    "section": "Side-by-Side Bar Charts",
+    "text": "Side-by-Side Bar Charts\n\nImprovements: Colors\n\n\n\ngsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    scale_fill_manual(values = cbsafe_pal$hex[2:5]) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent\\nThroughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#bar-charts-and-density-across-continuous-variables",
+    "href": "03-week3-slides-code.html#bar-charts-and-density-across-continuous-variables",
+    "title": "Week 3: Proportions",
+    "section": "Bar Charts and Density Across Continuous Variables",
+    "text": "Bar Charts and Density Across Continuous Variables\n\nOne challenge with stacked bar charts is that when there are more than two categories, it can be very difficult to track the visualized trend\nRelative to side-by-side bar charts, it’s easy to see any category relative to the total but somewhat more difficult to also account for differing numbers of people in different categories or across time\nOne possible solution to this is to look at densities across time and groups or relative to the total\nLet’s do both now"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#bar-charts-and-density-across-continuous-variables-1",
+    "href": "03-week3-slides-code.html#bar-charts-and-density-across-continuous-variables-1",
+    "title": "Week 3: Proportions",
+    "section": "Bar Charts and Density Across Continuous Variables",
+    "text": "Bar Charts and Density Across Continuous Variables\n\n\n\ngsoep %>%\n  filter(age %in% c(20, 30, 40, 50, 60, 70, 80) & !is.na(SRhealth)) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , seq(5,1,-1)\n    , c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = cbsafe_pal$hex[2:6]) +\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts",
+    "href": "03-week3-slides-code.html#stacked-area-charts",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , seq(5,1,-1)\n    , c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area() + \n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-1",
+    "href": "03-week3-slides-code.html#stacked-area-charts-1",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Color\nLet’s improve the coloring of this figure. Since we have ordinal data, we want these to be a somewhat coherent gradient to communicate amount. But we don’t want to a full gradient because it’s ordinal!\n\nApply the built-in viridis scale (hint: it’s a variant of scale_fill_viridis_[type]()).\nAdd boundaries to the areas (hint: use white) and reduce the intensity of the colors (hint: use alpha)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-2",
+    "href": "03-week3-slides-code.html#stacked-area-charts-2",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Color\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , seq(5,1,-1)\n    , c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    scale_fill_viridis_d() +\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-3",
+    "href": "03-week3-slides-code.html#stacked-area-charts-3",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Color Labels\n\n\nRemember, legends tax working memory, and these plots are not the exception to the rule. Let’s add the labels to the plot directly using annotate(). (Note, we could also use geom_text() but the setup would be a pain and dubiously worth the hassle.)\n\nThe annotate() function is a manual powerhouse.\nIt let’s you add grobs to a plot that match any kind of geom (e.g., lines, dots, rectangles, text, labels, and more).\n\n\nBasic syntax\n\nannotate(\n  geom,\n  x = NULL,\n  y = NULL,\n  xmin = NULL,\n  xmax = NULL,\n  ymin = NULL,\n  ymax = NULL,\n  xend = NULL,\n  yend = NULL,\n  ...,\n  na.rm = FALSE\n)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-4",
+    "href": "03-week3-slides-code.html#stacked-area-charts-4",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Color Labels\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , 1:5\n    , rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\"))\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    annotate(\"text\", x = 85, y = .95, label = \"Bad\"         , color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 75, y = .80, label = \"Poor\"        , color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 62, y = .55, label = \"Satisfactory\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 43, y = .3 , label = \"Good\"        , color = \"black\", fontface = 2) + \n    annotate(\"text\", x = 30, y = .07, label = \"Very Good\"   , color = \"black\", fontface = 2) + \n    scale_fill_viridis_d() +\n    theme_classic() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-5",
+    "href": "03-week3-slides-code.html#stacked-area-charts-5",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Labels, Titles, and Themes\nExercise:\n\nAdd plot title\nChange x and y scale labels and titles\nBold axis text and increase size\nBold axis titles and increase size\nBold title and center (hint, you may also need to wrap the title text using \\n)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#stacked-area-charts-6",
+    "href": "03-week3-slides-code.html#stacked-area-charts-6",
+    "title": "Week 3: Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nImprovements: Labels and Title\nNote how much clearer this is than if I’d just plotted the mean of self-rated health across groups!!\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    annotate(\"text\", x = 85, y = .95, label = \"Bad\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 75, y = .80, label = \"Poor\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 62, y = .55, label = \"Satisfactory\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 43, y = .3, label = \"Good\", color = \"black\", fontface = 2) + \n    annotate(\"text\", x = 30, y = .07, label = \"Very Good\", color = \"black\", fontface = 2) + \n    scale_x_continuous(limits = c(18, 100), breaks = seq(20, 100, 10)) + \n    scale_y_continuous(limits = c(0,1), breaks = seq(0,1, .25), labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")) + \n    scale_fill_viridis_d() +\n    labs(\n      x = \"Age (Years)\"\n      , y = \"Percentage of Participants\"\n      , title = \"Levels of Self-Rated Health Decrease Across the Lifespan\"\n    ) + \n    theme_classic() + \n    theme(legend.position = \"none\"\n          , axis.text = element_text(face = \"bold\", size = rel(1.1))\n          , axis.title = element_text(face = \"bold\", size = rel(1.1))\n          , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n    )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#total-density-plots",
+    "href": "03-week3-slides-code.html#total-density-plots",
+    "title": "Week 3: Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\n\nLet’s revisit these data but also demonstrating how sample size changes across the lifespan\nTo do this, we need two pieces of information:\n\nsample size in each self-rated health category at each age group\ntotal in each age group"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#total-density-plots-1",
+    "href": "03-week3-slides-code.html#total-density-plots-1",
+    "title": "Week 3: Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\nLet’s start by using stat_smooth() to get a smoothed geom_area() of the total sample size onto the figure\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(\n        aes(y = total_n)\n        , geom = 'area'\n        , method = 'loess'\n        , span = 1/3\n        , alpha = .8\n        , fill = \"grey\"\n        ) + \n    facet_grid(~SRhealth) + \n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#total-density-plots-2",
+    "href": "03-week3-slides-code.html#total-density-plots-2",
+    "title": "Week 3: Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\nNow let’s add each of the ordinal values\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(\n      aes(y = total_n)\n      , geom = 'area'\n      , method = 'loess'\n      , span = 1/3\n      , alpha = .8\n      , fill = \"grey\"\n      ) + \n    stat_smooth(\n        aes(fill = SRhealth)\n        , geom = 'area'\n        , method = 'loess'\n        , span = 1/3\n        , alpha = .8\n        ) + \n    annotate(\"text\", x = 45, y = 3000, label = \"Total\") + \n    facet_grid(~SRhealth) + \n    theme_classic() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#total-density-plots-3",
+    "href": "03-week3-slides-code.html#total-density-plots-3",
+    "title": "Week 3: Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\nLet’s not belabor this too much.\n\n\n\ngsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(aes(y = total_n), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8, fill = \"grey\") + \n    stat_smooth(aes(fill = SRhealth), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8) + \n    scale_x_continuous(limits = c(18, 100), breaks = seq(20, 100, 20)) + \n    scale_fill_viridis_d() +\n    annotate(\"text\", x = 45, y = 3000, label = \"Total\") + \n    labs(\n      x = \"Age (Years)\"\n      , y = \"Number of People\"\n      , title = \"Good Self-Rated Health Decreases Across the Lifespan\"\n      , subtitle = \"But bad decreases less, likely because all-cause sample drop-out\"\n      ) + \n    facet_grid(~SRhealth) + \n    theme_classic() + \n    theme(legend.position = \"none\"\n          , axis.text = element_text(face = \"bold\", size = rel(1.1))\n          , axis.title = element_text(face = \"bold\", size = rel(1.1))\n          , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n          , plot.subtitle = element_text(face = \"italic\", size = rel(1), hjust = .5)\n          , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n          , strip.text = element_text(face = \"bold\", size = rel(1.2))\n          )"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#total-density-plots-4",
+    "href": "03-week3-slides-code.html#total-density-plots-4",
+    "title": "Week 3: Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\nPerfectly fine but may not communicate what we want to show as well as other methods we’ve seen (at least in this instance)."
+  },
+  {
+    "objectID": "03-week3-slides-code.html#nested-proportions",
+    "href": "03-week3-slides-code.html#nested-proportions",
+    "title": "Week 3: Proportions",
+    "section": "Nested Proportions",
+    "text": "Nested Proportions\n\nSometimes, the proportions that we want to visualize are more complex and can’t just be simply binned\nIn such cases, there may be hierarchical relationships among the categories\nToday, we’ll cover two core nested proportion plots:\n\nMosaic plots\nParallel Sets\n\nTo do this, we’ll use two categorical variables: mortality and marital status"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#nested-proportions-1",
+    "href": "03-week3-slides-code.html#nested-proportions-1",
+    "title": "Week 3: Proportions",
+    "section": "Nested Proportions",
+    "text": "Nested Proportions\n\n\n\nTo do this, we’ll use 2-Digit NACE Industry Sector codes from participants’ last reported jobs in the SOEP, which I’ve broken down into 9 higher-order categories\nThis is a lot of categories, so we’ll further eventually exclude categories that don’t have at least 2% of the share of participants\n\n\n\n\n\n\n2-Digit NACE Industry Sector Codes and Categories\n \n  \n    Category \n    Job \n    Code \n  \n \n\n  \n    Agriculture \n    Agriculture Hunting Rel.Serv.Activities \n    1 \n  \n  \n   \n    Forestry Logging Rel.Service activities \n    2 \n  \n  \n   \n    Fishing Fish Hatcheries Fish Farms \n    5 \n  \n  \n    Energy and Utilities \n    Mining Coal Lignite; Extraction Of Peat \n    10 \n  \n  \n   \n    Extraction Crude Petroleum Natural Gas \n    11 \n  \n  \n   \n    Mining Of Uranium And Thorium Ores \n    12 \n  \n  \n   \n    Mining Of Metal Ores \n    13 \n  \n  \n   \n    Other Mining And Quarrying \n    14 \n  \n  \n   \n    Recycling \n    37 \n  \n  \n   \n    Electricity Gas Steam Hot Water Supply \n    40 \n  \n  \n   \n    Sewage Refuse Disposal Sanitationa.a.Re \n    90 \n  \n  \n    Finance and Tech \n    Financ.Intermediat. Exc.Insur. Pens.Fund \n    65 \n  \n  \n   \n    Insurance Pens.Funding Ex.Compuls.SocSe \n    66 \n  \n  \n   \n    Activ.Aux.To Financial Intermediation \n    67 \n  \n  \n   \n    Computer And Related Activities \n    72 \n  \n  \n   \n    Research And Development \n    73 \n  \n  \n   \n    Other Business Activities \n    74 \n  \n  \n   \n    Industry - NEC \n    96 \n  \n  \n    Manufacturing \n    Manuf Food Products And Beverages \n    15 \n  \n  \n   \n    Manuf Tobacco Products \n    16 \n  \n  \n   \n    Manuf Textiles \n    17 \n  \n  \n   \n    Manuf Wear. Apparel; Dressing Dyeing Fur \n    18 \n  \n  \n   \n    Tanning Dress.Leather; luggage Footwear \n    19 \n  \n  \n   \n    Manuf Wood Products Except Furniture \n    20 \n  \n  \n   \n    Manuf Pulp Paper And Paper Products \n    21 \n  \n  \n   \n    Manuf Coke Ref.Petroleum Nuclear Fuel \n    23 \n  \n  \n   \n    Manuf Chemicals And Chemical Products \n    24 \n  \n  \n   \n    Manuf Rubber And Plastic Products \n    25 \n  \n  \n   \n    Manuf Other Non-metallic Mineral Product \n    26 \n  \n  \n   \n    Manuf Basic Metals \n    27 \n  \n  \n   \n    Manuf Fabric.Metal Prod. Ex.Machin. Equi \n    28 \n  \n  \n   \n    Manuf Machinery And Equipment NEC \n    29 \n  \n  \n   \n    Manuf Office Machinery And Computers \n    30 \n  \n  \n   \n    Manuf Electrical Machinery Apparatus NE \n    31 \n  \n  \n   \n    Manuf Radio Television Communic.Equipmen \n    32 \n  \n  \n   \n    Manuf Medical Precision Optical Instrum. \n    33 \n  \n  \n   \n    Manuf Motor Vehicles Trailers Semi-tr. \n    34 \n  \n  \n   \n    Manuf Other Transport Equipment \n    35 \n  \n  \n   \n    Manuf Furniture; Manufacturing NEC \n    36 \n  \n  \n   \n    Collection Purification Distrib.Of Water \n    41 \n  \n  \n   \n    Handcraft Trade - NEC \n    97 \n  \n  \n   \n    Manufacturing - NEC \n    100 \n  \n  \n    Other \n    Private Households With Employed Persons \n    95 \n  \n  \n   \n    Extra-territorial Organizations.a.Bodies \n    99 \n  \n  \n    Public Service \n    Publ.Administr. Defense; Compuls.SocSec \n    75 \n  \n  \n   \n    Education \n    80 \n  \n  \n   \n    Health And Social Work \n    85 \n  \n  \n   \n    Activit.of.Membership Organizations NEC. \n    91 \n  \n  \n   \n    Other Service Activities \n    93 \n  \n  \n    Sales and Service \n    Publishing Printing Recorded Media \n    22 \n  \n  \n   \n    Construction \n    45 \n  \n  \n   \n    Sale Maint Rep.Mot.Vehicles;Ret.Sale Fue \n    50 \n  \n  \n   \n    Wholesale Commission Trade Exc.Mot.Vehic \n    51 \n  \n  \n   \n    Retail Trade Exc.Mot.Vehic;Mot.Cyc Repai \n    52 \n  \n  \n   \n    Hotels And Restaurants \n    55 \n  \n  \n   \n    Post And Telecommunications \n    64 \n  \n  \n   \n    Real Estate Property Activities \n    70 \n  \n  \n   \n    Rent.Machinery Equip Wo.Oper. P. HH Good \n    71 \n  \n  \n   \n    Recreational Cultural Sporting Activity \n    92 \n  \n  \n   \n    Services - NEC \n    98 \n  \n  \n    Transportation \n    Land Transport; Transport Via Pipelines \n    60 \n  \n  \n   \n    Water Transport \n    61 \n  \n  \n   \n    Air Transport \n    62 \n  \n  \n   \n    Supporting Aux.Transp.Activ;Trav.Agencie \n    63"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#mosaic-plots",
+    "href": "03-week3-slides-code.html#mosaic-plots",
+    "title": "Week 3: Proportions",
+    "section": "Mosaic Plots",
+    "text": "Mosaic Plots\n\nUnlike bar charts, mosaic plots allow us to index relative areas, sizes, proportions, etc. relative to two dimensions (so not just amount)\nSo in our example, this will let us see relative differences within categories vertically and across categories horizontally\nTo build this, we will finally leave the basic ggplot2 package and use the ggmosaic package\nThere are other packages, but we’ll use this one because (1) it’s great and (2) it let’s us still use everything we’ve learned about ggplot"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#mosaic-plots-1",
+    "href": "03-week3-slides-code.html#mosaic-plots-1",
+    "title": "Week 3: Proportions",
+    "section": "Mosaic Plots",
+    "text": "Mosaic Plots\n\nWrangle the Data\n(Review this on your own time!)\n\n\n\nif(!\"ggmosaic\" %in% installed.packages()) install.packages(\"ggmosaic\")\nlibrary(ggmosaic)\n\ngsoep_jobs <- gsoep %>%\n  mutate(age_gr = mapvalues(age, 20:99, rep(seq(20, 90, 10), each = 10))) %>%\n  filter(!is.na(age_gr) & age >= 20 & age < 100) %>%\n  group_by(SID) %>%\n  filter(!is.na(job)) %>%\n  filter(age_gr == max(age_gr)) %>%\n  group_by(SID, age_gr) %>%\n  summarize(job = max(job)) %>%\n  ungroup() %>%\n  rename(code = job) %>%\n  left_join(jobs %>% rename(code = old)) %>%\n  group_by(code) %>%\n  filter(n() / nrow(.) >= .02) %>%\n  ungroup() \ngsoep_jobs\n\n\n\n\n# A tibble: 4,326 × 5\n      SID age_gr  code job                                      cat             \n    <dbl>  <dbl> <dbl> <chr>                                    <chr>           \n 1  12303     40    85 Health And Social Work                   Public Service  \n 2  13603     60    80 Education                                Public Service  \n 3  35905     60    85 Health And Social Work                   Public Service  \n 4  71704     30    28 Manuf Fabric.Metal Prod. Ex.Machin. Equi Manufacturing   \n 5  73605     80    29 Manuf Machinery And Equipment NEC        Manufacturing   \n 6  79603     20    55 Hotels And Restaurants                   Sales and Servi…\n 7  84805     70    45 Construction                             Sales and Servi…\n 8  85307     30    74 Other Business Activities                Finance and Tech\n 9  89405     70    74 Other Business Activities                Finance and Tech\n10 112505     30    65 Financ.Intermediat. Exc.Insur. Pens.Fund Finance and Tech\n# ℹ 4,316 more rows"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#mosaic-plots-2",
+    "href": "03-week3-slides-code.html#mosaic-plots-2",
+    "title": "Week 3: Proportions",
+    "section": "Mosaic Plots",
+    "text": "Mosaic Plots\n\nLet’s say, for example, that we think that functional limitations and more may age people out of some professions\nWe could look at this simply as a stacked bar chart, but it wouldn’t clarify that there are different proportions of people in each job category / age group\nWe’ve already had a bunch of practice today improving plot aesthetics and seen somewhat similar plots, so we’re going to skip that for this exercise\n\n\n\n\n\ngsoep_jobs %>%\n  ggplot() + \n    geom_mosaic(aes(x = product(age_gr), fill = cat)) + \n    theme_classic() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap",
+    "href": "03-week3-slides-code.html#treemap",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nMosaic plots are sort of just fancy stacked bar plots that let you also index by size\nTreemaps are helpful when we have nested categorical (and sometimes, to a lesser degree continuous) variables\nWe’ll use the example of our jobs data, but this could be used for lots of other types of variables\n\nCrossed conditions in an experiment\nIntergenerational data\nAverage scores on variables within categories\nBrain activation across broader and narrower brain regions\nPolitical affiliation across states, demographic groups, and more"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-1",
+    "href": "03-week3-slides-code.html#treemap-1",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nWrangle the Data\n\n\n\ngsoep_tm <- gsoep %>%\n  group_by(SID) %>%\n  filter(!is.na(job)) %>%\n  group_by(SID) %>%\n  summarize(job = max(job)) %>%\n  ungroup() %>%\n  rename(code = job) %>%\n  left_join(jobs %>% rename(code = old)) %>%\n  group_by(code, cat, job) %>%\n  tally()  %>%\n  ungroup() %>%\n  filter(n/sum(n) > .02) %>%\n  mutate(job = str_wrap(job, 15))\ngsoep_tm\n\n\n\n\n# A tibble: 15 × 4\n    code cat               job                                               n\n   <dbl> <chr>             <chr>                                         <int>\n 1     1 Agriculture       \"Agriculture\\nHunting\\nRel.Serv.Activities\"     272\n 2    15 Manufacturing     \"Manuf Food\\nProducts And\\nBeverages\"           172\n 3    17 Manufacturing     \"Manuf Textiles\"                                122\n 4    28 Manufacturing     \"Manuf\\nFabric.Metal\\nProd.\\nEx.Machin. Equi\"   188\n 5    29 Manufacturing     \"Manuf Machinery\\nAnd Equipment\\nNEC\"           144\n 6    31 Manufacturing     \"Manuf\\nElectrical\\nMachinery\\nApparatus NE\"    123\n 7    45 Sales and Service \"Construction\"                                  370\n 8    52 Sales and Service \"Retail Trade\\nExc.Mot.Vehic;Mot.Cyc\\nRepai\"    718\n 9    55 Sales and Service \"Hotels And\\nRestaurants\"                       305\n10    60 Transportation    \"Land Transport;\\nTransport Via\\nPipelines\"     162\n11    65 Finance and Tech  \"Financ.Intermediat.\\nExc.Insur.\\nPens.Fund\"    123\n12    74 Finance and Tech  \"Other Business\\nActivities\"                    286\n13    75 Public Service    \"Publ.Administr.\\nDefense;\\nCompuls.SocSec\"     421\n14    80 Public Service    \"Education\"                                     339\n15    85 Public Service    \"Health And\\nSocial Work\"                       587"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-2",
+    "href": "03-week3-slides-code.html#treemap-2",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nBasic\n\n\n\nif(!\"treemapify\" %in% installed.packages()) install.packages(\"treemapify\")\nlibrary(treemapify)\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3)"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-3",
+    "href": "03-week3-slides-code.html#treemap-3",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nImprovements: Remove Legend and Add Labels\n\n\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = \"white\"\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-4",
+    "href": "03-week3-slides-code.html#treemap-4",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nImprovements: Add Subgroup Text\n\n\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = \"white\"\n    , fontface = \"italic\"\n    ) +\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-5",
+    "href": "03-week3-slides-code.html#treemap-5",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nImprovements: Color Palette\n\n\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = \"white\"\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = \"white\"\n    , fontface = \"italic\"\n    ) +\n  scale_fill_viridis_d()  +\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-6",
+    "href": "03-week3-slides-code.html#treemap-6",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nImprovements: Group and Subgroup Borders + Text Color\n\n\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , fontface = \"italic\"\n    ) +\n  geom_treemap_subgroup_border(\n    colour = \"white\"\n    , size = 5\n    ) +\n  scale_fill_viridis_d()  +\n  theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#treemap-7",
+    "href": "03-week3-slides-code.html#treemap-7",
+    "title": "Week 3: Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nImprovements: Title\n\n\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , fontface = \"italic\"\n    ) +\n  geom_treemap_subgroup_border(\n    colour = \"white\"\n    , size = 5\n    ) +\n  scale_fill_viridis_d()  +\n  labs(title = \"White Collar Public Service, Sales, and\\nFinance Jobs Far Outnumber Blue Collar Jobs\") + \n  theme(legend.position = \"none\"\n        , plot.title = element_text(face = \"bold\", hjust = .5))"
+  },
+  {
+    "objectID": "03-week3-slides-code.html#activity-lab-time-if-time",
+    "href": "03-week3-slides-code.html#activity-lab-time-if-time",
+    "title": "Week 3: Proportions",
+    "section": "Activity / Lab Time (If time)",
+    "text": "Activity / Lab Time (If time)\n\nFor the rest of class, I want you to take some of your own data or the data provided in the workbook version of these slides to create some visualization of proportions.\nDon’t overthink this, this is just your chance to apply what you’ve learned as we move into the “content area” portion of the course. * This is not a graded exercise but a chance to try to use your skills while also having the opportunity to ask questions of the instructors or your peers\nYou can work individually or in small groups, but I suggest at least trying to create the visualization independently, even if you work in small groups to come up with the idea and debug"
+  },
+  {
+    "objectID": "03-week3-workbook.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "href": "03-week3-workbook.html#what-are-the-core-elements-of-ggplot2-grammar",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "What are the core elements of ggplot2 grammar?",
+    "text": "What are the core elements of ggplot2 grammar?\nFrom last week:\n\n\nMappings: base layer\n\n\nggplot() and aes()\n\n\n\n\nScales: control and modify your mappings\n\ne.g., scale_x_continuous() and scale_fill_manual()\n\n\n\n\nGeoms: plot elements\n\ne.g., geom_point() and geom_line()\n\n\n\n\nFacets: panel your plot\n\n\nfacet_wrap() and facet_grid()\n\n\n\n\nThemes: style your figure\n\nBuilt-in: e.g., theme_classic()\n\nManual: theme() (legend, strip, axis, plot, panel)"
+  },
+  {
+    "objectID": "03-week3-workbook.html#colorblindness-and-accessible-plots",
+    "href": "03-week3-workbook.html#colorblindness-and-accessible-plots",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Colorblindness and accessible plots",
+    "text": "Colorblindness and accessible plots\n\nAdding in a colorblind-friendly palette from Wong (2011)\n\n\n\nCodecbsafe_pal <- tribble(\n  ~name, ~rgb\n  , \"black\", c(0, 0, 0)\n  , \"sky blue\", c(86, 180, 233)\n  , \"bluish green\", c(0, 158, 115)\n  , \"yellow\", c(240, 228, 66)\n  , \"orange\", c(230, 159, 0)\n  , \"blue\", c(0, 114, 178)\n  , \"vermillion\", c(213, 94, 0)\n  , \"reddish purple\", c(204, 121, 167)\n) %>%\n  mutate(hex = map_chr(rgb, function(x) rgb(x[1], x[2], x[3], maxColorValue = 255)))\ncbsafe_pal"
+  },
+  {
+    "objectID": "03-week3-workbook.html#agenda",
+    "href": "03-week3-workbook.html#agenda",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Agenda",
+    "text": "Agenda\n\nWe will cover X kinds of ways of visualizations, all of which were covered in your readings\nWe will cover both when to use them and how to create them\n\nPie Charts\nBar Charts (Stacked)\nBar Charts (Side-by-Side)\nBar Charts and Density Across Continuous Variables\nMosaic Plots\nParallel Sets"
+  },
+  {
+    "objectID": "03-week3-workbook.html#but-first-our-data",
+    "href": "03-week3-workbook.html#but-first-our-data",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "But First, Our Data",
+    "text": "But First, Our Data\n\nToday, we’ll use the teaching sample from the German Socioeconomic Panel Study (GSOEP)\nGSOEP is an ongoing longitudinal panel study that began in 1984 (26 waves of data!)\n~20,000 people are sampled each year\nSamples households in Germany\nHas additional sub-projects (e.g., innovation studies, migrant panel, etc.)\nThe data are publicly available via application\n\n\n\n\n\nCodeload(url(\"https://github.com/emoriebeck/psc290-data-viz-2022/raw/main/03-week3-proportions/04-data/gsoep.RData\"))\ngsoep"
+  },
+  {
+    "objectID": "03-week3-workbook.html#basic-syntax",
+    "href": "03-week3-workbook.html#basic-syntax",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Basic Syntax",
+    "text": "Basic Syntax\n\nCodegsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  ggplot(aes(x = \"\", y = n, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    coord_polar(\"y\", start = 0) + \n    theme_void()"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-directly-label",
+    "href": "03-week3-workbook.html#improvements-directly-label",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Directly label",
+    "text": "Improvements: Directly label\n\nCodegsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    geom_text(\n      aes(y = ypos, label = marital)\n      , color = \"white\"\n      , size=4\n      ) +\n    coord_polar(\"y\", start = 0) + \n    theme_void()"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-your-turn",
+    "href": "03-week3-workbook.html#improvements-your-turn",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Your Turn",
+    "text": "Improvements: Your Turn\n\nAdd a color-blind friendly palette (hint: use scale_fill_manual the the palette we created earlier)\nRemove the legend.\nAdd the percentages in each category.\n\n\nCodegsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(\n    marital\n    , 1:4\n    , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n    )) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"white\") + \n    geom_text(\n      aes(y = ypos, label = sprintf(\"%s\\n%.1f%%\", marital, prop))\n      , color = \"white\"\n      , size=4\n      ) +\n    scale_fill_manual(values = cbsafe_pal$hex[c(2, 8, 3, 4)]) + \n    coord_polar(\"y\", start = 0) + \n    theme_void() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-workbook.html#more-improvements",
+    "href": "03-week3-workbook.html#more-improvements",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "More Improvements",
+    "text": "More Improvements\n\nRemember that we want to tell a story with our data. Thus, with pie charts, it often makes sense to use a color palette that varies in saturation or lightness (v. hue) with the exception of the focal category. Let’s tell a story with our plot:\n\n\nAdd a title (hint: use the labs() function) to the plot that makes it clear what you want the reader to see.\nChange the color palette so that the focal category is a different color than the other categories (which should be the same hue but at different levels of saturation or lightness).\nMake your labels easier to see by swapping out geom_text() for geom_label().\n\n\nCodegsoep %>%\n  filter(year == 2009 & !is.na(marital)) %>% # random\n  group_by(marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, 1:4, c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))) %>%\n  arrange(desc(marital)) %>%\n  mutate(prop = n / sum(n) * 100\n         , ypos = cumsum(prop)- 0.5*prop) %>%\n  ggplot(aes(x = \"\", y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", width = 1, color = \"black\") + \n    geom_label(\n      aes(y = ypos, label = sprintf(\"%s\\n%.1f%%\", marital, prop))\n      , color = \"white\"\n      , size = 6\n      , fontface = 2) +\n    scale_fill_manual(values = c(rev(brewer.pal(9,\"Greens\")[c(4,6,8)]), \"grey60\")) + \n    coord_polar(\"y\", start = 0) + \n    labs(\n      title = \"In 2009, the majority of GSOEP participants\\nwere or had been married/partnered\"\n    ) + \n    theme_void() + \n    theme(\n      legend.position = \"none\"\n      , plot.title = element_text(face = \"bold.italic\", size = rel(1.4), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#basic-syntax-1",
+    "href": "03-week3-workbook.html#basic-syntax-1",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Basic Syntax",
+    "text": "Basic Syntax\n\nCodegsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(\n    marital = factor(\n      marital\n      , 1:4\n      , c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")\n      )\n    , age = factor(age)\n    , prop = n/sum(n)\n    ) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_col(color = \"black\") + # geom_bar(stat = \"identity\", color = \"black\")\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-color-labels-and-scales-exercise",
+    "href": "03-week3-workbook.html#improvements-color-labels-and-scales-exercise",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Color, Labels, and Scales Exercise",
+    "text": "Improvements: Color, Labels, and Scales Exercise\nLet’s improve how this looks. Let’s start by adjusting the color and labels, like last time. Do the following:\n\nChange the color palette to tell the story you see in the data.\nUse scale_y_continuous() to improve the labels on the y-axis (i.e. change them to intuitive percentages)\nUse labs() to add/improve the title, subtitle, x, and y labels on the plot\nRemove the title for fill (hint: use the labs() function) and move the legend to the bottom\n\n\nCodegsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(\n    marital = factor(\n      marital\n      , seq(4,1,-1)\n      , rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))\n      )\n    , age = factor(age)\n    , prop = n/sum(n)\n    ) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in emerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-directly-label-1",
+    "href": "03-week3-workbook.html#improvements-directly-label-1",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Directly label",
+    "text": "Improvements: Directly label\n\nCodegsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(marital = factor(marital, seq(4,1,-1), rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")))\n         , age = factor(age)\n         , prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    annotate(\"text\", x = \"26\", y = .60, label = \"Never Married\", angle = 90) + \n    annotate(\"text\", x = \"26\", y = .13, label = \"Married\", angle = 90, color = \"white\") + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in emerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-theme-elements-exercise",
+    "href": "03-week3-workbook.html#improvements-theme-elements-exercise",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Theme Elements Exercise",
+    "text": "Improvements: Theme Elements Exercise\n\nBold axis text and increase size\nBold axis titles and increase size\nBold title and subtitle and center (hint, you may also need to wrap the title text using \\n)\n\n\nCodegsoep %>%\n  filter(age %in% 18:26 & !is.na(marital)) %>%\n  group_by(age, marital) %>%\n  tally() %>%\n  group_by(age) %>%\n  mutate(marital = factor(marital, seq(4,1,-1), rev(c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\")))\n         , age = factor(age)\n         , prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\") + \n    scale_fill_manual(values = c(\"grey80\",brewer.pal(9,\"Greens\")[c(2,4,6)])) + \n    scale_y_continuous(\n      limits = c(0,1)\n      , breaks = seq(0, 1, .25)\n      , labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")\n      ) + \n    annotate(\"text\", x = \"26\", y = .60, label = \"Never Married\", angle = 90) + \n    annotate(\"text\", x = \"26\", y = .13, label = \"Married\", angle = 90, color = \"white\") + \n    labs(\n      x = \"Age\"\n      , y = \"Percent of Sample\"\n      , title = \"Rates of relationships increase in\\nemerging adulthood\"\n      , subtitle = \"But most remain unpartnered by 26\"\n      , fill = NULL\n      ) +\n    theme_classic() + \n    theme(\n      legend.position = \"bottom\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.1))\n      , plot.title = element_text(face = \"bold\", size = rel(1.2), hjust = .5)\n      , plot.subtitle = element_text(face = \"italic\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#basic-syntax-2",
+    "href": "03-week3-workbook.html#basic-syntax-2",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Basic Syntax",
+    "text": "Basic Syntax\n\nCodegsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, 1:4, c(\"Married\", \"Separated\", \"Widowed\", \"Never Married\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = year, y = prop, fill = marital)) + \n    geom_col(position = \"dodge\", color = \"black\") + # geom_bar(stat = \"identity\", color = \"black\", position =\n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-order",
+    "href": "03-week3-workbook.html#improvements-order",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Order",
+    "text": "Improvements: Order\n\nCodegsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = year, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    theme_classic()"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-axis-labels-and-titles",
+    "href": "03-week3-workbook.html#improvements-axis-labels-and-titles",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Axis Labels and Titles",
+    "text": "Improvements: Axis Labels and Titles\nWe could label the bars, but let’s label the axes instead. To do so:\n\nUse theme(axis.text.x = element_text()) to adjust the angle of the x-axis labels (hint: use angle and hjust).\nAdjust the y-axis scale using scale_y_continuous() to interpretable percentages.\nUsing labs():\n\n\nRemove the x-axis title\nChange the y-axis title to a complete phrase\nAdd an informative title\n\n\nCodegsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent Throughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text.x = element_text(angle = 45, hjust = 1)\n      )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-theme-elements-exercise-1",
+    "href": "03-week3-workbook.html#improvements-theme-elements-exercise-1",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Theme Elements Exercise",
+    "text": "Improvements: Theme Elements Exercise\nAs with the last plot type, let’s use theme() to improve the appearance of our plot. Do the following:\n\nBold axis text and increase size\nBold axis titles and increase size\nBold title and center (hint, you may also need to wrap the title text using \\n)\nChange the background color of the facet labels (hint: use theme(strip.background = element_rect(fill = [your argument])). Note that if you use a dark color, you will also have to change the text color.)\n\n\nCodegsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent\\nThroughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#improvements-colors-exercise",
+    "href": "03-week3-workbook.html#improvements-colors-exercise",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Improvements: Colors Exercise",
+    "text": "Improvements: Colors Exercise\n\nImprove the colors by making them:\n\nColorblind-friendly\nMatch the goal of the plot (see title)\n\n\n\n\nCodegsoep %>%\n  filter(year %in% c(2000, 2005, 2010, 2015) & !is.na(marital)) %>% # random\n  group_by(year, marital) %>%\n  tally() %>%\n  mutate(marital = factor(marital, c(1,4,2,3), c(\"Married\", \"Never Married\", \"Separated\", \"Widowed\"))) %>%\n  group_by(year) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = marital, y = prop, fill = marital)) + \n    geom_bar(stat = \"identity\", color = \"black\", position = \"dodge\") + \n    scale_y_continuous(\n      limits = c(0,.7), breaks = seq(0,.7, .2), labels = c(\"0%\", \"20%\", \"40%\", \"60%\")\n    ) +\n    scale_fill_manual(values = cbsafe_pal$hex[2:5]) +\n    facet_grid(~year) + \n    labs(\n      x = NULL\n      , y = \"Percentage of Participants\"\n      , title = \"Marital Status Has Remained Consistent\\nThroughout the 21st Century\"\n      ) + \n    theme_classic() + \n    theme(\n      legend.position = \"none\"\n      , axis.text = element_text(face = \"bold\", size = rel(1.2))\n      , axis.text.x = element_text(angle = 45, hjust = 1, size = rel(1))\n      , axis.title = element_text(face = \"bold\", size = rel(1.2))\n      , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n      , strip.text = element_text(face = \"bold\", size = rel(1.2))\n      , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n      )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#stacked-area-charts",
+    "href": "03-week3-workbook.html#stacked-area-charts",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Stacked Area Charts",
+    "text": "Stacked Area Charts\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , seq(5,1,-1)\n    , c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area() + \n    theme_classic()\n\n\n\n\n\n\n\nImprovements: Color\nLet’s improve the coloring of this figure. Since we have ordinal data, we want these to be a somewhat coherent gradient to communicate amount. But we don’t want to a full gradient because it’s ordinal!\n\nApply the built-in viridis scale (hint: it’s a variant of scale_fill_viridis_[type]()).\nAdd boundaries to the areas (hint: use white) and reduce the intensity of the colors (hint: use alpha)\n\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , seq(5,1,-1)\n    , c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    scale_fill_viridis_d() +\n    theme_classic()\n\n\n\n\n\n\n\nImprovements: Color Labels\nRemember, legends tax working memory, and these plots are not the exception to the rule. Let’s add the labels to the plot directly using annotate(). (Note, we could also use geom_text() but the setup would be a pain and dubiously worth the hassle.)\n\nThe annotate() function is a manual powerhouse.\nIt let’s you add grobs to a plot that match any kind of geom (e.g., lines, dots, rectangles, text, labels, and more).\n\nBasic syntax\n\nCodeannotate(\n  geom,\n  x = NULL,\n  y = NULL,\n  xmin = NULL,\n  xmax = NULL,\n  ymin = NULL,\n  ymax = NULL,\n  xend = NULL,\n  yend = NULL,\n  ...,\n  na.rm = FALSE\n)\n\n\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(\n    SRhealth\n    , 1:5\n    , rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\"))\n    )) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    annotate(\"text\", x = 85, y = .95, label = \"Bad\"         , color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 75, y = .80, label = \"Poor\"        , color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 62, y = .55, label = \"Satisfactory\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 43, y = .3 , label = \"Good\"        , color = \"black\", fontface = 2) + \n    annotate(\"text\", x = 30, y = .07, label = \"Very Good\"   , color = \"black\", fontface = 2) + \n    scale_fill_viridis_d() +\n    theme_classic() + \n    theme(legend.position = \"none\")\n\n\n\n\n\n\n\nImprovements: Labels, Titles, and Themes\nExercise:\n\nAdd plot title\nChange x and y scale labels and titles\nBold axis text and increase size\nBold axis titles and increase size\nBold title and center (hint, you may also need to wrap the title text using \\n)\n\nNote how much clearer this is than if I’d just plotted the mean of self-rated health across groups!!\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(prop = n/sum(n)) %>%\n  ggplot(aes(x = age, y = prop, fill = SRhealth)) + \n    geom_area(color = \"white\", alpha = .6) + \n    annotate(\"text\", x = 85, y = .95, label = \"Bad\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 75, y = .80, label = \"Poor\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 62, y = .55, label = \"Satisfactory\", color = \"white\", fontface = 2) + \n    annotate(\"text\", x = 43, y = .3, label = \"Good\", color = \"black\", fontface = 2) + \n    annotate(\"text\", x = 30, y = .07, label = \"Very Good\", color = \"black\", fontface = 2) + \n    scale_x_continuous(limits = c(18, 100), breaks = seq(20, 100, 10)) + \n    scale_y_continuous(limits = c(0,1), breaks = seq(0,1, .25), labels = c(\"0%\", \"25%\", \"50%\", \"75%\", \"100%\")) + \n    scale_fill_viridis_d() +\n    labs(\n      x = \"Age (Years)\"\n      , y = \"Percentage of Participants\"\n      , title = \"Levels of Self-Rated Health Decrease Across the Lifespan\"\n    ) + \n    theme_classic() + \n    theme(legend.position = \"none\"\n          , axis.text = element_text(face = \"bold\", size = rel(1.1))\n          , axis.title = element_text(face = \"bold\", size = rel(1.1))\n          , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n    )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#total-density-plots",
+    "href": "03-week3-workbook.html#total-density-plots",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Total Density Plots",
+    "text": "Total Density Plots\n\nLet’s revisit these data but also demonstrating how sample size changes across the lifespan\nTo do this, we need two pieces of information:\n\nsample size in each self-rated health category at each age group\ntotal in each age group\n\n\n\nLet’s start by using stat_smooth() to get a smoothed geom_area() of the total sample size onto the figure\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(\n        aes(y = total_n)\n        , geom = 'area'\n        , method = 'loess'\n        , span = 1/3\n        , alpha = .8\n        , fill = \"grey\"\n        ) + \n    facet_grid(~SRhealth) + \n    theme_classic()\n\n\n\n\n\n\n\nNow let’s add each of the ordinal values\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(\n      aes(y = total_n)\n      , geom = 'area'\n      , method = 'loess'\n      , span = 1/3\n      , alpha = .8\n      , fill = \"grey\"\n      ) + \n    stat_smooth(\n        aes(fill = SRhealth)\n        , geom = 'area'\n        , method = 'loess'\n        , span = 1/3\n        , alpha = .8\n        ) + \n    annotate(\"text\", x = 45, y = 3000, label = \"Total\") + \n    facet_grid(~SRhealth) + \n    theme_classic() + \n    theme(legend.position = \"none\")\n\n\n\n\n\n\n\nLet’s not belabor this too much.\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(aes(y = total_n), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8, fill = \"grey\") + \n    stat_smooth(aes(fill = SRhealth), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8) + \n    scale_x_continuous(limits = c(18, 100), breaks = seq(20, 100, 20)) + \n    scale_fill_viridis_d() +\n    annotate(\"text\", x = 45, y = 3000, label = \"Total\") + \n    labs(\n      x = \"Age (Years)\"\n      , y = \"Number of People\"\n      , title = \"Good Self-Rated Health Decreases Across the Lifespan\"\n      , subtitle = \"But bad decreases less, likely because all-cause sample drop-out\"\n      ) + \n    facet_grid(~SRhealth) + \n    theme_classic() + \n    theme(legend.position = \"none\"\n          , axis.text = element_text(face = \"bold\", size = rel(1.1))\n          , axis.title = element_text(face = \"bold\", size = rel(1.1))\n          , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n          , plot.subtitle = element_text(face = \"italic\", size = rel(1), hjust = .5)\n          , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n          , strip.text = element_text(face = \"bold\", size = rel(1.2))\n          )\n\n\n\n\n\n\n\nPerfectly fine but may not communicate what we want to show as well as other methods we’ve seen (at least in this instance).\n\nCodegsoep %>%\n  filter(!is.na(SRhealth) & age >= 18 & age <= 100) %>% # random\n  group_by(age, SRhealth) %>%\n  tally() %>%\n  mutate(SRhealth = factor(SRhealth, 1:5, rev(c(\"Very good\", \"Good\", \"Satisfactory\", \"Poor\", \"Bad\")))) %>%\n  group_by(age) %>%\n  mutate(total_n = sum(n))  %>%\n  ggplot(aes(x = age, y = n)) + \n    stat_smooth(aes(y = total_n), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8, fill = \"grey\") + \n    stat_smooth(aes(fill = SRhealth), geom = 'area', method = 'loess'\n        , span = 1/3, alpha = .8) + \n    scale_x_continuous(limits = c(15, 105), breaks = seq(20, 100, 20)) + \n    scale_fill_viridis_d() +\n    annotate(\"text\", x = 45, y = 3000, label = \"Total\") + \n    labs(\n      x = \"Age (Years)\"\n      , y = \"Number of People\"\n      , title = \"Good Self-Rated Health Decreases Across the Lifespan\"\n      , subtitle = \"But bad decreases less, likely because all-cause sample drop-out\"\n      ) + \n    facet_grid(~SRhealth) + \n    theme_classic() + \n    theme(legend.position = \"none\"\n          , axis.text = element_text(face = \"bold\", size = rel(1.1))\n          , axis.title = element_text(face = \"bold\", size = rel(1.1))\n          , plot.title = element_text(face = \"bold\", size = rel(1.1), hjust = .5)\n          , plot.subtitle = element_text(face = \"italic\", size = rel(1), hjust = .5)\n          , strip.background = element_rect(fill = \"grey90\", color = \"black\")\n          , strip.text = element_text(face = \"bold\", size = rel(1.2))\n          )"
+  },
+  {
+    "objectID": "03-week3-workbook.html#example-data",
+    "href": "03-week3-workbook.html#example-data",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Example Data",
+    "text": "Example Data\n\nTo do this, we’ll use 2-Digit NACE Industry Sector codes from participants’ last reported jobs in the SOEP, which I’ve broken down into 9 higher-order categories\nThis is a lot of categories, so we’ll further eventually exclude categories that don’t have at least 2% of the share of participants\n\n\n\n\n\n2-Digit NACE Industry Sector Codes and Categories\n \n Category \n    Job \n    Code \n  \n\n\n Agriculture \n    Agriculture Hunting Rel.Serv.Activities \n    1 \n  \n\n Forestry Logging Rel.Service activities \n    2 \n  \n\n Fishing Fish Hatcheries Fish Farms \n    5 \n  \n\n Energy and Utilities \n    Mining Coal Lignite; Extraction Of Peat \n    10 \n  \n\n Extraction Crude Petroleum Natural Gas \n    11 \n  \n\n Mining Of Uranium And Thorium Ores \n    12 \n  \n\n Mining Of Metal Ores \n    13 \n  \n\n Other Mining And Quarrying \n    14 \n  \n\n Recycling \n    37 \n  \n\n Electricity Gas Steam Hot Water Supply \n    40 \n  \n\n Sewage Refuse Disposal Sanitationa.a.Re \n    90 \n  \n\n Finance and Tech \n    Financ.Intermediat. Exc.Insur. Pens.Fund \n    65 \n  \n\n Insurance Pens.Funding Ex.Compuls.SocSe \n    66 \n  \n\n Activ.Aux.To Financial Intermediation \n    67 \n  \n\n Computer And Related Activities \n    72 \n  \n\n Research And Development \n    73 \n  \n\n Other Business Activities \n    74 \n  \n\n Industry - NEC \n    96 \n  \n\n Manufacturing \n    Manuf Food Products And Beverages \n    15 \n  \n\n Manuf Tobacco Products \n    16 \n  \n\n Manuf Textiles \n    17 \n  \n\n Manuf Wear. Apparel; Dressing Dyeing Fur \n    18 \n  \n\n Tanning Dress.Leather; luggage Footwear \n    19 \n  \n\n Manuf Wood Products Except Furniture \n    20 \n  \n\n Manuf Pulp Paper And Paper Products \n    21 \n  \n\n Manuf Coke Ref.Petroleum Nuclear Fuel \n    23 \n  \n\n Manuf Chemicals And Chemical Products \n    24 \n  \n\n Manuf Rubber And Plastic Products \n    25 \n  \n\n Manuf Other Non-metallic Mineral Product \n    26 \n  \n\n Manuf Basic Metals \n    27 \n  \n\n Manuf Fabric.Metal Prod. Ex.Machin. Equi \n    28 \n  \n\n Manuf Machinery And Equipment NEC \n    29 \n  \n\n Manuf Office Machinery And Computers \n    30 \n  \n\n Manuf Electrical Machinery Apparatus NE \n    31 \n  \n\n Manuf Radio Television Communic.Equipmen \n    32 \n  \n\n Manuf Medical Precision Optical Instrum. \n    33 \n  \n\n Manuf Motor Vehicles Trailers Semi-tr. \n    34 \n  \n\n Manuf Other Transport Equipment \n    35 \n  \n\n Manuf Furniture; Manufacturing NEC \n    36 \n  \n\n Collection Purification Distrib.Of Water \n    41 \n  \n\n Handcraft Trade - NEC \n    97 \n  \n\n Manufacturing - NEC \n    100 \n  \n\n Other \n    Private Households With Employed Persons \n    95 \n  \n\n Extra-territorial Organizations.a.Bodies \n    99 \n  \n\n Public Service \n    Publ.Administr. Defense; Compuls.SocSec \n    75 \n  \n\n Education \n    80 \n  \n\n Health And Social Work \n    85 \n  \n\n Activit.of.Membership Organizations NEC. \n    91 \n  \n\n Other Service Activities \n    93 \n  \n\n Sales and Service \n    Publishing Printing Recorded Media \n    22 \n  \n\n Construction \n    45 \n  \n\n Sale Maint Rep.Mot.Vehicles;Ret.Sale Fue \n    50 \n  \n\n Wholesale Commission Trade Exc.Mot.Vehic \n    51 \n  \n\n Retail Trade Exc.Mot.Vehic;Mot.Cyc Repai \n    52 \n  \n\n Hotels And Restaurants \n    55 \n  \n\n Post And Telecommunications \n    64 \n  \n\n Real Estate Property Activities \n    70 \n  \n\n Rent.Machinery Equip Wo.Oper. P. HH Good \n    71 \n  \n\n Recreational Cultural Sporting Activity \n    92 \n  \n\n Services - NEC \n    98 \n  \n\n Transportation \n    Land Transport; Transport Via Pipelines \n    60 \n  \n\n Water Transport \n    61 \n  \n\n Air Transport \n    62 \n  \n\n Supporting Aux.Transp.Activ;Trav.Agencie \n    63"
+  },
+  {
+    "objectID": "03-week3-workbook.html#mosaic-plots",
+    "href": "03-week3-workbook.html#mosaic-plots",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Mosaic Plots",
+    "text": "Mosaic Plots\n\nUnlike bar charts, mosaic plots allow us to index relative areas, sizes, proportions, etc. relative to two dimensions (so not just amount)\nSo in our example, this will let us see relative differences within categories vertically and across categories horizontally\nTo build this, we will finally leave the basic ggplot2 package and use the ggmosaic package\nThere are other packages, but we’ll use this one because (1) it’s great and (2) it let’s us still use everything we’ve learned about ggplot\n\nWrangle the Data\n\nCodeif(!\"ggmosaic\" %in% installed.packages()) install.packages(\"ggmosaic\")\nlibrary(ggmosaic)\n\ngsoep_jobs <- gsoep %>%\n  mutate(age_gr = mapvalues(age, 20:99, rep(seq(20, 90, 10), each = 10))) %>%\n  filter(!is.na(age_gr) & age >= 20 & age < 100) %>%\n  group_by(SID) %>%\n  filter(!is.na(job)) %>%\n  filter(age_gr == max(age_gr)) %>%\n  group_by(SID, age_gr) %>%\n  summarize(job = max(job)) %>%\n  ungroup() %>%\n  rename(code = job) %>%\n  left_join(jobs %>% rename(code = old)) %>%\n  group_by(code) %>%\n  filter(n() / nrow(.) >= .02) %>%\n  ungroup() \ngsoep_jobs\n\n\n\n  \n\n\n\n\nLet’s say, for example, that we think that functional limitations and more may age people out of some professions\nWe could look at this simply as a stacked bar chart, but it wouldn’t clarify that there are different proportions of people in each job category / age group\nWe’ve already had a bunch of practice today improving plot aesthetics and seen somewhat similar plots, so we’re going to skip that for this exercise\n\n\nCodegsoep_jobs %>%\n  ggplot() + \n    geom_mosaic(aes(x = product(age_gr), fill = cat)) + \n    theme_classic() + \n    theme(legend.position = \"none\")"
+  },
+  {
+    "objectID": "03-week3-workbook.html#treemap",
+    "href": "03-week3-workbook.html#treemap",
+    "title": "Week 3 (Workbook) - Proportions",
+    "section": "Treemap",
+    "text": "Treemap\n\nMosaic plots are sort of just fancy stacked bar plots that let you also index by size\nTreemaps are helpful when we have nested categorical (and sometimes, to a lesser degree continuous) variables\nWe’ll use the example of our jobs data, but this could be used for lots of other types of variables\n\nCrossed conditions in an experiment\nIntergenerational data\nAverage scores on variables within categories\nBrain activation across broader and narrower brain regions\nPolitical affiliation across states, demographic groups, and more\n\n\n\nWrangle the Data\n\nCodegsoep_tm <- gsoep %>%\n  group_by(SID) %>%\n  filter(!is.na(job)) %>%\n  group_by(SID) %>%\n  summarize(job = max(job)) %>%\n  ungroup() %>%\n  rename(code = job) %>%\n  left_join(jobs %>% rename(code = old)) %>%\n  group_by(code, cat, job) %>%\n  tally()  %>%\n  ungroup() %>%\n  filter(n/sum(n) > .02) %>%\n  mutate(job = str_wrap(job, 15))\ngsoep_tm\n\n\n\n  \n\n\n\nBasic\n\nCodeif(!\"treemapify\" %in% installed.packages()) install.packages(\"treemapify\")\nlibrary(treemapify)\n\ngsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) \n\n\n\n\n\n\n\nImprovements: Remove Legend and Add Labels\n\nCodegsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = \"white\"\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nImprovements: Add Subgroup Text\n\nCodegsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = \"white\"\n    , fontface = \"italic\"\n    ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nImprovements: Color Palette\n\nCodegsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = \"white\"\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = \"white\"\n    , fontface = \"italic\"\n    ) +\n  scale_fill_viridis_d()  +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nImprovements: Group and Subgroup Borders + Text Color\n\nCodegsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , fontface = \"italic\"\n    ) +\n  geom_treemap_subgroup_border(\n    colour = \"white\"\n    , size = 5\n    ) +\n  scale_fill_viridis_d()  +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nImprovements: Title\n\nCodegsoep_tm %>%\n  arrange(cat, code) %>%\n  ggplot(aes(area = n, fill = cat, label = job, subgroup = cat)) +\n  geom_treemap(color = \"white\", size = 3) +\n  geom_treemap_text(\n    colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , place = \"centre\"\n    , size = 15\n    , grow = FALSE\n    ) +\n  geom_treemap_subgroup_text(\n    place = \"bottom\"\n    , grow = TRUE\n    , alpha = 0.4\n    , colour = c(rep(\"white\", 11), rep(\"black\",4))\n    , fontface = \"italic\"\n    ) +\n  geom_treemap_subgroup_border(\n    colour = \"white\"\n    , size = 5\n    ) +\n  scale_fill_viridis_d()  +\n  labs(title = \"White Collar Public Service, Sales, and\\nFinance Jobs Far Outnumber Blue Collar Jobs\") + \n  theme(legend.position = \"none\"\n        , plot.title = element_text(face = \"bold\", hjust = .5))"
   }
 ]
