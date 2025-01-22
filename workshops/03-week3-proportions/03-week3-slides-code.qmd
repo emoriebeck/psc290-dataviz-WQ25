@@ -46,6 +46,12 @@ library(plyr)
 library(tidyverse)
 ```
 
+## Structure for today 
+* Today we'll talk about visualizing proportions. 
+* Our readings discussions will be folded into the application portion, with lots of breaks in lecture / demonstration to practice yourselves. 
+* Download the materials today at [https://bit.ly/dataviz25-03](https://bit.ly/dataviz25-03). 
+* Open up the week-03-workbook-students.qmd, which will have blanks for you to complete the built-in exercises. 
+
 # Quick Review
 
 ## Review
