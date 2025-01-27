@@ -1,0 +1,11 @@
+---
+title: "Problem Set 1"
+---
+
+**Due Date**: Wednesday, January 22, 9:30 AM PST.
+
+[Download](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/assignments/03-problem-sets/01-ps01/ps1-solutions.zip) your problem set for week 1 below or on Canvas.
+
+<iframe class="slide-deck" src="/static/ps/problemset1-solutions.pdf" width="100%" height="800">
+
+</iframe>
