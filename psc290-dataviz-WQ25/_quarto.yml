@@ -54,7 +54,7 @@ website:
       contents:
         - ps1.qmd
         - ps1-solutions.qmd
-        # - ps2-week2.qmd
+        - ps2.qmd
         # - ps3-week3.qmd
         # - ps4-week4.qmd
         # - ps5-week5.qmd
