@@ -1,5 +1,5 @@
 ---
-title: "Week 4 (Workbook) - Associations"
+title: "Week 4: Visualizing Associations and Models"
 author: "Emorie D Beck"
 format: 
   html:
@@ -67,7 +67,7 @@ pred_data <- pred_data$data[[4]]
 save(pred_data, file = "/Volumes/Emorie/GitHub/psc290-data-viz-2022/04-week4-associations/04-data/week4-data.RData")
 ```
 
-## The Data
+## The Data  
 
 ```{r}
 load(url("https://github.com/emoriebeck/psc290-data-viz-2022/blob/main/04-week4-associations/04-data/week4-data.RData?raw=true"))
@@ -76,24 +76,23 @@ pred_data
 
 # Part 1 Visualizing Associations Among Quantitative Variables
 
-## Scatterplots
-
--   Scatterplots are pretty ubiquitous
--   From a data visualization standpoint, this makes sense
--   Scatterplots
-    -   show raw data\
-    -   are common enough that little visualization literacy is needed
-    -   allow for lots of summaries to be placed atop them
-    -   this is why they are our entry point for today
-
-## Scatterplots - Basics
+## Scatterplots  
+* Scatterplots are pretty ubiquitous 
+* From a data visualization standpoint, this makes sense
+* Scatterplots
+  * show raw data  
+  * are common enough that little visualization literacy is needed
+  * allow for lots of summaries to be placed atop them
+  * this is why they are our entry point for today
+  
+## Scatterplots - Basics  
 
 ```{r}
 pred_data %>% 
   select(study, SID, p_value, SRhealth)
 ```
 
-Let's look at a basic scatterplot:
+Let's look at a basic scatterplot: 
 
 ```{r}
 pred_data %>% 
@@ -107,7 +106,7 @@ pred_data %>%
     theme_classic()
 ```
 
-Now let's add a trend line:
+Now let's add a trend line:  
 
 ```{r}
 pred_data %>% 
@@ -139,6 +138,8 @@ pred_data %>%
     theme_classic()
 ```
 
+
+
 ```{r}
 pred_data %>% 
   select(study, SID, p_value, SRhealth) %>%
@@ -155,7 +156,7 @@ pred_data %>%
     theme_classic()
 ```
 
-But if you remember from your readings, we don't typically want to show associations without some sort of estimate of error, confidence, etc.
+But if you remember from your readings, we don't typically want to show associations without some sort of estimate of error, confidence, etc. 
 
 ```{r}
 pred_data %>% 
@@ -174,23 +175,18 @@ pred_data %>%
     theme_classic()
 ```
 
-## Correlations and Correlelograms
+## Correlations and Correlelograms  
 
--   Understanding associations is always important, but perhaps never more so than when we do descriptives
+* Understanding associations is always important, but perhaps never more so than when we do descriptives
+* My hot take is that zero-order correlation maatrices should always be included in papers
+  + Someone's meta-analysis will thank you
+* If you're dumping correlations in supplementary materials, then tables are fine
+* But you (and your brain) will thank yourself if you use heat maps or correlelograms to visualize the correlations
+  + (Remember how quickly and preattentively we perceive color and size?)
+* There are `R` packages for this, but where's the fun in that?
 
--   My hot take is that zero-order correlation maatrices should always be included in papers
 
-    -   Someone's meta-analysis will thank you
-
--   If you're dumping correlations in supplementary materials, then tables are fine
-
--   But you (and your brain) will thank yourself if you use heat maps or correlelograms to visualize the correlations
-
-    -   (Remember how quickly and preattentively we perceive color and size?)
-
--   There are `R` packages for this, but where's the fun in that?
-
--   All right, let's estimate some correlation matrices for each sample.
+* All right, let's estimate some correlation matrices for each sample.
 
 ```{r}
 r_data <- pred_data %>%
@@ -203,22 +199,21 @@ r_data <- pred_data %>%
 r_data
 ```
 
--   The thing is that we know ggplot doesn't like wide form data, which is what `cor()` produces
 
+* The thing is that we know ggplot doesn't like wide form data, which is what `cor()` produces
 ```{r}
 r_data$r[[1]]
 ```
 
-### Reshaping
-
--   So we need to reshape it in long form
--   We're going to use a function so we only have to write the code once and can apply it to all the samples
--   Here's what we'll do:
-    -   remove the lower triangle and the diagonal of the correlation matrix
-    -   make matrix a data frame
-    -   make the row names of the matrix a column
-    -   make the columns long
-    -   factor them to retain order
+### Reshaping  
+* So we need to reshape it in long form
+* We're going to use a function so we only have to write the code once and can apply it to all the samples
+* Here's what we'll do: 
+  + remove the lower triangle and the diagonal of the correlation matrix
+  + make matrix a data frame 
+  + make the row names of the matrix a column
+  + make the columns long
+  + factor them to retain order
 
 ```{r}
 r_reshape_fun <- function(r){
@@ -232,7 +227,8 @@ r_reshape_fun <- function(r){
       , values_to = "r"
       , names_to = "V2"
     ) %>%
-    mutate_at(vars(V1, V2), ~factor(., coln))
+    mutate(V1 = factor(V1, coln)
+           , V2 = factor(V2, rev(coln)))
 }
 
 r_data <- r_data %>%
@@ -241,7 +237,6 @@ r_data$r[[1]]
 ```
 
 ### Heat Map Time!
-
 This is, technically, a heat map, but I think we can do better!
 
 ```{r}
@@ -276,7 +271,7 @@ r_data$r[[1]] %>%
 
 #### Labels
 
-Do we need axis labels?
+Do we need axis labels? 
 
 ```{r}
 r_data$r[[1]] %>%
@@ -356,7 +351,8 @@ r_data$r[[1]] %>%
   )
 ```
 
-### Correlelogram
+
+### Correlelogram  
 
 A correlelogram is basically a heat map that uses size in addition to color.
 
@@ -367,9 +363,10 @@ r_data$r[[1]] %>%
   theme_classic()
 ```
 
-#### Improvements
+#### Improvements  
 
-We're going to skip the steps we took with a heat map. So close! Just need to get rid of that size legend.
+We're going to skip the steps we took with a heat map.
+So close! Just need to get rid of that size legend.
 
 ```{r}
 r_data$r[[1]] %>%
@@ -399,8 +396,7 @@ r_data$r[[1]] %>%
 ```
 
 #### Legend
-
--   To do this, we'll use the `guides()` function!
+* To do this, we'll use the `guides()` function!
 
 ```{r}
 r_data$r[[1]] %>%
@@ -432,17 +428,18 @@ r_data$r[[1]] %>%
 
 # Part 2 Visualizing Associations, Parameters, and Predictions from Models
 
--   The goal of data visualization is to tell a story that tables, words, etc. either can't or can't do simply
--   Data visualizations aims to clarify complex patterns in data
--   Thus far, we've mostly focused on building models from raw data or descriptives of raw data
--   But in most research, we lean on inferential statistics and hypothesis testing (frequent or Bayesian) to tell our story
--   So next, we'll talk about how to use data visualization to tell stories *with* models
-    -   The reality is that there is no generalizable way to do this
-    -   So we will focus on models for which we are interested in specific parameters and/or parameterized our questions
-    -   Why? These have some shared functions across *lots* of packages in R
-    -   For models that don't, that's a data cleaning problem, not a visualization problem
--   Let's start with a basic model and predict later all-cause mortality from Conscientiousness in Sample 1.\
--   The basic form of the model is:
+* The goal of data visualization is to tell a story that tables, words, etc. either can't or can't do simply
+* Data visualizations aims to clarify complex patterns in data
+* Thus far, we've mostly focused on building models from raw data or descriptives of raw data
+* But in most research, we lean on inferential statistics and hypothesis testing (frequent or Bayesian) to tell our story
+* So next, we'll talk about how to use data visualization to tell stories *with* models
+  + The reality is that there is no generalizable way to do this
+  + So we will focus on models for which we are interested in specific parameters and/or parameterized our questions
+  + Why? These have some shared functions across *lots* of packages in R
+  + For models that don't, that's a data cleaning problem, not a visualization problem
+
+* Let's start with a basic model and predict later all-cause mortality from Conscientiousness in Sample 1.  
+* The basic form of the model is: 
 
 $$
 logit(\frac{\pi}{1-\pi}) = b_0 + b_1*C_{ij} + \epsilon_{ij}
@@ -452,56 +449,59 @@ $$
 ds1 <- pred_data %>% filter(study == "Study1")
 m1 <- glm(o_value ~ p_value, data = ds1, family = binomial(link = "logit"))
 summary(m1)
-```
+```  
 
--   Models and other objects in `R` are stored in lists or list-like objects
--   We can explore these lots of ways, but one good one is with `str()`
+* Models and other objects in `R` are stored in lists or list-like objects
+* We can explore these lots of ways, but one good one is with `str()`
 
 ```{r}
 str(m1)
 ```
 
--   The `broom` package is great for working with models (and the `broom.mixed` add-on makes it even better)
--   We're going to talk about how three its functions can be used for / improve data visualization:
-    -   `tidy()`
-    -   `glance()`
-    -   `augment()`
+* The `broom` package is great for working with models (and the `broom.mixed` add-on makes it even better)
+* We're going to talk about how three its functions can be used for / improve data visualization: 
+  + `tidy()`
+  + `glance()`
+  + `augment()`
 
 ## Models + `broom`: `tidy()`
 
--   Outside of `dplyr`/`tidyr`, `tidy()` is a close contender with `purrr::map()` functions as my most used function
--   Why?
-    -   When you run a model, base `R` provides the `summary()`, `coef()`, etc. to extract various components of the model
-    -   But these aren't `data.frames`, which are core input to a lot of other `R` functions across packages
-    -   `tidy()` provides a data frame with core model coefficients, inferential tests, etc. that be easily matched and merged across models, etc.
--   But with logistic regression with a logit link, we are left with coefficents that have to be interpreted in log odds, which realistically, almost no one can do
--   So we have to "undo" the log, which you may remember can done by exponentiating the natural log (ln)
--   But we can directly exponentiate from the summary function because it's the wrong class of object
--   We could just exponentiate the coefficients from the `coef()` function, but this still leaves us with the need to extract estimates of precision, like standard errors, confidence intervals, and more.
+* Outside of `dplyr`/`tidyr`, `tidy()` is a close contender with `purrr::map()` functions as my most used function
+* Why? 
+  + When you run a model, base `R` provides the `summary()`, `coef()`, etc. to extract various components of the model
+  + But these aren't `data.frames`, which are core input to a lot of other `R` functions across packages
+  + `tidy()` provides a data frame with core model coefficients, inferential tests, etc. that be easily matched and merged across models, etc. 
+
+
+* But with logistic regression with a logit link, we are left with coefficents that have to be interpreted in log odds, which realistically, almost no one can do
+* So we have to "undo" the log, which you may remember can done by exponentiating the natural log (ln)
+* But we can directly exponentiate from the summary function because it's the wrong class of object
+* We could just exponentiate the coefficients from the `coef()` function, but this still leaves us with the need to extract estimates of precision, like standard errors, confidence intervals, and more. 
 
 ```{r}
 coef(m1)
 ```
 
--   Enter `broom::tidy()`!
+
+* Enter `broom::tidy()`!
 
 ```{r}
 tidy(m1)
 ```
 
--   Even better, we can easily get confidence intervals
+* Even better, we can easily get confidence intervals
 
 ```{r}
 tidy(m1, conf.int = T)
 ```
 
-### Multiple Parameter Plots
+### Multiple Parameter Plots  
 
--   But when would you ever want to create a plot of just two parameters? Maybe never, but what if we wanted to do it for all 6 samples?
--   Watch! Let's make a nested data frame that will hold
-    -   All the data for each sample
-    -   A model for each sample
-    -   The `tidy()` data frame of the parmeter estimates for each sample
+* But when would you ever want to create a plot of just two parameters? Maybe never, but what if we wanted to do it for all 6 samples?
+* Watch! Let's make a nested data frame that will hold
+  + All the data for each sample
+  + A model for each sample
+  + The `tidy()` data frame of the parmeter estimates for each sample
 
 ```{r}
 tidy_ci <- function(m) tidy(m, conf.int = T)
@@ -525,8 +525,7 @@ nested_m %>%
   unnest(tidy)
 ```
 
-### Basic Plot
-
+### Basic Plot  
 Now these parameters from multiple models, we may want to plot!
 
 ```{r}
@@ -547,7 +546,6 @@ nested_m %>%
 ```
 
 #### Faceting
-
 Almost, but we have two parameters for each model (Intercept and p_value), so let's split those in a facet:
 
 ```{r}
@@ -568,9 +566,14 @@ nested_m %>%
     theme_classic()
 ```
 
-We've got some work to do to make this an intuitive figure. Let's: + Add a dashed line at 1 (odd ratio of 1 is a null effect) + Make the points bigger + Fix the titles on the plot and axis titles + Add some color + Fiddle with themes to make it prettier
+We've got some work to do to make this an intuitive figure. Let's: 
+  + Add a dashed line at 1 (odd ratio of 1 is a null effect)
+  + Make the points bigger
+  + Fix the titles on the plot and axis titles
+  + Add some color
+  + Fiddle with themes to make it prettier
 
-#### Null Comparison
+#### Null Comparison  
 
 Add a dashed line at 1 (odd ratio of 1 is a null effect)
 
@@ -593,9 +596,8 @@ nested_m %>%
     theme_classic()
 ```
 
-#### Point Size
-
--   Make the points bigger
+#### Point Size  
++ Make the points bigger
 
 ```{r}
 nested_m %>%
@@ -616,9 +618,10 @@ nested_m %>%
     theme_classic()
 ```
 
-#### Titles
 
--   Fix the titles on the plot and axis titles
+#### Titles  
+
++ Fix the titles on the plot and axis titles
 
 ```{r}
 nested_m %>%
@@ -645,9 +648,10 @@ nested_m %>%
     theme_classic()
 ```
 
-#### Color and Themes
+#### Color and Themes  
 
-Add some color Fiddle with themes to make it prettier
+Add some color
+Fiddle with themes to make it prettier
 
 ```{r}
 nested_m %>%
@@ -685,32 +689,32 @@ nested_m %>%
     )
 ```
 
--   This isn't perfect. But we're going to come back to this kind of plot when we talk about "piecing plots together."
--   Personally, I would:
-    -   Add text with Est. (CI) and N for each sample in the figure
-    -   Build both of these separately in order to order by effect size
-    -   Then put them back together and re-add the title
+
+* This isn't perfect. But we're going to come back to this kind of plot when we talk about "piecing plots together." 
+* Personally, I would: 
+  + Add text with Est. (CI) and N for each sample in the figure
+  + Build both of these separately in order to order by effect size
+  + Then put them back together and re-add the title
 
 ## Models + `broom`: `glance()`
-
--   When we run models, we need to care about more that just point and interval estimates
--   Often we are interested in comparing models, checking diagnostics, etc.
--   Again, all of these are embedded (mostly), in the model objects
--   The `glance()` function brings some of these important ones into a single object
--   Here's what it gives us for our logistic regression model
+* When we run models, we need to care about more that just point and interval estimates
+* Often we are interested in comparing models, checking diagnostics, etc. 
+* Again, all of these are embedded (mostly), in the model objects 
+* The `glance()` function brings some of these important ones into a single object
+* Here's what it gives us for our logistic regression model
 
 ```{r}
 glance(m1)
 ```
 
--   Let's also look for al linear model, which may be more familiar for many of you:
+* Let's also look for al linear model, which may be more familiar for many of you: 
 
 ```{r}
 m2 <- lm(SRhealth ~ age, data = ds1)
 glance(m2)
 ```
 
-As before, we can do this with lots of models to compare across samples:
+As before, we can do this with lots of models to compare across samples: 
 
 ```{r}
 nested_m <- nested_m %>%
@@ -724,7 +728,7 @@ nested_m %>%
   unnest(glance)
 ```
 
-Realistically, this is the kind of info we table, but we can also merge it with info from tidy:
+Realistically, this is the kind of info we table, but we can also merge it with info from tidy: 
 
 ```{r}
 nested_m %>%
@@ -734,21 +738,21 @@ nested_m %>%
   mutate_if(is.numeric, ~round(., 2))
 ```
 
--   Diagnostics are not just summary statistics!
--   We care a lot about prediction, too
-    -   Residuals both tell us unexplained variance (i.e. how observed data deviate from model predictions)
-    -   Model predictions and prediction intervals tell us about how our model is doing across levels our variables
+* Diagnostics are not just summary statistics! 
+* We care a lot about prediction, too
+  + Residuals both tell us unexplained variance (i.e. how observed data deviate from model predictions)
+  + Model predictions and prediction intervals tell us about how our model is doing across levels our variables
 
-Let's keep working with our nested data frame. Remember, it looks like this:
-
+Let's keep working with our nested data frame. Remember, it looks like this: 
+  
 ```{r}
 nested_m
 ```
 
 ## Models + `broom`: `augment()`
 
--   `augment()` let's us add (augment) the raw data we feed the model based on the fitted model
--   Notice we now have more columns
+* `augment()` let's us add (augment) the raw data we feed the model based on the fitted model
+* Notice we now have more columns  
 
 ```{r}
 nested_m <- nested_m %>%
@@ -756,15 +760,15 @@ nested_m <- nested_m %>%
 nested_m
 ```
 
-### `glm()` + `augment()`
+### `glm()` + `augment()`  
 
--   Here's the columns we used along with the additional columns with a `glm`:
-    -   `.fitted`: fitted / predicted value
-    -   `.se.fit`: standard error
-    -   `.resid`: observed - fitted
-    -   `.std.resd`: standardized residuals
-    -   `.sigma`: estimated residual SD when this obs is dropped from model
-    -   `cooksd`: Cooks distance (is this an outlier?)
+* Here's the columns we used along with the additional columns with a `glm`: 
+  + `.fitted`: fitted / predicted value
+  + `.se.fit`: standard error 
+  + `.resid`: observed - fitted
+  + `.std.resd`: standardized residuals
+  + `.sigma`: estimated residual SD when this obs is dropped from model
+  + `cooksd`: Cooks distance (is this an outlier?)
 
 ```{r}
 nested_m$data[[1]] %>%
@@ -772,8 +776,7 @@ nested_m$data[[1]] %>%
 ```
 
 ### `lm()` + `augment()`
-
-For the most part, many of the checks with `glm`'s and `lm`'s are the same. But it's a bit easier to wrap your head around `lm()`, so let's switch to that:
+For the most part, many of the checks with `glm`'s and `lm`'s are the same. But it's a bit easier to wrap your head around `lm()`, so let's switch to that: 
 
 ```{r}
 nested_lm <- pred_data %>%
@@ -789,17 +792,18 @@ nested_lm <- pred_data %>%
 nested_lm
 ```
 
--   Here's the columns we used along with the additional columns with an `lm`:
-    -   `.fitted`: fitted / predicted value
-    -   `.se.fit`: standard error
-    -   `.lower`: lower bound of the confidence/prediction interval
-    -   `.upper`: upper bound of the confidence/prediction interval
-    -   `.resid`: observed - fitted
-    -   `.std.resd`: standardized residuals
-    -   `.sigma`: estimated residual SD when this obs is dropped from model
-    -   `cooksd`: Cooks distance (is this an outlier?)
--   One standard diagnostic plot is to plot fitted values v residuals
--   Looks a little wonky (remember, these are results from multiple harmonized studies)
+* Here's the columns we used along with the additional columns with an `lm`: 
+  + `.fitted`: fitted / predicted value
+  + `.se.fit`: standard error
+  + `.lower`: lower bound of the confidence/prediction interval
+  + `.upper`: upper bound of the confidence/prediction interval
+  + `.resid`: observed - fitted
+  + `.std.resd`: standardized residuals
+  + `.sigma`: estimated residual SD when this obs is dropped from model
+  + `cooksd`: Cooks distance (is this an outlier?)
+
+* One standard diagnostic plot is to plot fitted values v residuals
+* Looks a little wonky (remember, these are results from multiple harmonized studies)
 
 ```{r}
 nested_lm %>%
@@ -813,10 +817,9 @@ nested_lm %>%
   theme_classic()
 ```
 
-### Plotting `augment()` Diagnostics
-
--   One standard diagnostic plot is to plot fitted values v residuals
--   Looks a little wonky (remember, these are results from multiple harmonized studies)
+### Plotting `augment()` Diagnostics  
+* One standard diagnostic plot is to plot fitted values v residuals
+* Looks a little wonky (remember, these are results from multiple harmonized studies)
 
 ```{r}
 nested_lm %>%
@@ -851,11 +854,11 @@ nested_lm %>%
   theme_classic()
 ```
 
-### Model Predictions
+### Model Predictions  
 
--   Although we can get the standard error of the prediction for each person, we often want to look at theoretical predictions, adjusting for covariates. We can typically use built-in `predict()` or `fitted()` functions
--   To do this, we need to see theoretical ranges of key variables and grab averages of covariates
--   I use functions for this. We'll do one and build
+* Although we can get the standard error of the prediction for each person, we often want to look at theoretical predictions, adjusting for covariates. We can typically use built-in `predict()` or `fitted()` functions
+* To do this, we need to see theoretical ranges of key variables and grab averages of covariates
+* I use functions for this. We'll do one and build
 
 ```{r}
 m1 <- nested_lm$m[[1]]
@@ -871,7 +874,7 @@ crossing(
   )
 ```
 
-#### Plotting That
+#### Plotting That  
 
 ```{r}
 crossing(
@@ -888,10 +891,10 @@ crossing(
     theme_classic()
 ```
 
--   This is fine, but it could use some improvements:
-    -   better scales
-    -   raw data
-    -   the usual aesthetics
+* This is fine, but it could use some improvements: 
+  + better scales
+  + raw data 
+  + the usual aesthetics
 
 #### Better scales
 
@@ -912,7 +915,7 @@ crossing(
     theme_classic()
 ```
 
-#### Raw Data
+#### Raw Data 
 
 ```{r}
 crossing(
@@ -991,8 +994,8 @@ nested_lm %>%
   unnest(pred)
 ```
 
--   Now let's do it for all of the samples
--   Very close, but our intervals are cutoff
+* Now let's do it for all of the samples
+* Very close, but our intervals are cutoff
 
 ```{r}
 nested_lm %>%
@@ -1019,8 +1022,8 @@ nested_lm %>%
       )
 ```
 
--   Now let's do it for all of the samples
--   Very close, but our intervals are cutoff
+* Now let's do it for all of the samples
+* Very close, but our intervals are cutoff
 
 ```{r}
 nested_lm %>%
@@ -1052,7 +1055,7 @@ nested_lm %>%
 ```
 
 ## Wrapping Up
+* This is a quick introduction to visualizing associations and working with models
+* Here, we focused on doing things very manually to promote understanding
+* But there are lots of packages to automate much of this
 
--   This is a quick introduction to visualizing associations and working with models
--   Here, we focused on doing things very manually to promote understanding
--   But there are lots of packages to automate much of this
