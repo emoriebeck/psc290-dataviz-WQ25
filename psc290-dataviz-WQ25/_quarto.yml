@@ -33,8 +33,8 @@ website:
         - 03-week3-slides.qmd
         - 04-week4-workbook.qmd
         - 04-week4-slides.qmd
-        # - 05-week5-slides.qmd
-        # - 05-week5-workbook.qmd
+        - 05-week5-workbook.qmd
+        - 05-week5-slides.qmd
         # - 06-week6-slides.qmd
         # - 06-week6-workbook.qmd
         # - 07-week7-slides.qmd
