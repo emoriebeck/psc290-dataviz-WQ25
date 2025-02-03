@@ -2,7 +2,7 @@
 title: "Week 5 (Slides) - Time Series"
 ---
 
-Welcome to Week 5! This week, focus on visualizing time series.
+Welcome to Week 5! This week, focus on visualizing time series. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/05-week5-time-series/05-week5.zip).
 
 <div>
 

@@ -2,7 +2,7 @@
 title: "Week 4 (Slides) - Associations"
 ---
 
-Welcome to Week 4! This week, focus on visualizing associations. This week requires dipping into knowledge of programming and modeling, so please refer to the end of the slides for some suggestions about where to learn more / background.
+Welcome to Week 4! This week, focus on visualizing associations. This week requires dipping into knowledge of programming and modeling, so please refer to the end of the slides for some suggestions about where to learn more / background. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/04-week4-associations/week-4-slides.zip):
 
 <div>
 

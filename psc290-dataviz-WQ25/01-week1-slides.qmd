@@ -2,10 +2,12 @@
 title: "Week 1 (Slides) - Getting Situated in R and tidyverse"
 ---
 
-Welcome to Week 1! This week, we introduce the course and review `tidyverse` core functions.
+Welcome to Week 1! This week, we introduce the course and review `tidyverse` core functions. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/01-week1-intro/02-code/week-1-slides.zip).
 
 <div>
 
-<iframe class="slide-deck" src="/slides/01-week1-slides-code.html" width="1200" height="800"></iframe>
+<iframe class="slide-deck" src="/slides/01-week1-slides-code.html" width="1200" height="800">
+
+</iframe>
 
 </div>
