@@ -1,0 +1,11 @@
+---
+title: "Problem Set 2 Solutions"
+---
+
+**Due Date**: Wednesday, February 5, 9:30 AM PST.
+
+[Download](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/assignments/03-problem-sets/02-ps02/ps2-solutions.zip) solutions problem set for week 1 below or on Canvas.
+
+<iframe class="slide-deck" src="/static/ps/problemset2-solution.html" width="100%" height="800">
+
+</iframe>

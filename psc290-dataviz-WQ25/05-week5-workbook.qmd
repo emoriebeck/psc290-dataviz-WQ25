@@ -293,6 +293,68 @@ p +
 * We can also apply the same principles to either: 
   + the same variable across participants
   + different variables within the same participant
+  
+
+### Mini Multiples Plots
+
+```{r, echo = F, fig.dim=c(12,8)}
+subs <- ipcs_data %>% group_by(SID) %>% tally() %>% arrange(desc(n)) %>% slice_head(n = 20) %>% pull(SID)
+ipcs_data %>% 
+  filter(SID %in% subs) %>%
+  select(SID, Full_Date, beep, excited
+         , goaldir, content, guilty) %>%
+  ggplot(aes(x = beep, y = content)) + 
+  geom_line() + 
+  geom_point(size = .5) + 
+  labs(
+    x = "Beep"
+    , y = "Momentary Contentedness (1-5)"
+    , title = "Mini Multiples Plot of Contentedness Time Series") + 
+  facet_wrap(~SID, nrow = 4) + 
+  my_theme()
+```
+
+```{r, eval = T, fig.dim=c(12,8)}
+subs <- ipcs_data %>% group_by(SID) %>% tally() %>% arrange(desc(n)) %>% slice_head(n = 20) %>% pull(SID)
+ipcs_data %>% 
+  filter(SID %in% subs) %>%
+  select(SID, Full_Date, beep, content) %>%
+  ggplot(aes(x = beep, y = content)) + 
+  geom_line() + 
+  geom_point(size = .5) + 
+  facet_wrap(~SID, nrow = 4) + 
+  my_theme()
+```
+
+```{r}
+nested_minis <- ipcs_data %>%
+  group_by(SID) %>%
+  filter(n() > 30) %>%
+  ungroup() %>%
+  select(SID) %>%
+  distinct() %>%
+  mutate(id2 = 1:n())
+nested_minis <- nested_minis %>% 
+  inner_join(ipcs_data) %>% 
+  mutate(gr = ifelse(id2 <= 20, 1, ifelse(id2 <= 40, 2, ifelse(id2 <= 60, 3, 4)))) %>%
+  group_by(gr) %>%
+  nest() %>%
+  ungroup()
+```
+
+```{r}
+mini_mult_plot <- function(d){
+  d %>% 
+    ggplot(aes(x = beep, y = content)) + 
+      geom_line() + 
+      geom_point(size = .5) + 
+      facet_wrap(~SID, nrow = 4) + 
+      my_theme()
+}
+
+nested_minis <- nested_minis %>%
+  mutate(p = map(data, mini_mult_plot)); nested_minis
+```
 
 ### Same variable; different participants
 
@@ -896,6 +958,7 @@ p6 <- gsoep %>%
   ) %>%
   ggplot(aes(x = age, y = value, color = item)) + 
   my_theme()
+p6
 ```
 
 ```{r}
