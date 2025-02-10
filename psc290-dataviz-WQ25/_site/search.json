@@ -2245,5 +2245,131 @@
     "title": "Final Project Presentation",
     "section": "",
     "text": "Due at 9:30 AM PST on March 12, 2025 on Canvas (visualization or slides)\nPresentations will be in class on March 12 (in person or Zoom)\n\n\n\n\nUp to 4 minute presentation (slides or simply the draft visualization), data blitz style, where you speak on:\n\nShort background (why do you / we care?)\nResearch question(s; only the question[s] you are focusing on)\nShort method (what are the data? Which are you using?)\nShowcase your visualization\n(optional) lingering questions or challenges\n\n\n\n\n\nThe goal of this presentation is to:\n\nProvide you with feedback from both instructor and classmates on the efficacy of your draft visualization\nClear up lingering challenges and barriers\nAllow you to practice talking about visualizations of your research\n\n\n\n\nAs a reminder, there are no restrictions on the scope of your presentation. Some ideas of what’s perfectly fine are as follows:\n\nIntroducing a new kind of visualization to your area of research\nOffering improvements to “standard practice” visualizations in your area\nSetting up a procedure for a kind of visualization you’ve long wanted / needed to figure out\nReally anything that is both useful to you and displays some sort of mastery of course content\n\n\n\n\nI will give an example data blitz on March 5 to showcase how your presentation may look. I will use the same example (below) that I included in your proposal instructions:\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question (Beck & Jackson, 2022). There were five research questions I was answering more generally, but one was just “Do psychological, situational, time, or full feature sets perform best?” I answered this with the following visualization, which shows the relative proportion of individuals’ psychological, situational, and timing features in their best performing model using a “sequence plot” I stole from genetics (which you’ll notice looks a lot like a rotated stacked bar chart, which it is!)."
+  },
+  {
+    "objectID": "final-project-rubric.html",
+    "href": "final-project-rubric.html",
+    "title": "Final Project Paper Rubric",
+    "section": "",
+    "text": "Due at 11:59 PM PST on March 20, 2025 on Canvas\n\n\n\n\n\n\n\n\nSection / Description\nPoints\n\n\n\n\nBackground: Describe the background / impetus for your visualization. What makes your research question important and why should I care? 1-2 paragraphs is sufficient in most cases.\n4 points\n\n\nResearch Questions: Clearly state the research question(s) you are answering in your visualization and hypothesis(es), if any.\n4 points\n\n\nMethod: Short description of (1) Participants, (2) Measures, (3) Procedure, (4) Analytic Plan. Include each section (or others not listed here) as is applicable for your project. This does not need to be a full Method section, but it helps me know things about the range of scales, details like the number of trials, etc., which can help me in evaluating your visualization. There is no minimum of maximum length, but my guess is no less than 2-3 paragraphs.\n4 points\n\n\nResults: Write the paragraph (or paragraphs) that would refer to your viusalization as if you were putting it in a manuscript. Be sure to make reference to the figure and provide necessary description to make clear why it’s relevant to your results and/or answers your research question\n4 points\n\n\nVisualization: Include your viusalization and figure caption. This will be graded for its connection to the research question and overall clarity.\n4 points\n\n\nConnection to Class Concepts: Connect your visualization(s) to topics learned throughout the course. Did you use color to leverage preattentive processing? Grouping? Movement? Shape? Content can come from any part of the course. Please cite the reading or source you use as it will help me evaluate different readings used throughout the course.\n10 points\n\n\nTotal\n30 points"
+  },
+  {
+    "objectID": "06-week6-workbook.html#visualizing-uncertainty-1",
+    "href": "06-week6-workbook.html#visualizing-uncertainty-1",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Visualizing Uncertainty",
+    "text": "Visualizing Uncertainty\n\nWhy is visualizing uncertainty important?\n\nPoint estimates are over-emphasized and interval estimates are unemphasized (or ignored)\nMost people misperceive both (1) common uncertainty visualizations and (2) most common uncertainty metrics\nIn other words, people make errors about error\nProbability is hard, and most aren’t taught about probability distributions (and more)"
+  },
+  {
+    "objectID": "06-week6-workbook.html#theories-of-visualizing-uncertainty",
+    "href": "06-week6-workbook.html#theories-of-visualizing-uncertainty",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Theories of Visualizing Uncertainty",
+    "text": "Theories of Visualizing Uncertainty\nWhy do people misperceive uncertainty, and how can we mitigate it?"
+  },
+  {
+    "objectID": "06-week6-workbook.html#quick-side-note-custom-themes",
+    "href": "06-week6-workbook.html#quick-side-note-custom-themes",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Quick Side Note: Custom Themes",
+    "text": "Quick Side Note: Custom Themes\n\nWe have a lot to cover today, so I’m going to skip over some of the usual “how to start with the basics and make it aesthetically pleasing”\nInstead, we’ll create a custom these that captures some of our usual additions\n\nThis will save us both time and text!\n\nI highly recommend doing this in your own work\n\n\nCodemy_theme <- function(){\n  theme_classic() + \n  theme(\n    legend.position = \"bottom\"\n    , legend.title = element_text(face = \"bold\", size = rel(1))\n    , legend.text = element_text(face = \"italic\", size = rel(1))\n    , axis.text = element_text(face = \"bold\", size = rel(1.1), color = \"black\")\n    , axis.title = element_text(face = \"bold\", size = rel(1.2))\n    , plot.title = element_text(face = \"bold\", size = rel(1.2), hjust = .5)\n    , plot.subtitle = element_text(face = \"italic\", size = rel(1.2), hjust = .5)\n    , strip.text = element_text(face = \"bold\", size = rel(1.1), color = \"white\")\n    , strip.background = element_rect(fill = \"black\")\n    )\n}"
+  },
+  {
+    "objectID": "06-week6-workbook.html#error-bars",
+    "href": "06-week6-workbook.html#error-bars",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Error Bars",
+    "text": "Error Bars\n\nFirst, let’s examine the usual ways that we show uncertainty around point estimates (e.g., means, model parameter estimates, etc.) using interval estimates (+/- 1 SE/D, confidence interval)\n\n\n\n\n\n  \n\n\n\n\nCodepomp <- function(x) (x - min(x, na.rm = T))/(max(x, na.rm = T) - min(x, na.rm = T))*10\ngsoep %>%\n  filter(year == 2005) %>%\n  filter(SID %in% sample(unique(.$SID, 500))) %>%\n  mutate(SRhealth = pomp(SRhealth)) %>%\n  group_by(SID, age) %>%\n  mutate(health = rowMeans(cbind(SRhealth, satHealth))) %>%\n  ungroup() %>%\n  select(SID, age, health) %>%\n  drop_na()\n\n\n\n  \n\n\n\n\nCodegsoep_desc <- gsoep %>%\n  filter(year == 2005 & age < 30) %>%\n  filter(SID %in% sample(unique(.$SID), 500)) %>%\n  mutate(SRhealth = pomp(SRhealth)) %>%\n  group_by(SID, age) %>%\n  mutate(health = rowMeans(cbind(SRhealth, satHealth), na.rm = T)) %>%\n  ungroup() %>%\n  select(SID, age, health) %>%\n  drop_na() %>%\n  mutate(\n    mean = mean(health)\n    , sd = sd(health)\n    , se = sd/sqrt(n())\n    , ci99 = se*2.576\n    , ci95 = se*1.96\n    , ci80 = se*1.282\n    )\ngsoep_desc\n\n\n\n  \n\n\n\n\nCodegsoep_desc <- gsoep_desc %>% \n  select(mean:ci80, health, SID) %>%\n  pivot_longer(\n    cols = c(-mean, -SID)\n    , names_to = \"measure\"\n    , values_to = \"value\"\n    ) %>%\n  mutate(SID = ifelse(measure == \"health\" | row_number() %in% 1:5, SID, NA)) %>%\n  drop_na() %>%\n  mutate(measure = factor(measure, rev(c(\"health\", \"sd\", \"se\", \"ci99\", \"ci95\", \"ci80\"))))\ngsoep_desc\n\n\n\n  \n\n\n\n\nCodegsoep_desc %>%\n  ggplot(aes(y = measure, x = mean)) +\n    geom_point(size = 3, color = \"darkorange3\") + \n    geom_jitter(\n      data = gsoep_desc %>% filter(measure == \"health\")\n      , aes(x = value), alpha = .5, height = .3, width = 0\n    ) + \n    geom_errorbar(\n      data =  gsoep_desc %>% filter(measure != \"health\")\n      , aes(xmin = mean - value, xmax = mean + value)\n      , width = .1\n      ) + \n    geom_point(size = 3, color = \"darkorange3\") + \n    my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#so-what-do-we-do",
+    "href": "06-week6-workbook.html#so-what-do-we-do",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "So What Do We Do?",
+    "text": "So What Do We Do?\n\nLots of things, not all of which we have time for today. See also:\n\nhttps://janhove.github.io/visualise_uncertainty/\nhttps://wilkelab.org/SDS375/slides/visualizing-uncertainty.html#1\nhttps://wilkelab.org/ungeviz/\n#TeamBayes: http://mjskay.github.io/tidybayes/\n\n#TeamFrequentist: https://mjskay.github.io/ggdist/"
+  },
+  {
+    "objectID": "06-week6-workbook.html#outline-for-today",
+    "href": "06-week6-workbook.html#outline-for-today",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Outline for Today:",
+    "text": "Outline for Today:\n\nProportions / Probability\n\nicon array\n\n\nPoint Estimates\n\nhalf-eye\ngradient interval\nquantile dotplot\nraincloud\n\n\nAnimated (sometimes)\n\nhypothetical outcome plots\nensemble display"
+  },
+  {
+    "objectID": "06-week6-workbook.html#point-estimates-from-model-predictions",
+    "href": "06-week6-workbook.html#point-estimates-from-model-predictions",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Point Estimates From Model Predictions",
+    "text": "Point Estimates From Model Predictions"
+  },
+  {
+    "objectID": "06-week6-workbook.html#marginal-means-from-model-predictions",
+    "href": "06-week6-workbook.html#marginal-means-from-model-predictions",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Marginal Means from Model Predictions",
+    "text": "Marginal Means from Model Predictions"
+  },
+  {
+    "objectID": "06-week6-workbook.html#point-estimates-and-marginal-means",
+    "href": "06-week6-workbook.html#point-estimates-and-marginal-means",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Point Estimates and Marginal Means",
+    "text": "Point Estimates and Marginal Means\n\n\nstat_halfeye(): Visual Boundaries\n\nstat_eye(): Visual Boundaries\n\nstat_gradientinterval(): Visual Semiotics\n\nstat_dots(): Frequency Framing\n\nstat_dotsinterval(): Frequency Framing\n\nstat_halfeye()+ stat_dots(): Visual Boundaries + Frequency Framing\n\nCore syntax\n\nThe benefit of ggdist is that it allows you to use essentially identical syntax to produce lots of different kinds of plots\n\nAll we have to do is swap out the geom\n\n\n\nCodem1 <- lm(SRhealth ~ marital + age, data = gsoep_ex)\ntidy1 <- tidy(m1)\n\ntidy1 %>%\n  filter(term != \"(Intercept)\") %>%\n  ggplot(aes(y = term)) + \n    stat_halfeye(\n        aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n    ) +\n  my_theme()\n\n\n\n\nstat_halfeye()\nWe can pull the predictions from model terms or marginal means\nModel Terms:\n\nCodetidy1 %>%\n  filter(term != \"(Intercept)\") %>%\n  ggplot(aes(y = term)) + \n    stat_halfeye(\n        aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n    ) +\n  my_theme()\n\n\n\n\nMarginal Means:\n\nCodegsoep_ex %>%\n  data_grid(marital) %>%\n  mutate(age = mean(gsoep_ex$age)) %>%\n  augment(m1, newdata = ., se_fit = T) %>%\n  ggplot(aes(y = marital)) + \n    stat_halfeye(\n        aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)), \n    ) +\n  my_theme()\n\n\n\n\nLet’s do a little hack and create our whole plots except the geom, so that we can build them with less syntax:\n\nCodep1 <- tidy1 %>%\n  filter(term != \"(Intercept)\") %>%\n  ggplot(aes(y = term)) + \n  labs(\n    x = \"Parameter Estimate\"\n    , y = NULL\n    , title = \"Model Estimates\"\n    , caption = \"Outcome: Self-Rated Health\"\n    ) +\n  my_theme()\n\n\n\nCodep2 <- gsoep_ex %>%\n  data_grid(marital) %>%\n  mutate(age = mean(gsoep_ex$age)) %>%\n  augment(m1, newdata = ., se_fit = T) %>%\n  ggplot(aes(y = marital)) + \n  labs(\n    x = \"Model Predicted Self-Rated Health\"\n    , title = \"Marginal Means\"\n    , y = NULL\n    ) +\n  my_theme()\n\n\nWe can pull the predictions from model terms or marginal means\nModel Terms:\n\nCodep1 +\n  stat_halfeye(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n  ) + \n  labs(subtitle = \"stat_halfeye()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_halfeye(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)), \n  ) + \n  labs(subtitle = \"stat_halfeye()\")\n\n\n\n\nstat_eye()\nModel Terms:\n\nCodep1 +\n  stat_eye(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n  ) + \n  labs(subtitle = \"stat_eye()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_eye(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)), \n  ) + \n  labs(subtitle = \"stat_eye()\")\n\n\n\n\nstat_gradientinterval()\nModel Terms:\n\nCodep1 +\n  stat_gradientinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n  ) + \n  labs(subtitle = \"stat_gradientinterval()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_gradientinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)), \n  ) + \n  labs(subtitle = \"stat_gradientinterval()\")\n\n\n\n\nstat_dots()\nModel Terms:\n\nCodep1 +\n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)), \n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nYou can also change the number of dots:\nModel Terms:\n\nCodep1 +\n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n      , quantiles = 50\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nThere are also three different layouts\nlayout = \"bin\":\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n      , layout = \"bin\"\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nlayout = \"weave\":\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n      , layout = \"weave\"\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nlayout = \"swarm\":\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n      , layout = \"swarm\"\n  ) + \n  labs(subtitle = \"stat_dots()\")\n\n\n\n\nstat_dotsinterval()\nModel Terms:\n\nCodep1 +\n  stat_dotsinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n      , quantiles = 50\n  ) + \n  labs(subtitle = \"stat_dotsinterval()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_dotsinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n  ) + \n  labs(subtitle = \"stat_dotsinterval()\")\n\n\n\n\nYou can apply many of the same arguments as “regular” stat_dots()\nModel Terms:\n\nCodep1 +\n  stat_dotsinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n      , quantiles = 50\n      , layout = \"swarm\"\n  ) + \n  labs(subtitle = \"stat_dotsinterval()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_dotsinterval(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n      , layout = \"swarm\"\n  ) + \n  labs(subtitle = \"stat_dotsinterval()\")\n\n\n\n\n\nstat_halfeye()+ stat_dots()\n\nModel Terms:\n\nCodep1 +\n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n      , quantiles = 50\n      , side = \"bottomleft\"\n      , layout = \"swarm\"\n  ) + \n  stat_halfeye(\n    aes(xdist = dist_student_t(df = df.residual(m1), mu = estimate, sigma = std.error))\n  ) + \n  labs(subtitle = \"`stat_halfeye()`+ `stat_dots()\")\n\n\n\n\nMarginal Means:\n\nCodep2 + \n  stat_dots(\n      aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n      , quantiles = 50\n      , side = \"bottomleft\"\n      , layout = \"swarm\"\n  ) + \n  stat_halfeye(\n    aes(xdist = dist_student_t(df = df.residual(m1), mu = .fitted, sigma = .se.fit)) \n  ) + \n  labs(subtitle = \"`stat_halfeye()`+ `stat_dots()\")"
+  },
+  {
+    "objectID": "06-week6-workbook.html#geom_line",
+    "href": "06-week6-workbook.html#geom_line",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "geom_line()",
+    "text": "geom_line()\n\nCodeb_df3 %>%\n  ggplot(aes(x = age, y = pred)) + \n    geom_line(\n      aes(color = marital, group = interaction(marital, boot))\n      , alpha = .2, size = .25\n      ) + \n    my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#geom_lineribbon-summarized",
+    "href": "06-week6-workbook.html#geom_lineribbon-summarized",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "\ngeom_lineribbon(): summarized",
+    "text": "geom_lineribbon(): summarized\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred) %>%\n  ggplot(aes(x = age, y = pred, ymin = .lower, ymax = .upper)) +\n  geom_lineribbon(aes(fill = marital), size = .9) + \n  scale_fill_brewer(palette = \"Set2\") +\n  my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#geom_lineribbon-bands-summarized",
+    "href": "06-week6-workbook.html#geom_lineribbon-bands-summarized",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "\ngeom_lineribbon() bands: summarized",
+    "text": "geom_lineribbon() bands: summarized\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred, .width = c(.50, .80, .95)) %>%\n  ggplot(aes(x = age, y = pred, ymin = .lower, ymax = .upper)) +\n  geom_lineribbon(size = .9) + \n  scale_fill_brewer() +\n  facet_grid(~marital) + \n  my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#stat_lineribbon-bands-samples",
+    "href": "06-week6-workbook.html#stat_lineribbon-bands-samples",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "\nstat_lineribbon() bands: samples",
+    "text": "stat_lineribbon() bands: samples\n\nCodeb_df3 %>%\n  ggplot(aes(x = age, y = pred, fill = marital)) + \n  stat_lineribbon(alpha = .25) + \n  my_theme()\n\n\n\n\nWe can also use a new aesthetic: fill_ramp:\n\nCodeb_df3 %>%\n  ggplot(aes(x = age, y = pred, fill = marital)) + \n  stat_lineribbon(aes(fill_ramp = stat(level))) +\n  my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#geom_lineribbon-gradient-samples",
+    "href": "06-week6-workbook.html#geom_lineribbon-gradient-samples",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "\ngeom_lineribbon() gradient: samples",
+    "text": "geom_lineribbon() gradient: samples\n\nCodeb_df3 %>%\n  ggplot(aes(x = age, y = pred, fill = marital)) + \n  stat_lineribbon(alpha = .25, .width = ppoints(25)) + \n  scale_fill_brewer(palette = \"Set2\") +\n  my_theme()\n\n\n\n\nLet’s clean it up:\n\nCodems <- b_df3 %>% filter(age == max(age)) %>% group_by(marital) %>% summarize(m = mean(pred))\n\nb_df3 %>%\n  ggplot(aes(x = age*10, y = pred, fill = marital, fill_ramp = stat(.width))) + \n  stat_lineribbon(alpha = .25, .width = ppoints(25)) +\n  scale_x_continuous(limits = c(15,100), breaks = seq(15,90,15)) + \n  scale_fill_manual(values = c(\"grey\", \"darkorange\")) + \n  annotate(\"text\", label = \"Married\", x = max(b_df3$age)*10+1, y = ms$m[1], hjust = 0) + \n  annotate(\"text\", label = \"Never\\nMarried\", x = max(b_df3$age)*10+1, y = ms$m[2], hjust = 0) + \n  labs(\n    x = \"Age (Years)\"\n    , y = \"Predicted Self Rated Health\\n(Bootstrapped Interval Estimates)\"\n    , fill = NULL\n    , title = \"Self-Rated Health Declines More Rapidly for Unmarried People\"\n    ) + \n  guides(fill = \"none\") + \n  my_theme()"
+  },
+  {
+    "objectID": "06-week6-workbook.html#ensemble-displays",
+    "href": "06-week6-workbook.html#ensemble-displays",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Ensemble Displays",
+    "text": "Ensemble Displays\n\nEnsemble displays are an alternative to putting hard boundaries around an interval estimate\nRemember that hard boundaries make people interpret categorical differences even when the underlying distribution is continuous\nWe’ve already seen this:\n\n\n\n\n\n\n\nBut the challenge with visualizing uncertainty is between inference and understanding\nWe need to leverage a knowledge of perception and cognitive processes to help us leverage strengths and overcome weaknesses\nAnimating visualizations can help us nudge people to process was they see and update their uncertainty estimates over time\n\nHere’s a quick example:\n\n\n\n\n\nLet’s break this down:\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred) \n\n\n\n  \n\n\n\nNow, let’s plot the ribbon:\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred) %>%\n  ggplot(aes(x = age, y = pred)) +\n    geom_ribbon(\n      aes(fill = marital, ymin = .lower, ymax = .upper)\n      , size = .9, alpha = .5\n      ) + \n    scale_fill_brewer(palette = \"Set2\") +\n    facet_grid(~marital) + \n    my_theme() + \n    theme(legend.position = \"none\")\n\n\n\n\nAnd add the lines (all of them, it will be ugly):\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred) %>%\n  ggplot(aes(x = age, y = pred)) +\n    geom_ribbon(\n      aes(fill = marital, ymin = .lower, ymax = .upper)\n      , size = .9, alpha = .5\n      ) + \n    scale_fill_brewer(palette = \"Set2\") +\n    geom_line(\n      data = b_df3\n      , aes(group = interaction(marital, boot))\n      , size = 1\n      ) +\n    facet_grid(~marital) + \n    my_theme() + \n    theme(legend.position = \"none\")\n\n\n\n\nAnd finally, use transition_states() to animate it\n\nCodeb_df3 %>%\n  group_by(marital, age) %>%\n  median_qi(pred) %>%\n  ggplot(aes(x = age, y = pred)) +\n    geom_ribbon(\n      aes(fill = marital, ymin = .lower, ymax = .upper)\n      , size = .9, alpha = .5\n      ) + \n    scale_fill_brewer(palette = \"Set2\") +\n    geom_line(\n      data = b_df3\n      , aes(group = interaction(marital, boot))\n      , size = 1\n      ) +\n    facet_grid(~marital) + \n    my_theme() + \n    theme(legend.position = \"none\") + \n    transition_states(boot, 1, 1)"
+  },
+  {
+    "objectID": "06-week6-workbook.html#hypothetical-outcome-plots-hops",
+    "href": "06-week6-workbook.html#hypothetical-outcome-plots-hops",
+    "title": "Week 6 (Workbook) - Visualizing Uncertainty",
+    "section": "Hypothetical Outcome Plots (HOPs)",
+    "text": "Hypothetical Outcome Plots (HOPs)\n\nSimilarly, hypothetical outcome plots let us see plausible mean estimates among raw data\nHere’s self-rated health (1-5) across married and unmarried individuals:\n\n\nCodegsoep_ex3 %>%\n  ggplot(aes(y = marital, x = SRhealth)) + \n    geom_jitter(aes(color = marital), alpha = .5) + \n    my_theme()\n\n\n\n\n\nUsing the ungeviz package, we can then use the geom_vpline() function to sample from the data across groups and plot the mean from different samples:\n\n\nCodegsoep_ex3 %>%\n  ggplot(aes(y = marital, x = SRhealth)) + \n    geom_jitter(aes(color = marital), alpha = .25) + \n    geom_vpline(\n      data = sampler(25, group = marital)\n      , height = 0.6\n      , color = \"#D55E00\"\n      ) +\n    scale_color_manual(values = c(\"seagreen2\", \"darkorange\")) + \n    my_theme()\n\n\n\n\nAnd finally, we can animate those samples the transition_states() function from the gganimate package again:\n\nCodegsoep_ex3 %>%\n  ggplot(aes(y = marital, x = SRhealth)) + \n    geom_jitter(aes(color = marital), alpha = .5) + \n    geom_vpline(\n      data = sampler(25, group = marital)\n      , height = 0.6\n      , color = \"#D55E00\"\n      ) +\n    scale_color_manual(values = c(\"seagreen2\", \"darkorange\")) + \n    my_theme() + \n    transition_states(.draw, 1, 3)"
+  },
+  {
+    "objectID": "ps3.html",
+    "href": "ps3.html",
+    "title": "Problem Set 3",
+    "section": "",
+    "text": "Due Date: Wednesday, February 19, 9:30 AM PST.\nDownload your problem set for weeks 5-6 below or on Canvas."
   }
 ]

@@ -94,6 +94,7 @@ my_theme <- function(){
 
 ```{r, echo=F}
 load(url("https://github.com/emoriebeck/psc290-data-viz-2022/blob/main/05-week5-time-series/01-data/gsoep.RData?raw=true"))
+gsoep <- gsoep %>% mutate(gender = haven::zap_labels(gender))
 gsoep
 ```
 
