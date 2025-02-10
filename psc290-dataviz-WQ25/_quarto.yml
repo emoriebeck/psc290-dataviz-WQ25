@@ -35,8 +35,8 @@ website:
         - 04-week4-slides.qmd
         - 05-week5-workbook.qmd
         - 05-week5-slides.qmd
-        # - 06-week6-slides.qmd
-        # - 06-week6-workbook.qmd
+        - 06-week6-workbook.qmd
+        - 06-week6-slides.qmd
         # - 07-week7-slides.qmd
         # - 07-week7-workbook.qmd
         # - 08-week8-slides.qmd
@@ -55,12 +55,10 @@ website:
         - ps1.qmd
         - ps1-solutions.qmd
         - ps2.qmd
-        # - ps3-week3.qmd
+        - ps2-solutions.qmd
+        - ps3-week3.qmd
         # - ps4-week4.qmd
         # - ps5-week5.qmd
-        # - ps7-week7.qmd
-        # - ps8-week8.qmd
-        # - ps9-week9-qmd
         
     - id: finalproject
       title: "Final Project"
@@ -69,8 +67,9 @@ website:
       collapse-level: 2
       contents:
         - final-project-proposal.qmd
-        # - final-project-submission.qmd
-        # - final-project-rubric.qmd
+        - final-project-presentation.qmd
+        - final-project-paper.qmd
+        - final-project-rubric.qmd
 
 format:
   html:

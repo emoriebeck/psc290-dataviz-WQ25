@@ -2231,5 +2231,19 @@
     "title": "Week 5 (Slides) - Time Series",
     "section": "",
     "text": "Welcome to Week 5! This week, focus on visualizing time series."
+  },
+  {
+    "objectID": "ps2-solutions.html",
+    "href": "ps2-solutions.html",
+    "title": "Problem Set 2 Solutions",
+    "section": "",
+    "text": "Due Date: Wednesday, February 5, 9:30 AM PST.\nDownload solutions problem set for week 1 below or on Canvas."
+  },
+  {
+    "objectID": "final-project-presentation.html",
+    "href": "final-project-presentation.html",
+    "title": "Final Project Presentation",
+    "section": "",
+    "text": "Due at 9:30 AM PST on March 12, 2025 on Canvas (visualization or slides)\nPresentations will be in class on March 12 (in person or Zoom)\n\n\n\n\nUp to 4 minute presentation (slides or simply the draft visualization), data blitz style, where you speak on:\n\nShort background (why do you / we care?)\nResearch question(s; only the question[s] you are focusing on)\nShort method (what are the data? Which are you using?)\nShowcase your visualization\n(optional) lingering questions or challenges\n\n\n\n\n\nThe goal of this presentation is to:\n\nProvide you with feedback from both instructor and classmates on the efficacy of your draft visualization\nClear up lingering challenges and barriers\nAllow you to practice talking about visualizations of your research\n\n\n\n\nAs a reminder, there are no restrictions on the scope of your presentation. Some ideas of what’s perfectly fine are as follows:\n\nIntroducing a new kind of visualization to your area of research\nOffering improvements to “standard practice” visualizations in your area\nSetting up a procedure for a kind of visualization you’ve long wanted / needed to figure out\nReally anything that is both useful to you and displays some sort of mastery of course content\n\n\n\n\nI will give an example data blitz on March 5 to showcase how your presentation may look. I will use the same example (below) that I included in your proposal instructions:\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question (Beck & Jackson, 2022). There were five research questions I was answering more generally, but one was just “Do psychological, situational, time, or full feature sets perform best?” I answered this with the following visualization, which shows the relative proportion of individuals’ psychological, situational, and timing features in their best performing model using a “sequence plot” I stole from genetics (which you’ll notice looks a lot like a rotated stacked bar chart, which it is!)."
   }
 ]

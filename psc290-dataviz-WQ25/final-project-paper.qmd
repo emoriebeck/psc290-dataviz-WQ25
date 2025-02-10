@@ -1,0 +1,44 @@
+---
+title: "Final Project Paper"
+subtitle: "PSC290 - Data Visualization, WQ25"
+author: "Emorie D Beck"
+institution: "University of California, Davis"
+format: html
+---
+
+# Final Project
+
+-   Due at 11:59 PM PST on March **20**, 2025 on Canvas
+
+## Format
+
+-   \~5 page paper (sort of research report style)
+    -   Short background (why do you / we care?)
+    -   Research question(s; only the question\[s\] you are focusing on)
+    -   Short method (what are the data? Which are you using?)
+    -   Results section describing and showcasing your visualization as you would in a paper you'd submit to a journal
+    -   Summary of what strategies (e.g., principle of proximity, etc.) you drew on to build the most effective visualization, why you chose that specific visualization, and anything else you'd like to add.
+
+## Goal
+
+The goal of this report / paper is to:
+
+-   Help you integrate the conceptual and applied knowledge and skills you gained throughout the course
+-   Practice how the conceptual and applied knowledge and skills of the course apply to your research in particular
+-   Create a visualization that you can use in a journal article, conference / brown bag presentation, grant / fellowship application
+
+## Scope
+
+As a reminder, there are no restrictions on the scope of your project. Some ideas of what's perfectly fine are as follows:
+
+-   Introducing a new kind of visualization to your area of research
+-   Offering improvements to "standard practice" visualizations in your area
+-   Setting up a procedure for a kind of visualization you've long wanted / needed to figure out
+-   Really anything that is both useful to you and displays some sort of mastery of course content
+
+## Additional Notes
+
+-   The length and type of descriptions often varies considerably across journals.
+-   That is fine! If your report / paper needs to be longer to mirror journal expectations, then make it longer.
+-   I will provide feedback on whatever you submit, which could hopefully be plopped right into a paper you'll eventually submit to a journal
+-   Please feel free to use the paper I linked in the proposal / presentation documents for how to link visualizations to research questions (sorry to belabor this paper, but the short report format makes it a little more accessible; [Beck & Jackson, 2022](https://journals.sagepub.com/eprint/JJIZZFKKZZPZCIG9VGIU/full)).
