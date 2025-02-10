@@ -1,0 +1,14 @@
+{
+  "hash": "a6b30dd8b925e3c06ec2c9fcffe27827",
+  "result": {
+    "markdown": "---\ntitle: \"Final Project Presentation\"\nsubtitle: \"PSC290 - Data Visualization, Winter 2025\"\nauthor: \"Emorie D Beck\"\ninstitution: \"University of California, Davis\"\nformat: html\n---\n\n\n# Final Project Presentations\n\n-   Due at 9:30 AM PST on March 12, 2025 on Canvas (visualization or slides)\n-   Presentations will be in class on March 12 (in person or Zoom)\n\n## Format\n\n-   Up to 4 minute presentation (slides or simply the draft visualization), data blitz style, where you speak on:\n    -   Short background (why do you / we care?)\n    -   Research question(s; only the question\\[s\\] you are focusing on)\n    -   Short method (what are the data? Which are you using?)\n    -   Showcase your visualization\n    -   (optional) lingering questions or challenges\n\n## Goal\n\nThe goal of this presentation is to:\n\n-   Provide you with feedback from both instructor and classmates on the efficacy of your draft visualization\n-   Clear up lingering challenges and barriers\n-   Allow you to practice talking about visualizations of your research\n\n## Scope\n\nAs a reminder, there are no restrictions on the scope of your presentation. Some ideas of what's perfectly fine are as follows:\n\n-   Introducing a new kind of visualization to your area of research\n-   Offering improvements to \"standard practice\" visualizations in your area\n-   Setting up a procedure for a kind of visualization you've long wanted / needed to figure out\n-   Really anything that is both useful to you and displays some sort of mastery of course content\n\n## Example\n\nI will give an example data blitz on March 5 to showcase how your presentation may look. I will use the same example (below) that I included in your proposal instructions:\n\nAs one brief example, in one of my recent papers, I was interested in the extent to which psychological, situational, and timing factors predicted different momentary experiences and behaviors using person-specific machine learning question ([Beck & Jackson, 2022](https://journals.sagepub.com/eprint/JJIZZFKKZZPZCIG9VGIU/full)). There were five research questions I was answering more generally, but one was just \"Do psychological, situational, time, or full feature sets perform best?\" I answered this with the following visualization, which shows the relative proportion of individuals' psychological, situational, and timing features in their best performing model using a \"sequence plot\" I stole from genetics (which you'll notice looks a lot like a rotated stacked bar chart, which it is!).\n\n\n::: {.cell-output-display}\n![](image.png){width=1200}\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
