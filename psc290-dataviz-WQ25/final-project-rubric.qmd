@@ -3,13 +3,13 @@ title: "Final Project Paper Rubric"
 subtitle: "PSC290 - Data Visualization, WQ25"
 author: "Emorie D Beck"
 institution: "University of California, Davis"
-format: pdf
+format: html
 ---
 
 -   Due at 11:59 PM PST on March **20**, 2025 on Canvas
 
 | Section / Description | Points |
-|--------------------------------------------------------|----------------|
+|------------------------------------------------------|------------------|
 | **Background**: Describe the background / impetus for your visualization. What makes your research question important and why should I care? 1-2 paragraphs is sufficient in most cases. | 4 points |
 | **Research Questions**: Clearly state the research question(s) you are answering in your visualization and hypothesis(es), if any. | 4 points |
 | **Method**: Short description of (1) Participants, (2) Measures, (3) Procedure, (4) Analytic Plan. Include each section (or others not listed here) as is applicable for your project. This does not need to be a full Method section, but it helps me know things about the range of scales, details like the number of trials, etc., which can help me in evaluating your visualization. There is no minimum of maximum length, but my guess is no less than 2-3 paragraphs. | 4 points |

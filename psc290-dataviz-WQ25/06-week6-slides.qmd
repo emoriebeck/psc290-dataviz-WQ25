@@ -2,7 +2,7 @@
 title: "Week 6 (Slides) - Visualizing Uncertainty"
 ---
 
-Welcome to Week 6! This week, focus on visualizing time series. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/06-week6-uncertainty/06-week6.zip).
+Welcome to Week 6! This week, focus on visualizing uncertainty. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/06-week6-uncertainty/06-week6.zip).
 
 <div>
 
