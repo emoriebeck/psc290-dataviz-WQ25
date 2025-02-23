@@ -1,12 +1,12 @@
 ---
-title: "Week 7 (Slides) - Piecing Plots Together"
+title: "Week 8 (Slides) - Polishing"
 ---
 
-Welcome to Week 7! This week, we're bringing everything together to talk about piecing plots together with a few long-form worked examples. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/07-week7-uncertainty/07-week7.zip).
+Welcome to Week 8! This week, we're bringing everything together to talk about tools for polishing plots. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/08-week8-polishing/08-week8.zip).
 
 <div>
 
-<iframe class="slide-deck" src="/slides/07-week7-slides-code.html" width="1200" height="800">
+<iframe class="slide-deck" src="/slides/08-week8-slides-code.html" width="1200" height="800">
 
 </iframe>
 
