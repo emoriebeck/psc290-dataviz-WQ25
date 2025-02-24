@@ -1,0 +1,9 @@
+---
+title: "Problem Set 3 Solutions"
+---
+
+[Download](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/assignments/03-problem-sets/03-ps3/ps3-solutions.zip) solutions problem set for Problem Set 3 here or on Canvas.
+
+<iframe class="slide-deck" src="/static/ps/problemset3-solution.html" width="100%" height="800">
+
+</iframe>

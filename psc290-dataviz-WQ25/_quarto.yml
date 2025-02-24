@@ -57,8 +57,8 @@ website:
         - ps2.qmd
         - ps2-solutions.qmd
         - ps3.qmd
-        # - ps4-week4.qmd
-        # - ps5-week5.qmd
+        - ps2-solutions.qmd
+        - ps4.qmd
         
     - id: finalproject
       title: "Final Project"
