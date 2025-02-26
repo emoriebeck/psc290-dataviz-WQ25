@@ -2,7 +2,7 @@
 title: "Problem Set 4"
 ---
 
-**Due Date**: Wednesday, March 5, 9:30 AM PST.
+**Due Date**: Wednesday, March 12, 9:30 AM PST.
 
 [Download](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/assignments/03-problem-sets/04-ps04/04-ps4.zip) your problem set for weeks 7-8 below or on Canvas.
 
