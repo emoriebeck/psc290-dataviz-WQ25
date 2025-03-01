@@ -2,7 +2,7 @@
 title: "Week 9 (Slides) - R Shiny"
 ---
 
-Welcome to Week 9! We're moving out of talking about plots per se and into one method for sharing a large variety of plots online. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/08-week8-polishing/08-week8.zip).
+Welcome to Week 9! We're moving out of talking about plots per se and into one method for sharing a large variety of plots online. Download all materials [here](https://github.com/emoriebeck/psc290-dataviz-WQ25/raw/refs/heads/main/workshops/09-week9-shiny/09-week9.zip).
 
 <div>
 
