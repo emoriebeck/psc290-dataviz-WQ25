@@ -49,3 +49,5 @@ download.file(url = "https://github.com/emoriebeck/behavior-prediction/raw/main/
           mode = 'wb')
 knitr::include_graphics(path = "image.png")
 ```
+
+<iframe class="slide-deck" src="/slides/example-pres.pdf" width="100%" height="800"></iframe>
